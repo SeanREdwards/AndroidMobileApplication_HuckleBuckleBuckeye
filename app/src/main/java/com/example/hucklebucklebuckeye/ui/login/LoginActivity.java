@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -23,6 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hucklebucklebuckeye.R;
+import com.example.hucklebucklebuckeye.mainmenu.MainMenuActivity;
 import com.example.hucklebucklebuckeye.ui.login.LoginViewModel;
 import com.example.hucklebucklebuckeye.ui.login.LoginViewModelFactory;
 
@@ -115,6 +117,8 @@ public class LoginActivity extends AppCompatActivity {
                 loadingProgressBar.setVisibility(View.VISIBLE);
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
+                //ADDED STUFF -- should actually log in first
+                startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
             }
         });
     }
