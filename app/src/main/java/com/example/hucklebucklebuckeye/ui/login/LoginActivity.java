@@ -24,9 +24,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.hucklebucklebuckeye.R;
-import com.example.hucklebucklebuckeye.mainmenu.MainMenuActivity;
-import com.example.hucklebucklebuckeye.ui.login.LoginViewModel;
-import com.example.hucklebucklebuckeye.ui.login.LoginViewModelFactory;
+import com.example.hucklebucklebuckeye.ui.mainmenu.MainMenuActivity;
 
 public class LoginActivity extends AppCompatActivity {
 

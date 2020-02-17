@@ -1,4 +1,4 @@
-package com.example.hucklebucklebuckeye.mainmenu.ui.mainmenu;
+package com.example.hucklebucklebuckeye.ui.mainmenu;
 
 import androidx.lifecycle.ViewModel;
 
