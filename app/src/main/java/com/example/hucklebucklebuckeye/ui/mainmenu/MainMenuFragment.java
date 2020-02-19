@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.hucklebucklebuckeye.R;
+import com.example.hucklebucklebuckeye.ui.history.HistoryActivity;
 import com.example.hucklebucklebuckeye.ui.profile.ProfileActivity;
 
 public class MainMenuFragment extends Fragment {
@@ -28,15 +29,25 @@ public class MainMenuFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.main_menu_fragment, container, false);
+
         final Button profileButton = view.findViewById(R.id.profileButton);
+        final Button historyButton = view.findViewById(R.id.historyButton);
+
         profileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(), ProfileActivity.class));
             }
         });
-        return view;
 
+        historyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), HistoryActivity.class));
+            }
+        });
+
+        return view;
     }
 
     @Override
