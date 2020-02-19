@@ -15,12 +15,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.hucklebucklebuckeye.R;
-import com.example.hucklebucklebuckeye.ui.mainmenu.MainMenuActivity;
 import com.example.hucklebucklebuckeye.ui.profile.ProfileActivity;
 
 public class MainMenuFragment extends Fragment {
-
-    private MainMenuViewModel mViewModel;
 
     public static MainMenuFragment newInstance() {
         return new MainMenuFragment();
@@ -45,9 +42,6 @@ public class MainMenuFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
-        mViewModel = ViewModelProviders.of(this).get(MainMenuViewModel.class);
-        // TODO: Use the ViewModel
     }
 
 }
