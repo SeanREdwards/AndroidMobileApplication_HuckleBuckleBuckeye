@@ -1,4 +1,5 @@
 package com.example.hucklebucklebuckeye.ui.mainmenu;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -22,6 +23,28 @@ public class MainMenuActivity extends AppCompatActivity {
                     .commitNow();
         }
 
+        Log.d("MainMenuActivity", "onCreate(Bundle?) method called");
+
+    }
+
+    protected void onStart() {
+        super.onStart();
+        Log.d("MainMenuActivity", "onStart() method called");
+    }
+
+    protected void onPause() {
+        super.onPause();
+        Log.d("MainMenuActivity", "onPause() method called");
+    }
+
+    protected void onResume() {
+        super.onResume();
+        Log.d("MainMenuActivity", "onResume() method called");
+    }
+
+    protected void onStop() {
+        super.onStop();
+        Log.d("MainMenuActivity", "onStop() method called");
     }
 
 }
