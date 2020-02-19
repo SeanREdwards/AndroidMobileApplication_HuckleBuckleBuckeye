@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +29,9 @@ public class MainMenuFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+
+        Log.d("MainMenuFragment", "onCreateView() method called");
+
         View view = inflater.inflate(R.layout.main_menu_fragment, container, false);
 
         final Button profileButton = view.findViewById(R.id.profileButton);
@@ -48,11 +52,30 @@ public class MainMenuFragment extends Fragment {
         });
 
         return view;
+
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+    }
+
+    @Override
+    public void onStart() {
+        Log.d("MainMenuFragment", "onStart() method called");
+        super.onStart();
+    }
+
+    @Override
+    public void onPause() {
+        Log.d("MainMenuFragment", "onPause() method called");
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        Log.d("MainMenuFragment", "onResume() method called");
+        super.onResume();
     }
 
 }

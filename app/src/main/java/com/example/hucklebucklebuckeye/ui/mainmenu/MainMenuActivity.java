@@ -23,7 +23,7 @@ public class MainMenuActivity extends AppCompatActivity {
                     .commitNow();
         }
 
-        Log.d("MainMenuActivity", "onCreate(Bundle?) method called");
+        Log.d("MainMenuActivity", "onCreate(Bundle) method called");
 
     }
 
