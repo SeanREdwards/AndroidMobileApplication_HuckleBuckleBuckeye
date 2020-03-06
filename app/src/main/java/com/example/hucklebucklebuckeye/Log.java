@@ -8,10 +8,16 @@ package com.example.hucklebucklebuckeye;
 
 import android.graphics.Bitmap;
 
-import java.time.LocalDate;
+
 import java.time.LocalTime;
+import java.util.Date;
+import java.util.UUID;
 
 public class Log {
+    private UUID mId;
+
+    //Date session played.
+    private Date mDate;
 
     //Steps taken.
     private int mSteps;
@@ -22,20 +28,18 @@ public class Log {
     //Distance in miles.
     private double mDistance;
 
-    //Date session played.
-    private LocalDate mDate;
-
     //Total Time of Session.
     private LocalTime mTime;
 
     //Status of successful finish.
     private boolean mWon;
 
-    public Log(int steps, Bitmap mapImage, double distance, LocalDate date, LocalTime time, boolean won){
+    public Log(int steps, Bitmap mapImage, double distance, LocalTime time, boolean won){
+        mId = UUID.randomUUID();
+        mDate = new Date();
         mSteps = steps;
         mMapImage = mapImage;
         mDistance = distance;
-        mDate = date;
         mTime = time;
         mWon = won;
     }
@@ -51,10 +55,6 @@ public class Log {
 
     public double getDistance() {
         return mDistance;
-    }
-
-    public LocalDate getDate() {
-        return mDate;
     }
 
     public LocalTime getTime() {
