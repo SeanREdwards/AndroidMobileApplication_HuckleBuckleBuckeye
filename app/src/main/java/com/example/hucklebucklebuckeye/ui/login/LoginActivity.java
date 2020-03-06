@@ -5,7 +5,9 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -22,7 +24,11 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.hucklebucklebuckeye.R;
+import com.example.hucklebucklebuckeye.model.Account;
+import com.example.hucklebucklebuckeye.model.AccountDBHelper;
 import com.example.hucklebucklebuckeye.ui.mainmenu.MainMenuActivity;
+
+import static java.security.AccessController.getContext;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -104,14 +110,36 @@ public class LoginActivity extends AppCompatActivity {
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
                 //ADDED STUFF -- should actually log in first
+                //TODO: for real shouldnt be here but yeah
+                boolean validated = validateUser(usernameEditText.getText().toString(),
+                        passwordEditText.getText().toString());
                 startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
             }
         });
     }
 
+    private boolean validateUser(String username, String password){
+        AccountDBHelper dbHelper = new AccountDBHelper(getApplicationContext());
+        // Gets the data repository in write mode
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        //dbHelper.onCreate(db);
+        // Create a new map of values, where column names are the keys
+        ContentValues values = new ContentValues();
+        values.put(Account.AccountEntry.COLUMN_NAME_USERNAME, username);
+        values.put(Account.AccountEntry.COLUMN_NAME_PASSWORD, password);
+
+        Log.d("Username + password: ", values.toString());
+        // Insert the new row, returning the primary key value of the new row
+        dbHelper.onCreate(db);
+        db.execSQL("INSERT INTO hucklebucklebuckeye.account VALUES (username, password)");
+        //long newRowId = db.insert(Account.AccountEntry.TABLE_NAME, null, values);
+        //Log.d("insertion result: ", String.valueOf(newRowId));
+        return true;
+    }
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
-        // TODO : initiate successful logged in experience
+        // TODO : initiate successful logged in experience (verify this)
+        startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
     }
 
