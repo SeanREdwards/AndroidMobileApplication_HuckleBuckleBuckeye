@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         Log.d("LoginActivity", "onCreate(Bundle?) method called");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        AccountDBHelper databaseHandler = new AccountDBHelper(this);
+        final AccountDBHelper databaseHandler = new AccountDBHelper(this);
         loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 
@@ -85,6 +85,8 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
+
         TextWatcher afterTextChangedListener = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -102,7 +104,7 @@ public class LoginActivity extends AppCompatActivity {
                         passwordEditText.getText().toString());
             }
         };
-        
+
         usernameEditText.addTextChangedListener(afterTextChangedListener);
         passwordEditText.addTextChangedListener(afterTextChangedListener);
 
@@ -114,12 +116,15 @@ public class LoginActivity extends AppCompatActivity {
                         passwordEditText.getText().toString());
                 //ADDED STUFF -- should actually log in first
                 //TODO: for real shouldnt be here but yeah
+                databaseHandler.insertData(usernameEditText.getText().toString(),
+                        passwordEditText.getText().toString());
                 boolean validated = validateUser(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
                 startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
             }
         });
     }
+
 
     private boolean validateUser(String username, String password){
         AccountDBHelper dbHelper = new AccountDBHelper(getApplicationContext());

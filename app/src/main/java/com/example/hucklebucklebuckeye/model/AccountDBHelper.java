@@ -1,5 +1,6 @@
 package com.example.hucklebucklebuckeye.model;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -42,6 +43,19 @@ public class AccountDBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
+    }
+
+    public boolean insertData(String username, String password) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COLUMN_USERNAME, username);
+        contentValues.put(COLUMN_PASSWORD, password);
+       long result = db.insert(TABLE_NAME, null, contentValues);
+       if (result == -1) {
+           return false;
+       } else {
+           return true;
+       }
     }
 
 }
