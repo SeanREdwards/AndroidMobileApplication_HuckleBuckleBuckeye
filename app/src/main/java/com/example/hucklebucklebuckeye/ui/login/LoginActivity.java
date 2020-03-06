@@ -26,6 +26,7 @@ import android.widget.Toast;
 import com.example.hucklebucklebuckeye.R;
 import com.example.hucklebucklebuckeye.model.Account;
 import com.example.hucklebucklebuckeye.model.AccountDBHelper;
+import com.example.hucklebucklebuckeye.model.DatabaseHandler;
 import com.example.hucklebucklebuckeye.ui.mainmenu.MainMenuActivity;
 
 import static java.security.AccessController.getContext;
@@ -39,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         Log.d("LoginActivity", "onCreate(Bundle?) method called");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        AccountDBHelper databaseHandler = new AccountDBHelper(this);
         loginViewModel = ViewModelProviders.of(this, new LoginViewModelFactory())
                 .get(LoginViewModel.class);
 

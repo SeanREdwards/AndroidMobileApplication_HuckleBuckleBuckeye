@@ -1,0 +1,129 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.hucklebucklebuckeye"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:6:5-79
+11-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:6:22-76
+12
+13    <uses-feature
+13-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:9:5-11:35
+14        android:glEsVersion="0x00020000"
+14-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:10:9-41
+15        android:required="true" />
+15-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:11:9-32
+16    <uses-feature
+16-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:12:5-14:36
+17        android:name="android.hardware.wifi"
+17-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:13:9-45
+18        android:required="false" /> <!-- Implied by ACCESS_WIFI_STATE. -->
+18-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:14:9-33
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:16:5-67
+19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:16:22-64
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:17:5-79
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:17:22-76
+21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:18:5-76
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/2b83033a9596ada038c8d740696fd3de/jetified-mapbox-android-sdk-8.6.2/AndroidManifest.xml:18:22-73
+22    <uses-permission android:name="android.permission.WAKE_LOCK" />
+22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/1f68d8bff2ee4f123efae732ea6cd0b7/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:12:5-68
+22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/1f68d8bff2ee4f123efae732ea6cd0b7/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:12:22-65
+23
+24    <application
+24-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:8:5-37:19
+25        android:allowBackup="true"
+25-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:9:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.0.1] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/8f8ab13dc8f4e84e14a8bb3d9ac92bc4/core-1.0.1/AndroidManifest.xml:22:18-86
+27        android:debuggable="true"
+28        android:icon="@mipmap/ic_launcher"
+28-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:10:9-43
+29        android:label="@string/app_name"
+29-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:11:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:12:9-54
+31        android:supportsRtl="true"
+31-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:13:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:14:9-40
+34        <activity
+34-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:16:9-24:20
+35            android:name="com.example.hucklebucklebuckeye.ui.login.LoginActivity"
+35-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:17:13-51
+36            android:label="@string/app_name" >
+36-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:18:13-45
+37            <intent-filter>
+37-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:19:13-23:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:20:17-69
+38-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:20:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:22:17-77
+40-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:22:27-74
+41            </intent-filter>
+42        </activity>
+43        <activity
+43-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:25:9-28:20
+44            android:name="com.example.hucklebucklebuckeye.ui.mainmenu.MainMenuActivity"
+44-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:26:13-57
+45            android:label="MainMenu" >
+45-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:27:13-37
+46        </activity>
+47        <activity
+47-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:29:9-32:20
+48            android:name="com.example.hucklebucklebuckeye.ui.profile.ProfileActivity"
+48-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:30:13-55
+49            android:label="Profile" >
+49-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:31:13-36
+50        </activity>
+51        <activity
+51-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:33:9-36:20
+52            android:name="com.example.hucklebucklebuckeye.ui.history.HistoryActivity"
+52-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:34:13-55
+53            android:label="History" >
+53-->/Users/NickLaManna/HuckleBuckleBuckeye/app/src/main/AndroidManifest.xml:35:13-36
+54        </activity>
+55
+56        <provider
+56-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/1f68d8bff2ee4f123efae732ea6cd0b7/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:19:9-23:39
+57            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+57-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/1f68d8bff2ee4f123efae732ea6cd0b7/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:20:13-93
+58            android:authorities="com.example.hucklebucklebuckeye.mapboxtelemetryinitprovider"
+58-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/1f68d8bff2ee4f123efae732ea6cd0b7/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:21:13-79
+59            android:exported="false"
+59-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/1f68d8bff2ee4f123efae732ea6cd0b7/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:22:13-37
+60            android:initOrder="100" />
+60-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/1f68d8bff2ee4f123efae732ea6cd0b7/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:23:13-36
+61
+62        <service
+62-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/1f68d8bff2ee4f123efae732ea6cd0b7/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:25:9-27:72
+63            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
+63-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/1f68d8bff2ee4f123efae732ea6cd0b7/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:26:13-92
+64            android:permission="android.permission.BIND_JOB_SERVICE" />
+64-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/1f68d8bff2ee4f123efae732ea6cd0b7/jetified-mapbox-android-telemetry-4.5.1/AndroidManifest.xml:27:13-69
+65
+66        <provider
+66-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/6fbf654d3db04d7d9e48eb73ccf59f45/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+67            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/6fbf654d3db04d7d9e48eb73ccf59f45/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+68            android:authorities="com.example.hucklebucklebuckeye.lifecycle-process"
+68-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/6fbf654d3db04d7d9e48eb73ccf59f45/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+69            android:exported="false"
+69-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/6fbf654d3db04d7d9e48eb73ccf59f45/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+70            android:multiprocess="true" />
+70-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/NickLaManna/.gradle/caches/transforms-2/files-2.1/6fbf654d3db04d7d9e48eb73ccf59f45/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+71    </application>
+72
+73</manifest>

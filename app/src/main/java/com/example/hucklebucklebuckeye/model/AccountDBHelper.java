@@ -9,26 +9,39 @@ import static com.example.hucklebucklebuckeye.model.Account.SQL_DELETE_ENTRIES;
 
 public class AccountDBHelper extends SQLiteOpenHelper {
     // If you change the database schema, you must increment the database version.
-    public static final int DATABASE_VERSION = 1;
+
+    //Database Version
+    private static final int DATABASE_VERSION = 1;
+
+    //Database Name
     public static final String DATABASE_NAME = "huckle.db";
+
+    //Table Name
+    private static final String TABLE_NAME = "account";
+
+    //Table Fields
+    private static final String COLUMN_ID = "id";
+    private static final String COLUMN_USERNAME = "username";
+    private static final String COLUMN_PASSWORD = "password";
+
+    SQLiteDatabase database;
 
     public AccountDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+        database = getWritableDatabase();
     }
 
+
+
+    @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(SQL_CREATE_ENTRIES);
+        db.execSQL("CREATE TABLE " + TABLE_NAME + " ( " + COLUMN_ID + " INTEGER PRIMARY KEY, " + COLUMN_USERNAME + " TEXT, " + COLUMN_PASSWORD + " TEXT) ");
     }
 
+    @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // This database is only a cache for online data, so its upgrade policy is
-        // to simply to discard the data and start over
-        db.execSQL(SQL_DELETE_ENTRIES);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
-    public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        onUpgrade(db, oldVersion, newVersion);
-    }
-
 
 }
