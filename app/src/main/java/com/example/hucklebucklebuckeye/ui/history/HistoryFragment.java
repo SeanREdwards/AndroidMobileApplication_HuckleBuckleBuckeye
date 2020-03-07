@@ -18,12 +18,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.hucklebucklebuckeye.R;
 import com.example.hucklebucklebuckeye.model.LogBaseHelper;
 
 public class HistoryFragment extends Fragment {
 
+    private static String outputText = "added!\n";
+    private static int addedCount = 0;
+    private static int stepCount = 15;
+    private static int updateCount = 0;
+    private static int deleteCount = 0;
+    private static String updateText = "updated!\n";
     public static HistoryFragment newInstance() {
         return new HistoryFragment();
     }
@@ -45,6 +52,7 @@ public class HistoryFragment extends Fragment {
         final Button deleteButton = view.findViewById(R.id.deleteButton);
         final TextView output = view.findViewById(R.id.output);
 
+
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,9 +64,15 @@ public class HistoryFragment extends Fragment {
                 values.put("COMPLETED", false);
 
                 logHandler.insertData(values);
-
-
-                output.setText("hello");
+                String out = "";
+                addedCount++;
+                //output.setText("added!\n");
+                for (int i = 0; i < addedCount; i++){
+                    out += outputText;
+                }
+                Log.d("output", out);
+                output.setText(out);
+                Toast.makeText(getContext(), out, Toast.LENGTH_SHORT).show();
              }
         });
 
@@ -66,15 +80,33 @@ public class HistoryFragment extends Fragment {
         updateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ContentValues values = new ContentValues();
+                stepCount++;
+                values.put("STEPS", stepCount);
+                values.put("MAP", "");
+                values.put("DISTANCE", 1.3);
+                values.put("TIME", "");
+                values.put("COMPLETED", false);
 
-                /*logHandler.deleteTitle("Hello");*/
+                logHandler.updateData(values);
+                String out = "";
+                updateCount++;
+                //output.setText("added!\n");
+                for (int i = 0; i < updateCount; i++){
+                    out += updateText;
+                }
+                output.setText(out);
+                Toast.makeText(getContext(), out, Toast.LENGTH_SHORT).show();
             }
         });
 
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                deleteCount++;
+                logHandler.deleteRow(Integer.toString(deleteCount));
 
+                output.setText(deleteCount + " deleted!");
 
             }
         });

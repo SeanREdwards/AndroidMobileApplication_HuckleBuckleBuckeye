@@ -69,11 +69,25 @@ public class LogBaseHelper extends SQLiteOpenHelper {
             return true;
         }
     }
-
-    public boolean deleteTitle(String temporary)
+    public boolean updateData(ContentValues contentValues) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        long result = db.update(TABLE_NAME, contentValues, "uuid = 1", null);
+        //long result = db.insert(TABLE_NAME, null, contentValues);
+        if (result == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    public boolean deleteRow(String temporary)
     {
         SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(TABLE_NAME, DISTANCE + "=" + temporary, null) > 0;
+        long result = db.delete(TABLE_NAME,  "uuid = " + temporary, null);
+        if (result == -1) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
 
