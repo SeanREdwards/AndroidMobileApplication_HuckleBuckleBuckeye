@@ -32,6 +32,7 @@ public class HistoryFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.history_fragment, container, false);
 
+        
         final Button addButton = view.findViewById(R.id.addButton);
         final Button updateButton = view.findViewById(R.id.updateButton);
         final Button deleteButton = view.findViewById(R.id.deleteButton);

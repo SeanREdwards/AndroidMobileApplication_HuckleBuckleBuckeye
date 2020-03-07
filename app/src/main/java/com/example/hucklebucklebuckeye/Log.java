@@ -45,6 +45,15 @@ public class Log {
     }
 
     /*Getter methods*/
+
+    public UUID getId() {
+        return mId;
+    }
+
+    public Date getDate() {
+        return mDate;
+    }
+
     public int getSteps() {
         return mSteps;
     }

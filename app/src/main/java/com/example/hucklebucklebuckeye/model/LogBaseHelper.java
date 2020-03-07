@@ -14,7 +14,14 @@ public class LogBaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db){
-
+        db.execSQL("create table " + LogDBSchema.LogTable.NAME + "(" +
+                LogDBSchema.LogTable.Cols.UUID + " integer primary key autoincrement, " +
+                LogDBSchema.LogTable.Cols.DATE + ", " +
+                LogDBSchema.LogTable.Cols.STEPS + ", " +
+                LogDBSchema.LogTable.Cols.MAP + ", "  +
+                LogDBSchema.LogTable.Cols.DISTANCE + ", " +
+                LogDBSchema.LogTable.Cols.TIME + ", " +
+                LogDBSchema.LogTable.Cols.COMPLETED + ")");
     }
 
     @Override
