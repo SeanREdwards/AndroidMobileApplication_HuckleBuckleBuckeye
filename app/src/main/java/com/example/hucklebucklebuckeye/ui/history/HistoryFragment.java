@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.hucklebucklebuckeye.R;
+import com.example.hucklebucklebuckeye.model.LogBaseHelper;
 
 public class HistoryFragment extends Fragment {
 
@@ -32,6 +33,9 @@ public class HistoryFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.history_fragment, container, false);
 
+
+        final LogBaseHelper logHandler = new LogBaseHelper(getActivity());
+
         final Button addButton = view.findViewById(R.id.addButton);
         final Button updateButton = view.findViewById(R.id.updateButton);
         final Button deleteButton = view.findViewById(R.id.deleteButton);
@@ -39,7 +43,8 @@ public class HistoryFragment extends Fragment {
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO:something
+
+                logHandler.insertData("Hello");
              }
         });
 
@@ -47,14 +52,16 @@ public class HistoryFragment extends Fragment {
         updateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO:something
+
+                /*logHandler.deleteTitle("Hello");*/
             }
         });
 
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO:something
+
+
             }
         });
 
