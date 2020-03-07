@@ -9,7 +9,9 @@ package com.example.hucklebucklebuckeye.ui.history;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.hucklebucklebuckeye.Log;
+import android.util.Log;
+
+import com.example.hucklebucklebuckeye.UserLog;
 import com.example.hucklebucklebuckeye.model.LogBaseHelper;
 
 import java.util.ArrayList;
@@ -18,7 +20,7 @@ import java.util.UUID;
 
 public class History {
     private static History sHistory;
-    private List<Log> mLogs;
+    private List<UserLog> mLogs;
     private Context mContext;
     private SQLiteDatabase mDatabase;
 
@@ -29,18 +31,19 @@ public class History {
         return sHistory;
     }
 
-    private History(Context context){
+    protected History(Context context){
         mContext = context;
         mDatabase = new LogBaseHelper(mContext).getWritableDatabase();
+        Log.d("database:" , mDatabase.toString());
         mLogs = new ArrayList<>();
     }
 
-    public List<Log> getLogs(){
+    public List<UserLog> getLogs(){
         return mLogs;
     }
 
-    public Log getLog(UUID id){
-        for (Log log : mLogs){
+    public UserLog getLog(UUID id){
+        for (UserLog log : mLogs){
             if (log.getId().equals(id)){
                 return log;
             }

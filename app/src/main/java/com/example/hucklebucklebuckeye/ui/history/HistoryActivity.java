@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.hucklebucklebuckeye.R;
+import com.example.hucklebucklebuckeye.model.LogBaseHelper;
 
 public class HistoryActivity extends AppCompatActivity {
 

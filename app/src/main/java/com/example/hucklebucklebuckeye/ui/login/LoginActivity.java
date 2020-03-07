@@ -141,7 +141,7 @@ public class LoginActivity extends AppCompatActivity {
         dbHelper.onCreate(db);
         //db.execSQL("INSERT INTO hucklebucklebuckeye.account VALUES (username, password)");
         //long newRowId = db.insert(Account.AccountEntry.TABLE_NAME, null, values);
-        //Log.d("insertion result: ", String.valueOf(newRowId));
+        //UserLog.d("insertion result: ", String.valueOf(newRowId));
         return true;
     }
     private void updateUiWithUser(LoggedInUserView model) {
