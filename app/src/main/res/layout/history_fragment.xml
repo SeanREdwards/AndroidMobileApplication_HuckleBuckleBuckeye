@@ -66,4 +66,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/updateButton" />
 
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="308dp"
+        android:layout_height="33dp"
+        android:text="temporary"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteButton"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
