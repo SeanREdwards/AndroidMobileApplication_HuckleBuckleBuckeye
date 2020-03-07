@@ -139,7 +139,7 @@ public class LoginActivity extends AppCompatActivity {
         Log.d("Username + password: ", values.toString());
         // Insert the new row, returning the primary key value of the new row
         dbHelper.onCreate(db);
-        db.execSQL("INSERT INTO hucklebucklebuckeye.account VALUES (username, password)");
+        //db.execSQL("INSERT INTO hucklebucklebuckeye.account VALUES (username, password)");
         //long newRowId = db.insert(Account.AccountEntry.TABLE_NAME, null, values);
         //Log.d("insertion result: ", String.valueOf(newRowId));
         return true;
