@@ -1,4 +1,4 @@
-package com.example.hucklebucklebuckeye.model;
+package com.example.hucklebucklebuckeye;
 
 
 import android.provider.BaseColumns;

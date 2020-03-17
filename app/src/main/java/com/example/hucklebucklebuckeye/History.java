@@ -4,14 +4,13 @@ History.java
 @Version 20200306
 History class to handle data related to player logs.
 */
-package com.example.hucklebucklebuckeye.ui.history;
+package com.example.hucklebucklebuckeye;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
 import android.util.Log;
 
-import com.example.hucklebucklebuckeye.UserLog;
 import com.example.hucklebucklebuckeye.model.LogBaseHelper;
 
 import java.util.ArrayList;
@@ -31,7 +30,7 @@ public class History {
         return sHistory;
     }
 
-    protected History(Context context){
+    public History(Context context){
         mContext = context;
         mDatabase = new LogBaseHelper(mContext).getWritableDatabase();
         Log.d("database:" , mDatabase.toString());

@@ -5,9 +5,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import static com.example.hucklebucklebuckeye.model.Account.SQL_CREATE_ENTRIES;
-import static com.example.hucklebucklebuckeye.model.Account.SQL_DELETE_ENTRIES;
-
 public class LogBaseHelper extends SQLiteOpenHelper {
     // If you change the database schema, you must increment the database version.
 
@@ -37,18 +34,6 @@ public class LogBaseHelper extends SQLiteOpenHelper {
         database.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " ( " + UUID + " INTEGER PRIMARY KEY, " + DATE + " DATE, " + STEPS + " INTEGER, " + MAP + " BITMAP, " + DISTANCE + " INTEGER, " + TIME + " INTEGER, " + COMPLETED + " BOOLEAN) ");
     }
 
-//    @Override
-//    public void onCreate(SQLiteDatabase db) {
-//        db.execSQL("create table " + LogDBSchema.LogTable.NAME + "(" +
-//                LogDBSchema.LogTable.Cols.UUID + " integer primary key autoincrement, " +
-//                LogDBSchema.LogTable.Cols.DATE + ", " +
-//                LogDBSchema.LogTable.Cols.STEPS + ", " +
-//                LogDBSchema.LogTable.Cols.MAP + ", " +
-//                LogDBSchema.LogTable.Cols.DISTANCE + ", " +
-//                LogDBSchema.LogTable.Cols.TIME + ", " +
-//                LogDBSchema.LogTable.Cols.COMPLETED + ")");
-//
-//    }
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " ( " + UUID + " INTEGER PRIMARY KEY, " + DATE + " DATE, " + STEPS + " INTEGER, " + MAP + " BITMAP, " + DISTANCE + " INTEGER, " + TIME + " INTEGER, " + COMPLETED + " BOOLEAN) ");

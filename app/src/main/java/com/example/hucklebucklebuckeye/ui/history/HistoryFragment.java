@@ -1,17 +1,12 @@
 package com.example.hucklebucklebuckeye.ui.history;
 
-import androidx.lifecycle.ViewModelProviders;
-
 import android.content.ContentValues;
-import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.os.Message;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +15,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.hucklebucklebuckeye.History;
 import com.example.hucklebucklebuckeye.R;
 import com.example.hucklebucklebuckeye.model.LogBaseHelper;
 

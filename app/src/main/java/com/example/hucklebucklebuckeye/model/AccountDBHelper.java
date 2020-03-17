@@ -2,11 +2,9 @@ package com.example.hucklebucklebuckeye.model;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
-import static com.example.hucklebucklebuckeye.model.Account.SQL_CREATE_ENTRIES;
-import static com.example.hucklebucklebuckeye.model.Account.SQL_DELETE_ENTRIES;
 
 public class AccountDBHelper extends SQLiteOpenHelper {
     // If you change the database schema, you must increment the database version.
@@ -56,4 +54,35 @@ public class AccountDBHelper extends SQLiteOpenHelper {
        }
     }
 
+    public boolean userExists(String username) {
+        boolean exists = false;
+        String[] columns = {COLUMN_ID};
+        String whereClause = COLUMN_USERNAME + " = ? ";
+        String[] whereArgs = {username};
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(TABLE_NAME, columns, whereClause, whereArgs, "", "", "");
+
+        if (cursor.getCount() == 0){
+            exists = false;
+        } else {
+            exists = true;
+        }
+        return exists;
+    }
+
+    public boolean userValid(String username, String password) {
+        boolean exists = false;
+        String[] columns = {COLUMN_ID};
+        String whereClause = COLUMN_USERNAME + " = ? AND " + COLUMN_PASSWORD + " = ?";
+        String[] whereArgs = {username, password};
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(TABLE_NAME, columns, whereClause, whereArgs, "", "", "");
+
+        if (cursor.getCount() == 0){
+            exists = false;
+        } else {
+            exists = true;
+        }
+        return exists;
+    }
 }
