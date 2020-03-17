@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\values-nl\\values-nl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,223,297,376,451,535,613,754,892,1052,1171",
+                        "endColumns": "167,73,78,74,83,77,140,137,159,118,145",
+                        "endOffsets": "218,292,371,446,530,608,749,887,1047,1166,1312"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,37,38,39",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2839,3007,3081,3160,3235,3319,3397,3538,3676,3836,3955",
+                        "endColumns": "167,73,78,74,83,77,140,137,159,118,145",
+                        "endOffsets": "3002,3076,3155,3230,3314,3392,3533,3671,3831,3950,4096"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\values-nl\\values-nl.xml",
                     "from": {
                         "startLines": "2",
@@ -35,23 +52,6 @@
                         "startOffsets": "4183",
                         "endColumns": "100",
                         "endOffsets": "4279"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\92843307c3c180824ba6ad9abe0d9483\\jetified-mapbox-android-sdk-8.6.2\\res\\values-nl\\values-nl.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,223,297,376,451,535,613,754,892,1052,1171",
-                        "endColumns": "167,73,78,74,83,77,140,137,159,118,145",
-                        "endOffsets": "218,292,371,446,530,608,749,887,1047,1166,1312"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,37,38,39",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2839,3007,3081,3160,3235,3319,3397,3538,3676,3836,3955",
-                        "endColumns": "167,73,78,74,83,77,140,137,159,118,145",
-                        "endOffsets": "3002,3076,3155,3230,3314,3392,3533,3671,3831,3950,4096"
                     }
                 }
             ]

@@ -17,6 +17,7 @@ import android.widget.Button;
 
 import com.example.hucklebucklebuckeye.R;
 import com.example.hucklebucklebuckeye.ui.history.HistoryActivity;
+import com.example.hucklebucklebuckeye.ui.playgame.GameActivity;
 import com.example.hucklebucklebuckeye.ui.profile.ProfileActivity;
 
 public class MainMenuFragment extends Fragment {
@@ -36,6 +37,7 @@ public class MainMenuFragment extends Fragment {
 
         final Button profileButton = view.findViewById(R.id.profileButton);
         final Button historyButton = view.findViewById(R.id.historyButton);
+        final Button playGameButton = view.findViewById(R.id.playGameButton);
 
         profileButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +53,12 @@ public class MainMenuFragment extends Fragment {
             }
         });
 
+        playGameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), GameActivity.class));
+            }
+        });
         return view;
 
     }

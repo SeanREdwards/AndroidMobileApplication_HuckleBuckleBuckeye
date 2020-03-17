@@ -15,32 +15,32 @@
 11-->C:\Users\Natalie Hartsook\workspace\HuckleBuckleBuckeye\app\src\main\AndroidManifest.xml:6:22-76
 12
 13    <uses-feature
-13-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:9:5-11:35
+13-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:9:5-11:35
 14        android:glEsVersion="0x00020000"
-14-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:10:9-41
+14-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:10:9-41
 15        android:required="true" />
-15-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:11:9-32
+15-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:11:9-32
 16    <uses-feature
-16-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:12:5-14:36
+16-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:12:5-14:36
 17        android:name="android.hardware.wifi"
-17-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:13:9-45
+17-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:13:9-45
 18        android:required="false" /> <!-- Implied by ACCESS_WIFI_STATE. -->
-18-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:14:9-33
+18-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:14:9-33
 19    <uses-permission android:name="android.permission.INTERNET" />
-19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:16:5-67
-19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:16:22-64
+19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:16:5-67
+19-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:16:22-64
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:17:5-79
-20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:17:22-76
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:17:5-79
+20-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:17:22-76
 21    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
-21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:18:5-76
-21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:8.6.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\92843307c3c180824ba6ad9abe0d9483\jetified-mapbox-android-sdk-8.6.2\AndroidManifest.xml:18:22-73
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:18:5-76
+21-->[com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:18:22-73
 22    <uses-permission android:name="android.permission.WAKE_LOCK" />
-22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\b3ee6a5e9867f552ebdec7d456e4e707\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:5-68
-22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\b3ee6a5e9867f552ebdec7d456e4e707\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:12:22-65
+22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:12:5-68
+22-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:12:22-65
 23
 24    <application
-24-->C:\Users\Natalie Hartsook\workspace\HuckleBuckleBuckeye\app\src\main\AndroidManifest.xml:8:5-37:19
+24-->C:\Users\Natalie Hartsook\workspace\HuckleBuckleBuckeye\app\src\main\AndroidManifest.xml:8:5-40:19
 25        android:allowBackup="true"
 25-->C:\Users\Natalie Hartsook\workspace\HuckleBuckleBuckeye\app\src\main\AndroidManifest.xml:9:9-35
 26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -95,35 +95,41 @@
 53            android:label="History" >
 53-->C:\Users\Natalie Hartsook\workspace\HuckleBuckleBuckeye\app\src\main\AndroidManifest.xml:35:13-36
 54        </activity>
-55
-56        <provider
-56-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\b3ee6a5e9867f552ebdec7d456e4e707\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:19:9-23:39
-57            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
-57-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\b3ee6a5e9867f552ebdec7d456e4e707\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:20:13-93
-58            android:authorities="com.example.hucklebucklebuckeye.mapboxtelemetryinitprovider"
-58-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\b3ee6a5e9867f552ebdec7d456e4e707\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:21:13-79
-59            android:exported="false"
-59-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\b3ee6a5e9867f552ebdec7d456e4e707\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:22:13-37
-60            android:initOrder="100" />
-60-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\b3ee6a5e9867f552ebdec7d456e4e707\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:23:13-36
-61
-62        <service
-62-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\b3ee6a5e9867f552ebdec7d456e4e707\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:25:9-27:72
-63            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
-63-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\b3ee6a5e9867f552ebdec7d456e4e707\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:26:13-92
-64            android:permission="android.permission.BIND_JOB_SERVICE" />
-64-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.5.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\b3ee6a5e9867f552ebdec7d456e4e707\jetified-mapbox-android-telemetry-4.5.1\AndroidManifest.xml:27:13-69
-65
-66        <provider
-66-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
-67            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-67-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
-68            android:authorities="com.example.hucklebucklebuckeye.lifecycle-process"
-68-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
-69            android:exported="false"
-69-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
-70            android:multiprocess="true" />
-70-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
-71    </application>
-72
-73</manifest>
+55        <activity
+55-->C:\Users\Natalie Hartsook\workspace\HuckleBuckleBuckeye\app\src\main\AndroidManifest.xml:37:9-39:45
+56            android:name="com.example.hucklebucklebuckeye.ui.playgame.GameActivity"
+56-->C:\Users\Natalie Hartsook\workspace\HuckleBuckleBuckeye\app\src\main\AndroidManifest.xml:38:13-53
+57            android:label="Game" />
+57-->C:\Users\Natalie Hartsook\workspace\HuckleBuckleBuckeye\app\src\main\AndroidManifest.xml:39:13-33
+58
+59        <provider
+59-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:18:9-22:39
+60            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+60-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:19:13-93
+61            android:authorities="com.example.hucklebucklebuckeye.mapboxtelemetryinitprovider"
+61-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:20:13-79
+62            android:exported="false"
+62-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:21:13-37
+63            android:initOrder="100" />
+63-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:22:13-36
+64
+65        <service
+65-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:24:9-26:72
+66            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
+66-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:25:13-92
+67            android:permission="android.permission.BIND_JOB_SERVICE" />
+67-->[com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:26:13-69
+68
+69        <provider
+69-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+70            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+70-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+71            android:authorities="com.example.hucklebucklebuckeye.lifecycle-process"
+71-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+72            android:exported="false"
+72-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+73            android:multiprocess="true" />
+73-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\6fbf654d3db04d7d9e48eb73ccf59f45\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+74    </application>
+75
+76</manifest>

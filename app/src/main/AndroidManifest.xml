@@ -34,6 +34,9 @@
             android:name=".ui.history.HistoryActivity"
             android:label="History">
         </activity>
+        <activity
+            android:name=".ui.playgame.GameActivity"
+            android:label="Game"></activity>
     </application>
 
 </manifest>

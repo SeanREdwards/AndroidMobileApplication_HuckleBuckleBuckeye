@@ -4,23 +4,6 @@
             "outputFile": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rHK\\values-zh-rHK.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\92843307c3c180824ba6ad9abe0d9483\\jetified-mapbox-android-sdk-8.6.2\\res\\values-zh-rHK\\values-zh-rHK.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,136,236,305,373,442,517,604,709,790,883,968,1082,1142",
-                        "endColumns": "80,99,68,67,68,74,86,104,80,92,84,113,59,64",
-                        "endOffsets": "131,231,300,368,437,512,599,704,785,878,963,1077,1137,1202"
-                    },
-                    "to": {
-                        "startLines": "29,30,31,32,33,34,35,36,37,38,39,40,41,42",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "2668,2749,2849,2918,2986,3055,3130,3217,3322,3403,3496,3581,3695,3755",
-                        "endColumns": "80,99,68,67,68,74,86,104,80,92,84,113,59,64",
-                        "endOffsets": "2744,2844,2913,2981,3050,3125,3212,3317,3398,3491,3576,3690,3750,3815"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\values-zh-rHK\\values-zh-rHK.xml",
                     "from": {
                         "startLines": "2",
@@ -35,6 +18,23 @@
                         "startOffsets": "3898",
                         "endColumns": "100",
                         "endOffsets": "3994"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\values-zh-rHK\\values-zh-rHK.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,136,236,305,373,442,517,604,709,790,883,968,1082,1142",
+                        "endColumns": "80,99,68,67,68,74,86,104,80,92,84,113,59,64",
+                        "endOffsets": "131,231,300,368,437,512,599,704,785,878,963,1077,1137,1202"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,37,38,39,40,41,42",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2668,2749,2849,2918,2986,3055,3130,3217,3322,3403,3496,3581,3695,3755",
+                        "endColumns": "80,99,68,67,68,74,86,104,80,92,84,113,59,64",
+                        "endOffsets": "2744,2844,2913,2981,3050,3125,3212,3317,3398,3491,3576,3690,3750,3815"
                     }
                 },
                 {
