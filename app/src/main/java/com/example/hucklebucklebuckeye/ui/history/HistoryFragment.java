@@ -27,6 +27,7 @@ public class HistoryFragment extends Fragment {
     private static int updateCount = 0;
     private static int deleteCount = 0;
     private static String updateText = "updated!\n";
+
     public static HistoryFragment newInstance() {
         return new HistoryFragment();
     }

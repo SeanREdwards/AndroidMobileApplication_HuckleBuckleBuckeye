@@ -144,6 +144,10 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_game_map.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\layout\\fragment_game_map.xml"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mapbox_markerview_icon_default.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-hdpi-v4\\mapbox_markerview_icon_default.png"
     },
@@ -422,6 +426,10 @@
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_game.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\layout\\activity_game.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -2170,10 +2178,6 @@
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_play_game.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\layout\\activity_play_game.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
