@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_dialog_title_material.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mapbox_mylocation_bg_shape.xml.flat",
@@ -32,12 +32,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\animator\\mtrl_btn_state_list_anim.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu_item.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_navigation_menu_item.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu_item.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
@@ -56,12 +56,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mapbox_compass_icon.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxhdpi-v4\\mapbox_compass_icon.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mapbox_compass_icon.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxhdpi-v4\\mapbox_compass_icon.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_history.xml.flat",
@@ -72,12 +72,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mapbox_logo_icon.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxhdpi-v4\\mapbox_logo_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_tooltip_frame_dark.xml.flat",
@@ -96,12 +96,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_tabs_icon_color_selector_colored.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable-xxxhdpi-v4\\design_ic_visibility.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_color_selector.xml.flat",
@@ -136,12 +136,16 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_content_include.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_screen_content_include.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_game_map.xml.flat",
@@ -160,12 +164,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_text_select_handle_right_mtrl_light.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
@@ -180,12 +184,20 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxhdpi-v4\\mapbox_marker_icon_default.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-mdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mapbox_user_stroke_icon.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-hdpi-v4\\mapbox_user_stroke_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_voice_search_api_material.xml.flat",
@@ -212,12 +224,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-hdpi-v4\\mapbox_user_icon.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_navigation_menu.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_close_circle.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable\\ic_mtrl_chip_close_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_navigation_menu.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
@@ -264,6 +276,10 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_disabled.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_icon_disabled.xml"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
@@ -300,8 +316,8 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_snackbar_background.xml.flat",
@@ -312,8 +328,8 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable-xhdpi-v4\\design_ic_visibility_off.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_mapbox_markerview_icon_default.png.flat",
@@ -364,6 +380,10 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_light.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\color\\common_google_signin_btn_text_light.xml"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_btn_radio_material.xml"
     },
@@ -380,16 +400,20 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mapbox_logo_helmet.png.flat",
@@ -456,36 +480,36 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\767612e54049c1347a891905a7e9d5e4\\media-1.0.0\\res\\layout\\notification_media_action.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_btn_ripple_color.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_btn_text_btn_ripple_color.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\767612e54049c1347a891905a7e9d5e4\\media-1.0.0\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_search_url_text.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color\\abc_search_url_text.xml"
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_borderless_text_material.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mapbox_rounded_corner.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable\\mapbox_rounded_corner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_search_url_text.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color\\abc_search_url_text.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -498,6 +522,10 @@
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_out.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-hdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -524,16 +552,20 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_navigation_item.xml"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mapbox_user_bearing_icon.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xhdpi-v4\\mapbox_user_bearing_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -544,16 +576,20 @@
         "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\layout\\main_menu_fragment.xml"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_shrink_fade_out_from_bottom.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_shrink_fade_out_from_bottom.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mapbox_user_puck_icon.png.flat",
@@ -564,6 +600,14 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_main_menu_activity.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\layout\\main_menu_activity.xml"
     },
@@ -572,12 +616,16 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
@@ -590,6 +638,10 @@
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_focused.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_light.xml.flat",
@@ -606,6 +658,10 @@
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4_mapbox_user_puck_icon.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-ldpi-v4\\mapbox_user_puck_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-mdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
@@ -700,6 +756,10 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_search_api_material.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_ic_search_api_material.xml"
     },
@@ -716,20 +776,28 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_tint.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_sheet_dialog.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_bottom_sheet_dialog.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_sheet_dialog.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_mapbox_marker_icon_default.png.flat",
@@ -740,12 +808,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxxhdpi-v4\\mapbox_user_icon_stale.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_layout_tab_text.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_tab_text.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_layout_tab_text.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -774,6 +842,10 @@
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_dropdown_item_icons_2line.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark_normal.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
@@ -816,6 +888,10 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\interpolator-v21\\mtrl_fast_out_linear_in.xml"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
     },
@@ -840,6 +916,10 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\767612e54049c1347a891905a7e9d5e4\\media-1.0.0\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_text_material.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color-v23\\abc_btn_colored_text_material.xml"
     },
@@ -858,6 +938,10 @@
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\767612e54049c1347a891905a7e9d5e4\\media-1.0.0\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_light.xml.flat",
@@ -884,16 +968,24 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_normal.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_icon_dark_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xhdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
@@ -956,12 +1048,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxhdpi-v4\\mapbox_user_puck_icon.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_navigation_item.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_bottom_navigation_item.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_bottom_navigation_item.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_bottom_navigation_item.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mapbox_logo_helmet.png.flat",
@@ -976,12 +1068,16 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_light.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color\\abc_secondary_text_material_light.xml"
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_light.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -998,6 +1094,10 @@
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_mapbox_user_puck_icon.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-anydpi-v21\\mapbox_user_puck_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_dark.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\color\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_abc_screen_toolbar.xml.flat",
@@ -1032,6 +1132,10 @@
         "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_dark_focused.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_text_dark_focused.xml"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mtrl_chip_checked_circle.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable\\ic_mtrl_chip_checked_circle.xml"
     },
@@ -1048,8 +1152,16 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-mdpi-v4\\mapbox_compass_icon.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xhdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_out.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
@@ -1060,12 +1172,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-hdpi-v4\\mapbox_compass_icon.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_light.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mapbox_user_bearing_icon.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxhdpi-v4\\mapbox_user_bearing_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_light.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mapbox_user_puck_icon.png.flat",
@@ -1100,12 +1212,20 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xhdpi-v4\\common_full_open_on_phone.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_navigation_empty_icon.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
@@ -1156,12 +1276,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_show_motion_spec.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\animator\\design_fab_show_motion_spec.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -1184,10 +1304,6 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
@@ -1196,16 +1312,20 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxhdpi-v4\\mapbox_mylocation_icon_bearing.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mapbox_user_icon_stale.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxhdpi-v4\\mapbox_user_icon_stale.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mapbox_user_icon_stale.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxhdpi-v4\\mapbox_user_icon_stale.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
@@ -1216,16 +1336,16 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_expanded_menu_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_light.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -1280,20 +1400,28 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\animator\\mtrl_fab_hide_motion_spec.xml"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_dark.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_ripple_color.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_chip_ripple_color.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_mapbox_user_bearing_icon.xml.flat",
@@ -1316,12 +1444,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar_include.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_layout_snackbar_include.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar_include.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -1348,12 +1476,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_bottom_nav_item_tint.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_tooltip_exit.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\anim\\abc_tooltip_exit.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_tooltip_exit.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\anim\\abc_tooltip_exit.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -1364,16 +1492,20 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-hdpi-v4\\mapbox_logo_helmet.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_disabled.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_text_disabled.xml"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4_mapbox_info_icon_selected.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-ldpi-v4\\mapbox_info_icon_selected.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mapbox_marker_icon_default.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xhdpi-v4\\mapbox_marker_icon_default.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mapbox_logo_icon.png.flat",
@@ -1396,12 +1528,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_fab_ripple_color.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mapbox_user_icon_stale.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-hdpi-v4\\mapbox_user_icon_stale.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_design_error.xml.flat",
@@ -1500,8 +1632,16 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xhdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -1510,6 +1650,10 @@
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4_mapbox_user_bearing_icon.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-ldpi-v4\\mapbox_user_bearing_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light_normal.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -1528,6 +1672,10 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-hdpi-v4\\mapbox_marker_icon_default.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-xxhdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_tabs_default_indicator.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable\\mtrl_tabs_default_indicator.xml"
     },
@@ -1540,12 +1688,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -1568,12 +1716,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_hide_password.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -1672,6 +1820,10 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_light_focused.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_icon_light_focused.xml"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_mapbox_mylocation_icon_default.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-hdpi-v4\\mapbox_mylocation_icon_default.png"
     },
@@ -1692,12 +1844,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_dark.xml.flat",
@@ -1784,16 +1936,20 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_colored_item_tint.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_bottom_nav_colored_item_tint.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
@@ -1860,12 +2016,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color\\abc_secondary_text_material_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color-v23\\abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_close_item_material.xml.flat",
@@ -1980,24 +2136,24 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_multichoice_material.xml.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\select_dialog_multichoice_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_mapbox_user_stroke_icon.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xhdpi-v4\\mapbox_user_stroke_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_multichoice_material.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable-xxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mapbox_info_icon_selected.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxhdpi-v4\\mapbox_info_icon_selected.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_close_icon_tint.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\color\\mtrl_chip_close_icon_tint.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_mapbox_info_icon_selected.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxhdpi-v4\\mapbox_info_icon_selected.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
@@ -2008,16 +2164,20 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-ldpi-v4\\mapbox_user_icon_stale.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mapbox_mylocation_icon_bearing.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxxhdpi-v4\\mapbox_mylocation_icon_bearing.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_menu_item_action_area.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_mapbox_mylocation_icon_bearing.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xxxhdpi-v4\\mapbox_mylocation_icon_bearing.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_material.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_normal.xml.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable\\common_google_signin_btn_text_light_normal.xml"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -2064,12 +2224,16 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c4d54ab0ac40e2d2466f844be9fb3f83\\jetified-mapbox-android-sdk-9.0.0\\res\\drawable-xhdpi-v4\\mapbox_mylocation_icon_default.png"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -2132,6 +2296,10 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable_design_snackbar_background.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\c7eb9cd3508ac3959447c14fd76c9fb9\\material-1.0.0\\res\\drawable\\design_snackbar_background.xml"
     },
@@ -2140,12 +2308,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
@@ -2160,12 +2328,12 @@
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\\core-1.0.1\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_grow_fade_in_from_bottom.xml.flat",
@@ -2250,6 +2418,10 @@
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\697f71c0c12135256cbfe98df498a7e4\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_icon_light_normal_background.9.png.flat",
+        "source": "C:\\Users\\Natalie Hartsook\\.gradle\\caches\\transforms-2\\files-2.1\\77c2fc448e2bd0738fd67dce062b1efd\\play-services-base-17.0.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\Natalie Hartsook\\workspace\\HuckleBuckleBuckeye\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar.xml.flat",

@@ -149,6 +149,7 @@ public class LoginActivity extends AppCompatActivity {
         boolean exists = dbHelper.userExists(username);
         if (!exists){
             dbHelper.insertData(username, password);
+            dbHelper.updateId(username);
         }
 
         Log.d("Username + password: ", values.toString());
@@ -168,6 +169,7 @@ public class LoginActivity extends AppCompatActivity {
         values.put(Account.AccountEntry.COLUMN_NAME_PASSWORD, password);
 
         boolean valid = dbHelper.userValid(username, password);
+        if (valid) {dbHelper.updateId(username); }
         Log.d("Username + password: ", values.toString());
 
 

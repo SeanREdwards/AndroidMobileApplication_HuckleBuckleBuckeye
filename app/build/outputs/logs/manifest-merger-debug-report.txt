@@ -6,9 +6,14 @@ INJECTED from C:\Users\Natalie Hartsook\workspace\HuckleBuckleBuckeye\app\src\ma
 INJECTED from C:\Users\Natalie Hartsook\workspace\HuckleBuckleBuckeye\app\src\main\AndroidManifest.xml:2:1-42:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\697f71c0c12135256cbfe98df498a7e4\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\cd2555db0203a9129fdeb1355c14dcc8\play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:2:1-21:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\062eb74c1a6fe650432564db4113c6b5\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\e71d59022806682985be2942fcbccbfb\lifecycle-extensions-2.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\2905ca591d95bf0e403f68a05d4ee4e5\play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\2b8a3547a6423f6fb15f19a78415dd89\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\943649c085b69cd033e53ff45b9fcdb2\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\4f680f5cab482b7966fa9c805ac0cb70\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\61965e5c06bda9445c13760f9d9ef779\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\ceb81553a8d4d1147c847656f2ca2121\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -76,8 +81,18 @@ application
 ADDED from C:\Users\Natalie Hartsook\workspace\HuckleBuckleBuckeye\app\src\main\AndroidManifest.xml:8:5-40:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\cd2555db0203a9129fdeb1355c14dcc8\play-services-location-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\cd2555db0203a9129fdeb1355c14dcc8\play-services-location-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\e71d59022806682985be2942fcbccbfb\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\e71d59022806682985be2942fcbccbfb\lifecycle-extensions-2.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\2905ca591d95bf0e403f68a05d4ee4e5\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\2905ca591d95bf0e403f68a05d4ee4e5\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\2b8a3547a6423f6fb15f19a78415dd89\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\2b8a3547a6423f6fb15f19a78415dd89\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\943649c085b69cd033e53ff45b9fcdb2\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\943649c085b69cd033e53ff45b9fcdb2\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:17:5-27:19
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:17:5-27:19
 MERGED from [androidx.core:core:1.0.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:5-89
@@ -156,12 +171,22 @@ MERGED from [com.google.android.material:material:1.0.0] C:\Users\Natalie Hartso
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c7eb9cd3508ac3959447c14fd76c9fb9\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\697f71c0c12135256cbfe98df498a7e4\appcompat-1.0.2\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\697f71c0c12135256cbfe98df498a7e4\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\cd2555db0203a9129fdeb1355c14dcc8\play-services-location-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\cd2555db0203a9129fdeb1355c14dcc8\play-services-location-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\062eb74c1a6fe650432564db4113c6b5\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\062eb74c1a6fe650432564db4113c6b5\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\e71d59022806682985be2942fcbccbfb\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\e71d59022806682985be2942fcbccbfb\lifecycle-extensions-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\2905ca591d95bf0e403f68a05d4ee4e5\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\2905ca591d95bf0e403f68a05d4ee4e5\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\2b8a3547a6423f6fb15f19a78415dd89\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\2b8a3547a6423f6fb15f19a78415dd89\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\943649c085b69cd033e53ff45b9fcdb2\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\943649c085b69cd033e53ff45b9fcdb2\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\4f680f5cab482b7966fa9c805ac0cb70\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\4f680f5cab482b7966fa9c805ac0cb70\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\61965e5c06bda9445c13760f9d9ef779\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
@@ -280,6 +305,20 @@ MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natal
 MERGED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:14:5-76
 	android:name
 		ADDED from [com.mapbox.mapboxsdk:mapbox-android-sdk:9.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\c4d54ab0ac40e2d2466f844be9fb3f83\jetified-mapbox-android-sdk-9.0.0\AndroidManifest.xml:18:22-73
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\77c2fc448e2bd0738fd67dce062b1efd\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\943649c085b69cd033e53ff45b9fcdb2\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\943649c085b69cd033e53ff45b9fcdb2\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\943649c085b69cd033e53ff45b9fcdb2\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.mapbox.mapboxsdk:mapbox-android-telemetry:4.7.1] C:\Users\Natalie Hartsook\.gradle\caches\transforms-2\files-2.1\dba1fe31885e58030dd986afd61dda12\jetified-mapbox-android-telemetry-4.7.1\AndroidManifest.xml:12:5-68
 	android:name

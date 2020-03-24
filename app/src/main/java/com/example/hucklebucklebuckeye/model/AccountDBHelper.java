@@ -12,6 +12,8 @@ public class AccountDBHelper extends SQLiteOpenHelper {
     //Database Version
     private static final int DATABASE_VERSION = 1;
 
+    private static int userId;
+
     //Database Name
     public static final String DATABASE_NAME = "huckle.db";
 
@@ -70,6 +72,20 @@ public class AccountDBHelper extends SQLiteOpenHelper {
         return exists;
     }
 
+    public void updateId(String username){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String[] columns = {COLUMN_ID};
+        String whereClause = COLUMN_USERNAME + " = ? ";
+        String[] whereArgs = {username};
+        Cursor cursor = db.query(TABLE_NAME, columns, whereClause, whereArgs, "", "", "");
+        if (cursor.moveToNext()){
+            userId = cursor.getInt(0);
+        }
+    }
+
+    public int getId(){
+        return userId;
+    }
     public boolean userValid(String username, String password) {
         boolean exists = false;
         String[] columns = {COLUMN_ID};
