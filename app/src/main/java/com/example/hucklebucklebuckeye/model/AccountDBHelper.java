@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.UUID;
+
 public class AccountDBHelper extends SQLiteOpenHelper {
     // If you change the database schema, you must increment the database version.
 
@@ -83,7 +85,7 @@ public class AccountDBHelper extends SQLiteOpenHelper {
         }
     }
 
-    public int getId(){
+    public static int getId(){
         return userId;
     }
     public boolean userValid(String username, String password) {

@@ -9,12 +9,16 @@ package com.example.hucklebucklebuckeye;
 import android.graphics.Bitmap;
 
 
+import com.example.hucklebucklebuckeye.model.AccountDBHelper;
+
 import java.time.LocalTime;
 import java.util.Date;
 import java.util.UUID;
 
 public class UserLog {
     private UUID mId;
+
+    private UUID mAcid;
 
     //Date session played.
     private Date mDate;
@@ -36,6 +40,7 @@ public class UserLog {
 
     public UserLog(int steps, Bitmap mapImage, double distance, LocalTime time, boolean completed){
         mId = UUID.randomUUID();
+        mAcid = UUID.randomUUID();
         mDate = new Date();
         mSteps = steps;
         mMapImage = mapImage;
@@ -47,6 +52,9 @@ public class UserLog {
     /*Getter methods*/
 
     public UUID getId() {
+
+        AccountDBHelper.getId();
+
         return mId;
     }
 
