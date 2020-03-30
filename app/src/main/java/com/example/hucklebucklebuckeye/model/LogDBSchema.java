@@ -6,6 +6,7 @@ public class LogDBSchema {
 
         public static final class Cols{
             public static final String UUID = "uuid";
+            public static final String ACID = "acid";
             public static final String DATE = "date";
             public static final String STEPS = "steps";
             public static final String MAP = "map";
