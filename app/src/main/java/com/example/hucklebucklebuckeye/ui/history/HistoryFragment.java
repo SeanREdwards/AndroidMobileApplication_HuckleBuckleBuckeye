@@ -19,6 +19,9 @@ import com.example.hucklebucklebuckeye.History;
 import com.example.hucklebucklebuckeye.R;
 import com.example.hucklebucklebuckeye.model.LogBaseHelper;
 import com.example.hucklebucklebuckeye.model.AccountDBHelper;
+import java.util.Date;
+import java.time.LocalDate;
+import java.text.SimpleDateFormat;
 
 public class HistoryFragment extends Fragment {
 
@@ -28,6 +31,7 @@ public class HistoryFragment extends Fragment {
     private static int updateCount = 0;
     private static int deleteCount = 0;
     private static String updateText = "updated!\n";
+
 
     public static HistoryFragment newInstance() {
         return new HistoryFragment();
@@ -49,17 +53,22 @@ public class HistoryFragment extends Fragment {
         final Button updateButton = view.findViewById(R.id.updateButton);
         final Button deleteButton = view.findViewById(R.id.deleteButton);
         final TextView output = view.findViewById(R.id.output);
+        LocalDate date = LocalDate.now();
 
 
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ContentValues values = new ContentValues();
+                LocalDate date = LocalDate.now();
+                SimpleDateFormat localDateFormat = new SimpleDateFormat("HH:mm:ss");
+                String time = localDateFormat.format(new Date());
                 values.put("ACID", AccountDBHelper.getId());
                 values.put("STEPS", 15);
+                values.put("DATE", date.toString());
                 values.put("MAP", "");
                 values.put("DISTANCE", 1.3);
-                values.put("TIME", "");
+                values.put("TIME", time);
                 values.put("COMPLETED", false);
 
                 logHandler.insertData(values);
@@ -79,12 +88,17 @@ public class HistoryFragment extends Fragment {
         updateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                LocalDate date = LocalDate.now();
                 ContentValues values = new ContentValues();
+                SimpleDateFormat localDateFormat = new SimpleDateFormat("HH:mm:ss");
+                String time = localDateFormat.format(new Date());
                 stepCount++;
+                values.put("ACID", AccountDBHelper.getId());
                 values.put("STEPS", stepCount);
+                values.put("DATE", date.toString());
                 values.put("MAP", "");
                 values.put("DISTANCE", 1.3);
-                values.put("TIME", "");
+                values.put("TIME", time);
                 values.put("COMPLETED", false);
 
                 logHandler.updateData(values);

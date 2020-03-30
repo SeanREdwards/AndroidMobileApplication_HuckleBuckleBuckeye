@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import com.example.hucklebucklebuckeye.model.AccountDBHelper;
+import java.util.Calendar;
 
 public class LogBaseHelper extends SQLiteOpenHelper {
     // If you change the database schema, you must increment the database version.
