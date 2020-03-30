@@ -27,6 +27,7 @@ public class LogBaseHelper extends SQLiteOpenHelper {
     public static final String TIME = "time";
     public static final String COMPLETED = "completed";
 
+    
     SQLiteDatabase database;
 
     public LogBaseHelper(Context context) {
