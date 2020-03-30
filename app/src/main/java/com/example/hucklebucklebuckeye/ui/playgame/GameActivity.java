@@ -39,6 +39,8 @@ public class GameActivity extends AppCompatActivity {
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         getLastLocation();
 
+        //TODO: request location on mainmenu screen and disable playgame if permission not granted
+
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.container, MapFragment.newInstance())
