@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.example.hucklebucklebuckeye.History;
 import com.example.hucklebucklebuckeye.R;
 import com.example.hucklebucklebuckeye.model.LogBaseHelper;
+import com.example.hucklebucklebuckeye.model.AccountDBHelper;
 
 public class HistoryFragment extends Fragment {
 
@@ -54,6 +55,7 @@ public class HistoryFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 ContentValues values = new ContentValues();
+                values.put("ACID", AccountDBHelper.getId());
                 values.put("STEPS", 15);
                 values.put("MAP", "");
                 values.put("DISTANCE", 1.3);
