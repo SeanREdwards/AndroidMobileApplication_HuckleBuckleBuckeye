@@ -5,6 +5,11 @@ import android.util.Log;
 public class Game {
 
     private static Coordinates destinationLocation;
+    private static Coordinates currentLocation;
+
+    //initial distance from starting location to destination in miles.
+    private double initialDistance;
+
     //TODO: this is about 100 feet from the location. we might want to tweak this when we're further along
     final private static double CLOSE_ENOUGH_LATITUDE = 0.00002756515 * 10;
     final private static double CLOSE_ENOUGH_LONGITUDE = 0.00002738485 * 10;
@@ -23,10 +28,13 @@ public class Game {
         //add log to db
         //display play again option
 
-    public Game(){
+    public Game(Coordinates initial){
         Locations locations = new Locations();
         destinationLocation = locations.setLocation();
+        initialDistance = this.calcDistance(initial);
     }
+
+
 
     public static void logLocation(){
         Log.d("GAME location name: ", destinationLocation.getName());
@@ -52,7 +60,6 @@ public class Game {
             destinationReached = true;
         }
         return destinationReached;
-
     }
 
 /*Method to obtain the distance between two locations based on the Haversine formula:
@@ -68,17 +75,17 @@ public class Game {
 * @Requires double destLon
 *   Longitude of end point.
 * @Returns the distance between starting and ending points.*/
-    private double calcDistance(double srcLat, double srcLon, double destLat, double destLon){
+    public double calcDistance(Coordinates currentLocation){
 
         /*r value obtained by taking the diameter of the Earth in miles and
         dividing by 2 to get the radius. Diameter of earth per NASA's fact sheet:
         https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_british.html*/
         double r = 3958;
 
-        double lat1 = Math.toRadians(srcLat);
-        double lat2 = Math.toRadians(destLat);
-        double lon1 = Math.toRadians(srcLon);
-        double lon2 = Math.toRadians(destLon);
+        double lat1 = Math.toRadians(currentLocation.getLat());
+        double lat2 = Math.toRadians(destinationLocation.getLat());
+        double lon1 = Math.toRadians(currentLocation.getLon());
+        double lon2 = Math.toRadians(destinationLocation.getLon());
 
         //Get delta values for both latitudes and longitude.
         double dLat = lat2 - lat1;

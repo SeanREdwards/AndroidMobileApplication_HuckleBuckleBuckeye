@@ -43,7 +43,7 @@ public class GameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
-        Game game = new Game();
+        Game game = new Game(getCurrentLocation());
         Log.d("TEST", "onCreate: Line before Async task");
         toast = Toast.makeText(this, "Starting game!", Toast.LENGTH_SHORT);
         AsyncTask<Game, String, String> testTask = new LocationUpdateTask();
@@ -61,54 +61,41 @@ public class GameActivity extends AppCompatActivity {
         private Handler handler;
         int tick;
         Runnable runnable;
-        private boolean running;
-        private int count;
+        private boolean foundDestination;
+        private double distanceToDestination;
         Coordinates destination;
+        Coordinates currentLocation;
 
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
             handler = new Handler();
             tick = 5000;
-            running = true;
-            count = 0;
+            foundDestination = false;
         }
 
         @Override
         protected String doInBackground(Game... games) {
 
-            Game game = games[0];
+            final Game game = games[0];
             destination = game.getDestinationCoords();
 
             handler.postDelayed( runnable = new Runnable() {
                 public void run() {
                     handler.postDelayed(runnable, tick);
-                    if (running ){
-                        toast.setText("Coordinates of Destination: (" + destination.getLat() + ", " + destination.getLon());
-                        count ++;
-                        if (count == 3){
-                            running = false;
-                        }
+                    currentLocation = getCurrentLocation();
+                    distanceToDestination = game.calcDistance(currentLocation);
+                    foundDestination = game.destinationReached(currentLocation);
+                    if (!foundDestination ){
+                        toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " miles");
+
                     } else{
-                        toast.setText("I will no longer repeat!");
+                        toast.setText("You found your destination!!!!");
                         handler.removeCallbacks(runnable);
                     }
                     toast.show();
                 }
             }, tick);
-
-            /*Location Checker Algorithm:
-                Coordinates startLocation = start location;
-                Coordinates currentLocation = start location;
-                Coordinates destination = end location;
-                    //Tick
-                UpdateCurrentLocation(currentLocation);
-
-                getCurrentCoordinates;
-
-
-
-             */
 
 //            Coordinates current = getCurrentLocation();
 //            if (game.destinationReached(current)) {
