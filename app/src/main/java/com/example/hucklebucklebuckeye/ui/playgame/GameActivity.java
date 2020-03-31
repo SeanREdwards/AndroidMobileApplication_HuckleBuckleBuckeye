@@ -63,8 +63,7 @@ public class GameActivity extends AppCompatActivity {
         Runnable runnable;
         private boolean running;
         private int count;
-        Location destination;
-        Location currentLocation;
+        Coordinates destination;
 
         @Override
         protected void onPreExecute() {
@@ -79,16 +78,15 @@ public class GameActivity extends AppCompatActivity {
         protected String doInBackground(Game... games) {
 
             Game game = games[0];
+            destination = game.getDestinationCoords();
+
             handler.postDelayed( runnable = new Runnable() {
                 public void run() {
-                    //do something
-                    s = "AM I REPEATING?";
                     handler.postDelayed(runnable, tick);
-                    toast.setText(s);
                     if (running ){
-                        toast.setText("I am still repeating!");
+                        toast.setText("Coordinates of Destination: (" + destination.getLat() + ", " + destination.getLon());
                         count ++;
-                        if (count == 5){
+                        if (count == 3){
                             running = false;
                         }
                     } else{
@@ -99,7 +97,7 @@ public class GameActivity extends AppCompatActivity {
                 }
             }, tick);
 
-            /*Location Checker Alogrithm:
+            /*Location Checker Algorithm:
                 Coordinates startLocation = start location;
                 Coordinates currentLocation = start location;
                 Coordinates destination = end location;
@@ -169,35 +167,6 @@ public class GameActivity extends AppCompatActivity {
         }
     }
 
-    //    @SuppressWarnings("MissingPermission")
-//    private void getLastLocation(){
-//        if (checkPermissions()) {
-//            if (isLocationEnabled()) {
-//                mFusedLocationClient.getLastLocation().addOnCompleteListener(
-//                        new OnCompleteListener<Location>() {
-//                            @Override
-//                            public void onComplete(@NonNull Task<Location> task) {
-//                                Location location = task.getResult();
-//                                if (location == null) {
-//                                    requestNewLocationData();
-//                                } else {
-//                                    //Game game = new Game();
-//
-//                                    //Log.d("latitude: ", location.getLatitude()+"");
-//                                    //Log.d("longitude: ", location.getLongitude()+"");
-//                                }
-//                            }
-//                        }
-//                );
-//            } else {
-//                Toast.makeText(this, "Turn on location", Toast.LENGTH_LONG).show();
-//                Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-//                startActivity(intent);
-//            }
-//        } else {
-//            requestPermissions();
-//        }
-//    }
     /*
      *
      * this was here to return the current coordinates. we might want to use it later
@@ -245,44 +214,4 @@ public class GameActivity extends AppCompatActivity {
             //Log.d("longitude: ", mLastLocation.getLongitude()+"");
         }
     };
-
-    /*Method to obtain the distance between two locations based on the Haversine formula:
-        a = (sin(dlat/2))^2 + cos(lat1) * cos(lat2) * (sin(dlon/2))^2
-        c = 2 * atan2( sqrt(a), sqrt(1-a) )
-        d = R * c (where R is the radius of the Earth)
-    * @Requires double srcLat
-    *   Latitude of starting point.
-    * @Requires double srcLon
-    *   Longitude of starting point.
-    * @Requires double destLat
-    *   Latitude of end point.
-    * @Requires double destLon
-    *   Longitude of end point.
-    * @Returns the distance between starting and ending points.
-    * */
-    private double calcDistance(double srcLat, double srcLon, double destLat, double destLon){
-
-        /*r value obtained by taking the diameter of the Earth in miles and
-        dividing by 2 to get the radius. Diameter of earth per NASA's fact sheet:
-        https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_british.html*/
-        double r = 3958;
-
-        double lat1 = Math.toRadians(srcLat);
-        double lat2 = Math.toRadians(destLat);
-        double lon1 = Math.toRadians(srcLon);
-        double lon2 = Math.toRadians(destLon);
-
-        //Get delta values for both latitudes and longitude.
-        double dLat = lat2 - lat1;
-        double dLon = lon2 - lon1;
-
-        //Haversine formula calculation:
-        double a = Math.pow(Math.sin(dLat / 2), 2) + Math.cos(lat1) * Math.cos(lat2)
-                * Math.pow(Math.sin(dLon / 2),2);
-
-        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-
-        return (r * c);
-    }
-
 }

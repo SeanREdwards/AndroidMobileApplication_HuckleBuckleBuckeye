@@ -34,6 +34,10 @@ public class Game {
         Log.d("GAME longitude: ", destinationLocation.getLon()+"");
     }
 
+    public Coordinates getDestinationCoords(){
+        return destinationLocation;
+    };
+
     //TODO: figure out where to use this. I think it needs to be called continuously from MapFragment or GameActivity
     public static boolean destinationReached (Coordinates currentLocation){
         boolean destinationReached = false;
@@ -50,6 +54,45 @@ public class Game {
         return destinationReached;
 
     }
+
+/*Method to obtain the distance between two locations based on the Haversine formula:
+*       a = (sin(dlat/2))^2 + cos(lat1) * cos(lat2) * (sin(dlon/2))^2
+*       c = 2 * atan2( sqrt(a), sqrt(1-a) )
+*       d = R * c (where R is the radius of the Earth)
+* @Requires double srcLat
+*   Latitude of starting point.
+* @Requires double srcLon
+*   Longitude of starting point.
+* @Requires double destLat
+*   Latitude of end point.
+* @Requires double destLon
+*   Longitude of end point.
+* @Returns the distance between starting and ending points.*/
+    private double calcDistance(double srcLat, double srcLon, double destLat, double destLon){
+
+        /*r value obtained by taking the diameter of the Earth in miles and
+        dividing by 2 to get the radius. Diameter of earth per NASA's fact sheet:
+        https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_british.html*/
+        double r = 3958;
+
+        double lat1 = Math.toRadians(srcLat);
+        double lat2 = Math.toRadians(destLat);
+        double lon1 = Math.toRadians(srcLon);
+        double lon2 = Math.toRadians(destLon);
+
+        //Get delta values for both latitudes and longitude.
+        double dLat = lat2 - lat1;
+        double dLon = lon2 - lon1;
+
+        //Haversine formula calculation:
+        double a = Math.pow(Math.sin(dLat / 2), 2) + Math.cos(lat1) * Math.cos(lat2)
+                * Math.pow(Math.sin(dLon / 2),2);
+
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+        return (r * c);
+    }
+
     public static void endGame(){
         //TODO: stop timer
         //TODO: log data
