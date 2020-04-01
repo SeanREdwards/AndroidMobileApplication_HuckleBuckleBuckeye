@@ -41,16 +41,19 @@ public class GameActivity extends AppCompatActivity {
     Toast toast;
     String s = "";
     int PERMISSION_ID = 44;
+    private AsyncTask<Game, String, String> testTask;
+    private boolean isCancelled;
     FusedLocationProviderClient mFusedLocationClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        isCancelled = false;
         Game game = new Game(getCurrentLocation());
         Log.d("TEST", "onCreate: Line before Async task");
         toast = Toast.makeText(this, "Starting game!", Toast.LENGTH_SHORT);
-        AsyncTask<Game, String, String> testTask = new LocationUpdateTask();
+        this.testTask= new LocationUpdateTask();
         testTask.execute(game);
         Log.d("TEST", this.s);
         if (savedInstanceState == null) {
@@ -115,6 +118,9 @@ public class GameActivity extends AppCompatActivity {
 
             handler.postDelayed( runnable = new Runnable() {
                 public void run() {
+                    if (!isCancelled){
+
+
                     handler.postDelayed(runnable, tick);
                     currentLocation = getCurrentLocation();
                     Log.d("HERE IT IS location is", "here is " + lat);
@@ -129,6 +135,7 @@ public class GameActivity extends AppCompatActivity {
                         handler.removeCallbacks(runnable);
                     }
                     toast.show();
+                    }
                 }
             }, tick);
 
@@ -241,5 +248,15 @@ public class GameActivity extends AppCompatActivity {
             //Log.d("longitude: ", mLastLocation.getLongitude()+"");
         }
     };
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("GameActivity", "onDestroy() method called");
+        //if (!this.testTask.isCancelled()){
+        this.isCancelled = true;
+        this.testTask.cancel(true);
+        //}
+    }
 }
 
