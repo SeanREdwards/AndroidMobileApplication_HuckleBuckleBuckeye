@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 
 
 import androidx.annotation.NonNull;
@@ -33,7 +34,10 @@ import android.widget.Toast;
 import java.util.concurrent.ExecutionException;
 
 
+
 public class GameActivity extends AppCompatActivity {
+    public static double lat;
+    public static double lon;
     Toast toast;
     String s = "";
     int PERMISSION_ID = 44;
@@ -57,6 +61,7 @@ public class GameActivity extends AppCompatActivity {
         //toast.show();
     }
 
+
     private class LocationUpdateTask extends AsyncTask<Game, String, String> {
         private Handler handler;
         int tick;
@@ -70,8 +75,35 @@ public class GameActivity extends AppCompatActivity {
         protected void onPreExecute() {
             super.onPreExecute();
             handler = new Handler();
-            tick = 5000;
+            tick = 3000;
             foundDestination = false;
+        }
+
+        /*
+         *
+         * this was here to return the current coordinates. we might want to use it later
+         */
+        public Coordinates getCurrentLocation(){
+            final double[] latlong = new double[2];
+            mFusedLocationClient.getLastLocation().addOnCompleteListener( new OnCompleteListener<Location>() {
+                @Override
+                public void onComplete(@NonNull Task<Location> task) {
+                    Location location = task.getResult();
+                    if (location == null) {
+                        requestNewLocationData();
+                    } else {
+                        lat = location.getLatitude();
+                        Log.d("location is", "here is" + lat);
+                        lon = location.getLongitude();
+                        Log.d("location is", "here is " + lon);
+                        //Log.d("latitude: ", location.getLatitude()+"");
+                        //Log.d("longitude: ", location.getLongitude()+"");
+                    }
+                }
+            }
+            );
+            return new Coordinates("current", latlong[0], latlong[1]);
+
         }
 
         @Override
@@ -80,17 +112,20 @@ public class GameActivity extends AppCompatActivity {
             final Game game = games[0];
             destination = game.getDestinationCoords();
 
+
             handler.postDelayed( runnable = new Runnable() {
                 public void run() {
                     handler.postDelayed(runnable, tick);
                     currentLocation = getCurrentLocation();
-                    distanceToDestination = game.calcDistance(currentLocation);
-                    foundDestination = game.destinationReached(currentLocation);
+                    Log.d("HERE IT IS location is", "here is " + lat);
+                    Log.d("HERE IT IS location is", "here is " + lon);
+                    distanceToDestination = game.calcDistance(new Coordinates("current ", lat, lon));
+                    foundDestination = game.destinationReached(new Coordinates("current ", lat, lon));
                     if (!foundDestination ){
-                        toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " miles");
+                        toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " ft");
 
                     } else{
-                        toast.setText("You found your destination!!!!");
+                        toast.setText("You found your destination!!!! Distance Away: " + distanceToDestination + " ft");
                         handler.removeCallbacks(runnable);
                     }
                     toast.show();
@@ -121,6 +156,34 @@ public class GameActivity extends AppCompatActivity {
 
         }
     }
+
+    /*
+     *
+     * this was here to return the current coordinates. we might want to use it later
+     */
+    public Coordinates getCurrentLocation(){
+        final double[] latlong = new double[2];
+        mFusedLocationClient.getLastLocation().addOnCompleteListener( new OnCompleteListener<Location>() {
+                                                                          @Override
+                                                                          public void onComplete(@NonNull Task<Location> task) {
+                                                                              Location location = task.getResult();
+                                                                              if (location == null) {
+                                                                                  requestNewLocationData();
+                                                                              } else {
+                                                                                  lat = location.getLatitude();
+                                                                                  Log.d("location is", "here is" + lat);
+                                                                                  lon = location.getLongitude();
+                                                                                  Log.d("location is", "here is " + lon);
+                                                                                  //Log.d("latitude: ", location.getLatitude()+"");
+                                                                                  //Log.d("longitude: ", location.getLongitude()+"");
+                                                                              }
+                                                                          }
+                                                                      }
+        );
+        return new Coordinates("current", latlong[0], latlong[1]);
+
+    }
+
 
     private boolean checkPermissions() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
@@ -154,30 +217,7 @@ public class GameActivity extends AppCompatActivity {
         }
     }
 
-    /*
-     *
-     * this was here to return the current coordinates. we might want to use it later
-     */
-    public Coordinates getCurrentLocation(){
-        final double[] latlong = new double[2];
-        mFusedLocationClient.getLastLocation().addOnCompleteListener( new OnCompleteListener<Location>() {
-            @Override
-            public void onComplete(@NonNull Task<Location> task) {
-                Location location = task.getResult();
-                if (location == null) {
-                    requestNewLocationData();
-                } else {
-                    latlong[0] = location.getLatitude();
-                    latlong[1] = location.getLongitude();
-                    //Log.d("latitude: ", location.getLatitude()+"");
-                    //Log.d("longitude: ", location.getLongitude()+"");
-                }
-            }
-        }
-        );
-        return new Coordinates("current", latlong[0], latlong[1]);
 
-    }
     @SuppressLint("MissingPermission")
     private void requestNewLocationData(){
 
@@ -202,3 +242,4 @@ public class GameActivity extends AppCompatActivity {
         }
     };
 }
+

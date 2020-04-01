@@ -81,6 +81,7 @@ public class Game {
         dividing by 2 to get the radius. Diameter of earth per NASA's fact sheet:
         https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_british.html*/
         double r = 3958;
+        double ftPerMile = 5280;
 
         double lat1 = Math.toRadians(currentLocation.getLat());
         double lat2 = Math.toRadians(destinationLocation.getLat());
@@ -97,7 +98,7 @@ public class Game {
 
         double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 
-        return (r * c);
+        return ((r * c) * ftPerMile);
     }
 
     public static void endGame(){
