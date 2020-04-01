@@ -47,6 +47,7 @@ public class GameActivity extends AppCompatActivity {
     private boolean isCancelled;
     private TextView updateMessage;
     MapFragment mapFragment;
+
     FusedLocationProviderClient mFusedLocationClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,8 +132,6 @@ public class GameActivity extends AppCompatActivity {
             handler.postDelayed( runnable = new Runnable() {
                 public void run() {
                     if (!isCancelled){
-
-
                         handler.postDelayed(runnable, tick);
                         currentLocation = getCurrentLocation();
                         Log.d("HERE IT IS location is", "here is " + lat);
@@ -273,6 +272,7 @@ public class GameActivity extends AppCompatActivity {
         Log.d("GameActivity", "onDestroy() method called");
         this.isCancelled = true;
         this.testTask.cancel(true);
+
     }
 }
 
