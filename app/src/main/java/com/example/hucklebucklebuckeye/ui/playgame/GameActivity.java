@@ -29,6 +29,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.concurrent.ExecutionException;
@@ -43,6 +45,9 @@ public class GameActivity extends AppCompatActivity {
     int PERMISSION_ID = 44;
     private AsyncTask<Game, String, String> testTask;
     private boolean isCancelled;
+    private TextView updateMessage;
+    MapFragment mapFragment;
+
     FusedLocationProviderClient mFusedLocationClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,17 +56,23 @@ public class GameActivity extends AppCompatActivity {
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         isCancelled = false;
         Game game = new Game(getCurrentLocation());
+
         Log.d("TEST", "onCreate: Line before Async task");
         toast = Toast.makeText(this, "Starting game!", Toast.LENGTH_SHORT);
+
         this.testTask= new LocationUpdateTask();
         testTask.execute(game);
         Log.d("TEST", this.s);
+
+        mapFragment = MapFragment.newInstance();
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, MapFragment.newInstance())
+                    .replace(R.id.container, mapFragment)
                     .commitNow();
         }
-        //toast.show();
+
+        updateMessage = findViewById(R.id.fragment_below_textview);
+        updateMessage.setText("Play game!");
     }
 
 
@@ -71,6 +82,7 @@ public class GameActivity extends AppCompatActivity {
         Runnable runnable;
         private boolean foundDestination;
         private double distanceToDestination;
+        private double previousDistance;
         Coordinates destination;
         Coordinates currentLocation;
 
@@ -79,6 +91,7 @@ public class GameActivity extends AppCompatActivity {
             super.onPreExecute();
             handler = new Handler();
             tick = 3000;
+            previousDistance = Integer.MAX_VALUE;
             foundDestination = false;
         }
 
@@ -89,21 +102,21 @@ public class GameActivity extends AppCompatActivity {
         public Coordinates getCurrentLocation(){
             final double[] latlong = new double[2];
             mFusedLocationClient.getLastLocation().addOnCompleteListener( new OnCompleteListener<Location>() {
-                @Override
-                public void onComplete(@NonNull Task<Location> task) {
-                    Location location = task.getResult();
-                    if (location == null) {
-                        requestNewLocationData();
-                    } else {
-                        lat = location.getLatitude();
-                        Log.d("location is", "here is" + lat);
-                        lon = location.getLongitude();
-                        Log.d("location is", "here is " + lon);
-                        //Log.d("latitude: ", location.getLatitude()+"");
-                        //Log.d("longitude: ", location.getLongitude()+"");
-                    }
-                }
-            }
+                                                                              @Override
+                                                                              public void onComplete(@NonNull Task<Location> task) {
+                                                                                  Location location = task.getResult();
+                                                                                  if (location == null) {
+                                                                                      requestNewLocationData();
+                                                                                  } else {
+                                                                                      lat = location.getLatitude();
+                                                                                      Log.d("location is", "here is" + lat);
+                                                                                      lon = location.getLongitude();
+                                                                                      Log.d("location is", "here is " + lon);
+                                                                                      //Log.d("latitude: ", location.getLatitude()+"");
+                                                                                      //Log.d("longitude: ", location.getLongitude()+"");
+                                                                                  }
+                                                                              }
+                                                                          }
             );
             return new Coordinates("current", latlong[0], latlong[1]);
 
@@ -119,22 +132,26 @@ public class GameActivity extends AppCompatActivity {
             handler.postDelayed( runnable = new Runnable() {
                 public void run() {
                     if (!isCancelled){
+                        handler.postDelayed(runnable, tick);
+                        currentLocation = getCurrentLocation();
+                        Log.d("HERE IT IS location is", "here is " + lat);
+                        Log.d("HERE IT IS location is", "here is " + lon);
+                        distanceToDestination = game.calcDistance(new Coordinates("current ", lat, lon));
+                        if (distanceToDestination < previousDistance){
+                            updateMessage.setText("Hotter...");
+                        } else if (distanceToDestination > previousDistance) {
+                            updateMessage.setText("Colder...");
+                        }
+                        previousDistance = distanceToDestination;
+                        foundDestination = game.destinationReached(new Coordinates("current ", lat, lon));
+                        if (!foundDestination ){
+                            toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " ft");
 
-
-                    handler.postDelayed(runnable, tick);
-                    currentLocation = getCurrentLocation();
-                    Log.d("HERE IT IS location is", "here is " + lat);
-                    Log.d("HERE IT IS location is", "here is " + lon);
-                    distanceToDestination = game.calcDistance(new Coordinates("current ", lat, lon));
-                    foundDestination = game.destinationReached(new Coordinates("current ", lat, lon));
-                    if (!foundDestination ){
-                        toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " ft");
-
-                    } else{
-                        toast.setText("You found your destination!!!! Distance Away: " + distanceToDestination + " ft");
-                        handler.removeCallbacks(runnable);
-                    }
-                    toast.show();
+                        } else{
+                            toast.setText("You found your destination!!!! Distance Away: " + distanceToDestination + " ft");
+                            handler.removeCallbacks(runnable);
+                        }
+                        toast.show();
                     }
                 }
             }, tick);
@@ -171,21 +188,21 @@ public class GameActivity extends AppCompatActivity {
     public Coordinates getCurrentLocation(){
         final double[] latlong = new double[2];
         mFusedLocationClient.getLastLocation().addOnCompleteListener( new OnCompleteListener<Location>() {
-                                                                          @Override
-                                                                          public void onComplete(@NonNull Task<Location> task) {
-                                                                              Location location = task.getResult();
-                                                                              if (location == null) {
-                                                                                  requestNewLocationData();
-                                                                              } else {
-                                                                                  lat = location.getLatitude();
-                                                                                  Log.d("location is", "here is" + lat);
-                                                                                  lon = location.getLongitude();
-                                                                                  Log.d("location is", "here is " + lon);
-                                                                                  //Log.d("latitude: ", location.getLatitude()+"");
-                                                                                  //Log.d("longitude: ", location.getLongitude()+"");
-                                                                              }
-                                                                          }
-                                                                      }
+            @Override
+            public void onComplete(@NonNull Task<Location> task) {
+                Location location = task.getResult();
+                if (location == null) {
+                    requestNewLocationData();
+                } else {
+                    lat = location.getLatitude();
+                    Log.d("location is", "here is" + lat);
+                    lon = location.getLongitude();
+                    Log.d("location is", "here is " + lon);
+                    //Log.d("latitude: ", location.getLatitude()+"");
+                    //Log.d("longitude: ", location.getLongitude()+"");
+                }
+            }
+        }
         );
         return new Coordinates("current", latlong[0], latlong[1]);
 
@@ -253,10 +270,11 @@ public class GameActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.d("GameActivity", "onDestroy() method called");
-        //if (!this.testTask.isCancelled()){
         this.isCancelled = true;
         this.testTask.cancel(true);
-        //}
+
     }
 }
+
+
 
