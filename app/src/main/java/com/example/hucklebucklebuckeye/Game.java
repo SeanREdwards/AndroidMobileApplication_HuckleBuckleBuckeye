@@ -5,6 +5,11 @@ import android.util.Log;
 public class Game {
 
     private static Coordinates destinationLocation;
+    private static Coordinates currentLocation;
+
+    //initial distance from starting location to destination in miles.
+    private double initialDistance;
+
     //TODO: this is about 100 feet from the location. we might want to tweak this when we're further along
     final private static double CLOSE_ENOUGH_LATITUDE = 0.00002756515 * 10;
     final private static double CLOSE_ENOUGH_LONGITUDE = 0.00002738485 * 10;
@@ -23,16 +28,23 @@ public class Game {
         //add log to db
         //display play again option
 
-    public Game(){
+    public Game(Coordinates initial){
         Locations locations = new Locations();
         destinationLocation = locations.setLocation();
+        initialDistance = this.calcDistance(initial);
     }
+
+
 
     public static void logLocation(){
         Log.d("GAME location name: ", destinationLocation.getName());
         Log.d("GAME latitude: ", destinationLocation.getLat()+"");
         Log.d("GAME longitude: ", destinationLocation.getLon()+"");
     }
+
+    public Coordinates getDestinationCoords(){
+        return destinationLocation;
+    };
 
     //TODO: figure out where to use this. I think it needs to be called continuously from MapFragment or GameActivity
     public static boolean destinationReached (Coordinates currentLocation){
@@ -48,8 +60,47 @@ public class Game {
             destinationReached = true;
         }
         return destinationReached;
-
     }
+
+/*Method to obtain the distance between two locations based on the Haversine formula:
+*       a = (sin(dlat/2))^2 + cos(lat1) * cos(lat2) * (sin(dlon/2))^2
+*       c = 2 * atan2( sqrt(a), sqrt(1-a) )
+*       d = R * c (where R is the radius of the Earth)
+* @Requires double srcLat
+*   Latitude of starting point.
+* @Requires double srcLon
+*   Longitude of starting point.
+* @Requires double destLat
+*   Latitude of end point.
+* @Requires double destLon
+*   Longitude of end point.
+* @Returns the distance between starting and ending points.*/
+    public double calcDistance(Coordinates currentLocation){
+
+        /*r value obtained by taking the diameter of the Earth in miles and
+        dividing by 2 to get the radius. Diameter of earth per NASA's fact sheet:
+        https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_british.html*/
+        double r = 3958;
+        double ftPerMile = 5280;
+
+        double lat1 = Math.toRadians(currentLocation.getLat());
+        double lat2 = Math.toRadians(destinationLocation.getLat());
+        double lon1 = Math.toRadians(currentLocation.getLon());
+        double lon2 = Math.toRadians(destinationLocation.getLon());
+
+        //Get delta values for both latitudes and longitude.
+        double dLat = lat2 - lat1;
+        double dLon = lon2 - lon1;
+
+        //Haversine formula calculation:
+        double a = Math.pow(Math.sin(dLat / 2), 2) + Math.cos(lat1) * Math.cos(lat2)
+                * Math.pow(Math.sin(dLon / 2),2);
+
+        double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+        return ((r * c) * ftPerMile);
+    }
+
     public static void endGame(){
         //TODO: stop timer
         //TODO: log data
