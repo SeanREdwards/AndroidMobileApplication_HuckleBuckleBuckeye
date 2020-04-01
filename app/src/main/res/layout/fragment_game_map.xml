@@ -7,13 +7,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.playgame.MapFragment">
-    <TextView
-        android:id="@+id/fragment_below_textview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:gravity="center_horizontal"
-        android:text="Play game!"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/location_frag_cardview"
@@ -30,9 +23,5 @@
             android:layout_width="match_parent"
             mapbox:mapbox_cameraZoom="12"
             android:layout_height="match_parent" />
-<!--        <FrameLayout-->
-<!--            android:id="@+id/location_frag_container"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent" />-->
     </androidx.cardview.widget.CardView>
 </RelativeLayout>
