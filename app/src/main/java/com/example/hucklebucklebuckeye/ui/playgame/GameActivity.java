@@ -58,6 +58,7 @@ public class GameActivity extends AppCompatActivity {
     private boolean isCancelled;
     private TextView updateMessage;
     private TextView stopwatchView;
+    private TextView stepView;
     MapFragment mapFragment;
 
     //For Stopwatch
@@ -84,6 +85,7 @@ public class GameActivity extends AppCompatActivity {
         stopwatch.Start();
 
         //step counter setup
+        stepView = findViewById(R.id.steps_view);
         steps = 0;
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
@@ -91,6 +93,7 @@ public class GameActivity extends AppCompatActivity {
             @Override
             public void onSensorChanged(SensorEvent event) {
                 steps++;
+                stepView.setText("Steps Taken: " + steps);
             }
 
             @Override
@@ -100,7 +103,7 @@ public class GameActivity extends AppCompatActivity {
         };
 
         if (stepSensor != null){
-            sensorManager.registerListener((SensorEventListener) this, stepSensor, sensorManager.SENSOR_DELAY_UI);
+            sensorManager.registerListener(stepListener, stepSensor, sensorManager.SENSOR_DELAY_UI);
         }else{
             Toast.makeText(this, "Step Detector not found!", Toast.LENGTH_SHORT).show();
         }
