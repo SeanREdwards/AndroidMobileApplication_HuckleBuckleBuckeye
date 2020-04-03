@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/history_ACID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Title"/>
+
+    <TextView
+        android:id="@+id/history_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Date"/>
+
+    <TextView
+        android:id="@+id/history_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Date"/>
+
+    <TextView
+        android:id="@+id/history_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Date"/>
+
+    <TextView
+        android:id="@+id/history_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Date"/>
+
+    <TextView
+        android:id="@+id/history_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Date"/>
+
+    <TextView
+        android:id="@+id/history_completed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Date"/>
+
+
+
+</LinearLayout>

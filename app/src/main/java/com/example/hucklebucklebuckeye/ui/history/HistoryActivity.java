@@ -15,7 +15,7 @@ public class HistoryActivity extends AppCompatActivity {
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, HistoryFragment.newInstance())
+                    .replace(R.id.container, HistoryListFragment.newInstance())
                     .commitNow();
         }
     }
