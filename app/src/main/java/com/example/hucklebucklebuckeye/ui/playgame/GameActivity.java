@@ -3,7 +3,6 @@ import android.animation.ArgbEvaluator;
 import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.hardware.Sensor;
@@ -39,9 +38,6 @@ import android.content.pm.PackageManager;
 import android.location.LocationManager;
 import android.os.Handler;
 import android.os.Looper;
-import android.provider.Settings;
-import android.util.Log;
-import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -49,7 +45,7 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Date;
-import java.util.concurrent.ExecutionException;
+
 
 
 
@@ -57,18 +53,21 @@ public class GameActivity extends AppCompatActivity {
     public static double lat;
     public static double lon;
     Toast toast;
-    String s = "";
     int PERMISSION_ID = 44;
-    private AsyncTask<Game, String, Boolean> testTask;
+    private AsyncTask<Game, String, Boolean> locationUpdateTask;
     private boolean isCancelled;
+
     private TextView updateMessage;
     private TextView stopwatchView;
     private TextView stepView;
     MapFragment mapFragment;
     private RelativeLayout background;
-    private final int blue = Color.parseColor("#0000ff");
-    private final int red = Color.parseColor("#ff0000");
+
+    //Background color setup
+    private final int blue = Color.parseColor("#add8e6");
+    private final int red = Color.parseColor("#da9b86");
     private int currentColor;
+
     //For Stopwatch
     Stopwatch stopwatch;
 
@@ -86,7 +85,7 @@ public class GameActivity extends AppCompatActivity {
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         isCancelled = false;
         background = findViewById(R.id.container);
-        background.setBackgroundColor(Color.parseColor("#ff0000"));
+        background.setBackgroundColor(red);
         Game game = new Game(getCurrentLocation());
         toast.makeText(this, "", Toast.LENGTH_SHORT);
         //Stopwatch setup
@@ -111,21 +110,23 @@ public class GameActivity extends AppCompatActivity {
 
             }
         };
-
+        //Setup pedometer values
         if (stepSensor != null){
             sensorManager.registerListener(stepListener, stepSensor, sensorManager.SENSOR_DELAY_UI);
         }else{
             Toast.makeText(this, "Step Detector not found!", Toast.LENGTH_SHORT).show();
         }
 
+        //Get initial background color
         currentColor = 0;
         if (background.getBackground() instanceof ColorDrawable){
             currentColor = ((ColorDrawable) background.getBackground()).getColor();}
 
-        this.testTask= new LocationUpdateTask();
-        testTask.execute(game);
-        Log.d("TEST", this.s);
+        //start location update asyncronous task
+        this.locationUpdateTask = new LocationUpdateTask();
+        locationUpdateTask.execute(game);
 
+        //commit mapFragment for mapview
         mapFragment = MapFragment.newInstance();
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
@@ -133,6 +134,7 @@ public class GameActivity extends AppCompatActivity {
                     .commitNow();
         }
 
+        //initialize update message TextView
        updateMessage = findViewById(R.id.fragment_below_textview);
        updateMessage.setText("Play game!");
     }
@@ -188,12 +190,13 @@ public class GameActivity extends AppCompatActivity {
             ContentValues values = new ContentValues();
             LocalDate date = LocalDate.now();
             SimpleDateFormat localDateFormat = new SimpleDateFormat("HH:mm:ss");
+            double miles = Game.stepsToMiles(steps);
             String time = localDateFormat.format(new Date());
                 values.put("ACID", AccountDBHelper.getId());
-                values.put("STEPS", 15);
+                values.put("STEPS", steps);
                 values.put("DATE", date.toString());
                 values.put("MAP", destination.getName());
-                values.put("DISTANCE", 10);
+                values.put("DISTANCE", miles);
                 values.put("TIME", time);
                 values.put("COMPLETED", true);
                 logHandler.insertData(values);
@@ -252,7 +255,7 @@ public class GameActivity extends AppCompatActivity {
 
         private void transitionBackground(int colorFrom, int colorTo){
             ValueAnimator colorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), colorFrom, colorTo);
-            colorAnimation.setDuration(250); // milliseconds
+            colorAnimation.setDuration(300); // milliseconds
             colorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
 
                 @Override
@@ -363,7 +366,7 @@ public class GameActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d("GameActivity", "onDestroy() method called");
         this.isCancelled = true;
-        this.testTask.cancel(true);
+        this.locationUpdateTask.cancel(true);
     }
 }
 
