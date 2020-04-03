@@ -103,7 +103,6 @@ public class Game {
 
     public static void endGame(){
         //TODO: stop timer
-        //TODO: log data
         //nullify location
         destinationLocation = null;
     }

@@ -28,7 +28,6 @@ public class Locations {
         this.coordinates.add(new Coordinates("Tom W. Davis Clock Tower", 40.0049371, -83.012978));
         this.coordinates.add(new Coordinates("RPAC", 39.9994014, -83.0182686));
         this.coordinates.add(new Coordinates("Ohio Union", 39.9976772, -83.0085748));
-
     }
 
     public Coordinates setLocation(){
