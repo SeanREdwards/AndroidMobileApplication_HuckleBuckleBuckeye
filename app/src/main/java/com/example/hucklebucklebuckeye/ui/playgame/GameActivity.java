@@ -2,6 +2,10 @@ package com.example.hucklebucklebuckeye.ui.playgame;
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -56,7 +60,14 @@ public class GameActivity extends AppCompatActivity {
     private TextView stopwatchView;
     MapFragment mapFragment;
 
+    //For Stopwatch
     Stopwatch stopwatch;
+
+    //For StepCounter
+    private SensorManager sensorManager;
+    private Sensor stepSensor;
+    private int steps;
+
 
     FusedLocationProviderClient mFusedLocationClient;
     @Override
@@ -67,9 +78,32 @@ public class GameActivity extends AppCompatActivity {
         isCancelled = false;
         Game game = new Game(getCurrentLocation());
 
+        //Stopwatch setup
         stopwatchView = findViewById(R.id.stopwatch_view);
         stopwatch = new Stopwatch(stopwatchView);
         stopwatch.Start();
+
+        //step counter setup
+        steps = 0;
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
+        SensorEventListener stepListener = new SensorEventListener() {
+            @Override
+            public void onSensorChanged(SensorEvent event) {
+                steps++;
+            }
+
+            @Override
+            public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+            }
+        };
+
+        if (stepSensor != null){
+            sensorManager.registerListener((SensorEventListener) this, stepSensor, sensorManager.SENSOR_DELAY_UI);
+        }else{
+            Toast.makeText(this, "Step Detector not found!", Toast.LENGTH_SHORT).show();
+        }
 
         Log.d("TEST", "onCreate: Line before Async task");
         toast = Toast.makeText(this, "Starting game!", Toast.LENGTH_SHORT);
@@ -88,7 +122,6 @@ public class GameActivity extends AppCompatActivity {
        updateMessage = findViewById(R.id.fragment_below_textview);
        updateMessage.setText("Play game!");
     }
-
 
     private class LocationUpdateTask extends AsyncTask<Game, String, Boolean> {
         private Handler handler;
@@ -294,6 +327,7 @@ public class GameActivity extends AppCompatActivity {
         Log.d("GameActivity", "onDestroy() method called");
         this.isCancelled = true;
         this.testTask.cancel(true);
+        Toast.makeText(this, "Total Steps: " + steps, Toast.LENGTH_LONG).show();
     }
 }
 
