@@ -1,3 +1,7 @@
+/*Stopwatch.js
+*@Author Sean Edwards
+*@Version 20200403
+*Class to create a stopwatch that counts hours minutes and seconds to obtain elapsed game time.*/
 package com.example.hucklebucklebuckeye;
 
 import android.os.Handler;
@@ -11,7 +15,6 @@ public class Stopwatch {
     //Stopwatch variables
     private int seconds;
     private boolean running;
-    private boolean wasRunning;
     private String strTime;
     private TextView timeView;
 
@@ -21,6 +24,7 @@ public class Stopwatch {
         timeView = view;
     }
 
+    //Starts the stopwatch
     public void Start() {
         running = true;
         final Handler handler = new Handler();
@@ -44,10 +48,12 @@ public class Stopwatch {
         });
     }
 
+    //Stops the stopwatch
     public void Stop(){
         running = false;
     }
 
+    //Returns the elapsed time.
     public String getTime() {
         return strTime;
     }
