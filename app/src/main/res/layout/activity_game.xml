@@ -15,5 +15,14 @@ tools:context=".ui.playgame.GameActivity">
         android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
         android:text="Play game!"/>
+
+    <TextView
+        android:id="@+id/stopwatch_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="56sp" />
 </RelativeLayout>
 

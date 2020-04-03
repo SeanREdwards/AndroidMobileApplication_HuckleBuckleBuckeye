@@ -2,49 +2,53 @@ package com.example.hucklebucklebuckeye;
 
 import android.os.Handler;
 import android.os.SystemClock;
+import android.widget.TextView;
+
+import java.util.Locale;
 
 public class Stopwatch {
 
-    //Stopwatch variables for  Game
-    private int milliseconds;
+    //Stopwatch variables
     private int seconds;
-    private int minutes;
-    private int hours;
-    private long millisecondTime;
-    private long startTime;
-    private long timeBuffer;
-    private long updatedTime;
-    private Handler stopwatchHandler;
-    private Runnable runnable;
+    private boolean running;
+    private boolean wasRunning;
+    private String strTime;
+    private TextView timeView;
 
-    public Stopwatch() {
-        updatedTime = 0L;
-        startTime = SystemClock.uptimeMillis();
-        stopwatchHandler = new Handler();
-        stopwatchHandler.postDelayed(runnable, 0);
-        runnable = new Runnable() {
-            public void run() {
-                millisecondTime = SystemClock.uptimeMillis() - startTime;
-                updatedTime = timeBuffer + millisecondTime;
-                seconds = (int) (updatedTime / 1000);
-                minutes = seconds / 60;
-                seconds = seconds % 60;
-                milliseconds = (int) (updatedTime % 1000);
-                stopwatchHandler.postDelayed(this, 0);
+
+    public Stopwatch(TextView view) {
+        seconds = 0;
+        timeView = view;
+    }
+
+    public void Start() {
+        running = true;
+        final Handler handler = new Handler();
+        handler.post(new Runnable(){
+            @Override
+            public void run()
+            {
+                int hours = seconds / 3600;
+                int minutes = (seconds % 3600) / 60;
+                int secs = seconds % 60;
+
+                strTime = String.format(Locale.getDefault(),"%d:%02d:%02d", hours, minutes, secs);
+                timeView.setText(strTime);
+
+                if (running) {
+                    seconds++;
+                }
+
+                handler.postDelayed((Runnable) this, 1000);
             }
-        };
+        });
     }
 
-    public int getMiliseconds(){
-        return milliseconds;
+    public void Stop(){
+        running = false;
     }
 
-    public int getSeconds(){
-        return seconds;
+    public String getTime() {
+        return strTime;
     }
-
-    public int getMinutes(){
-        return minutes;
-    }
-
 }

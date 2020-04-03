@@ -53,6 +53,7 @@ public class GameActivity extends AppCompatActivity {
     private AsyncTask<Game, String, Boolean> testTask;
     private boolean isCancelled;
     private TextView updateMessage;
+    private TextView stopwatchView;
     MapFragment mapFragment;
 
     Stopwatch stopwatch;
@@ -65,10 +66,10 @@ public class GameActivity extends AppCompatActivity {
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         isCancelled = false;
         Game game = new Game(getCurrentLocation());
-        stopwatch = new Stopwatch();
-        stopwatch.getMinutes();
-        stopwatch.getSeconds();
-        stopwatch.getMiliseconds();
+
+        stopwatchView = findViewById(R.id.stopwatch_view);
+        stopwatch = new Stopwatch(stopwatchView);
+        stopwatch.Start();
 
         Log.d("TEST", "onCreate: Line before Async task");
         toast = Toast.makeText(this, "Starting game!", Toast.LENGTH_SHORT);
@@ -177,8 +178,9 @@ public class GameActivity extends AppCompatActivity {
                             toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " ft");
 
                         } else{
-                            addLog();
+                            stopwatch.Stop();
                             toast.setText("You found your destination!!!! Distance Away: " + distanceToDestination + " ft");
+                            addLog();
                             handler.removeCallbacks(runnable);
                         }
                         toast.show();
