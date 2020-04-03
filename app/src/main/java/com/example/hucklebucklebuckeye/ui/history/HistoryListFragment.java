@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -38,9 +39,9 @@ public class HistoryListFragment extends Fragment {
     }
 
     private void updateUI() {
-        LogBaseHelper crimeLab =
+        LogBaseHelper logBaseHelper =
                 LogBaseHelper.get(getActivity());
-        List<History> history = crimeLab.getHistorys();
+        List<History> history = logBaseHelper.getHistorys();
         mAdapter = new HistoryAdapter(history);
         mHistoryRecyclerView.setAdapter(mAdapter);
     }
@@ -48,10 +49,27 @@ public class HistoryListFragment extends Fragment {
 
 
     private class HistoryHolder extends RecyclerView.ViewHolder {
+
+        private TextView mTitleTextView;
+        private TextView mDateTextView;
+        private History mHistory;
+
         public HistoryHolder(LayoutInflater inflater,
                              ViewGroup parent) {
             super(inflater.inflate(R.layout.list_item_history, parent, false));
-        } }
+
+            mTitleTextView = (TextView) itemView.findViewById(R.id.history_title);
+            mDateTextView = (TextView) itemView.findViewById(R.id.history_date);
+
+
+        }
+
+        public void bind(History crime) {
+            mHistory = crime;
+            mTitleTextView.setText(mHistory.getACID());
+            mDateTextView.setText(mHistory.getDate()); }
+
+    }
 
     private class HistoryAdapter extends RecyclerView.Adapter<HistoryHolder> {
         private List<History> mHistory;
@@ -68,6 +86,8 @@ public class HistoryListFragment extends Fragment {
 
         @Override
         public void onBindViewHolder(HistoryHolder holder, int position) {
+            History crime = mHistory.get(position);
+            holder.bind(crime);
         }
 
         @Override

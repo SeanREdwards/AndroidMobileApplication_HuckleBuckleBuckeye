@@ -58,8 +58,11 @@ public class LogBaseHelper extends SQLiteOpenHelper {
     public LogBaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
         mHistory = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 5; i++) {
             History history = new History();
+            history.setACID("hi");
+            history.setDate("here");
+            /*Log.d("sadada", "here is" + history);*/
             mHistory.add(history);
         }
 
@@ -68,7 +71,7 @@ public class LogBaseHelper extends SQLiteOpenHelper {
     }
 
     public List<History> getHistorys() {
-        return mHistory;
+            return mHistory;
     }
 
     public History getHistory(String ACID) {
