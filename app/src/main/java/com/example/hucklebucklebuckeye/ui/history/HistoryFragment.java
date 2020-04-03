@@ -6,6 +6,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,6 +19,7 @@ import android.widget.Toast;
 
 import com.example.hucklebucklebuckeye.History;
 import com.example.hucklebucklebuckeye.R;
+import com.example.hucklebucklebuckeye.ui.history.HistoryListFragment;
 import com.example.hucklebucklebuckeye.model.LogBaseHelper;
 import com.example.hucklebucklebuckeye.model.AccountDBHelper;
 import java.util.Date;
@@ -32,12 +35,17 @@ public class HistoryFragment extends Fragment {
     private static int deleteCount = 0;
     private static String updateText = "updated!\n";
 
+    private RecyclerView mHistoryRecyclerView;
+
+    /*private HistoryAdapter mHistory;*/
+
+
 
     public static HistoryFragment newInstance() {
         return new HistoryFragment();
     }
 
-    @Nullable
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
@@ -46,7 +54,27 @@ public class HistoryFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.history_fragment, container, false);
 
-        History h = new History(getContext());
+        mHistoryRecyclerView = (RecyclerView) view
+                .findViewById(R.id.my_recycler_view);
+        mHistoryRecyclerView.setLayoutManager(new
+                LinearLayoutManager(getActivity()));
+
+
+        /*updateUI();*/
+        
+        return view;
+        }
+
+    /*private void updateUI() {
+        CrimeLab crimeLab = CrimeLab.get(getActivity());
+        List<Crime> crimes = crimeLab.getCrimes();
+        mAdapter = new CrimeAdapter(crimes);
+        mCrimeRecyclerView.setAdapter(mAdapter); }
+    }*/
+}
+
+
+        /*History h = new History(getContext());
         final LogBaseHelper logHandler = new LogBaseHelper(getActivity());
 
         final Button addButton = view.findViewById(R.id.addButton);
@@ -162,4 +190,4 @@ public class HistoryFragment extends Fragment {
 //                null, null, null, null, null);
 //    }
 
-}
+}*/
