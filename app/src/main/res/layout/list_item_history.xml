@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/history_title"
+        android:id="@+id/history_ACID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="History Title"/>
@@ -14,5 +14,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="History Date"/>
+
+    <TextView
+        android:id="@+id/history_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Date"/>
+
+    <TextView
+        android:id="@+id/history_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Date"/>
+
+    <TextView
+        android:id="@+id/history_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Date"/>
+
+    <TextView
+        android:id="@+id/history_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Date"/>
+
+    <TextView
+        android:id="@+id/history_completed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History Date"/>
+
+
 
 </LinearLayout>

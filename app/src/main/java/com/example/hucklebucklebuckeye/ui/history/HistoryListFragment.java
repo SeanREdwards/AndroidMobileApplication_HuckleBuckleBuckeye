@@ -50,24 +50,40 @@ public class HistoryListFragment extends Fragment {
 
     private class HistoryHolder extends RecyclerView.ViewHolder {
 
-        private TextView mTitleTextView;
+        private TextView mACIDTextView;
         private TextView mDateTextView;
+        private TextView mStepsTextView;
+        private TextView mMapTextView;
+        private TextView mDistanceTextView;
+        private TextView mTimeTextView;
+        private TextView mCompletedTextView;
         private History mHistory;
 
         public HistoryHolder(LayoutInflater inflater,
                              ViewGroup parent) {
             super(inflater.inflate(R.layout.list_item_history, parent, false));
 
-            mTitleTextView = (TextView) itemView.findViewById(R.id.history_title);
+            mACIDTextView = (TextView) itemView.findViewById(R.id.history_ACID);
             mDateTextView = (TextView) itemView.findViewById(R.id.history_date);
+            mStepsTextView = (TextView) itemView.findViewById(R.id.history_steps);
+            mMapTextView = (TextView) itemView.findViewById(R.id.history_map);
+            mDistanceTextView = (TextView) itemView.findViewById(R.id.history_distance);
+            mTimeTextView = (TextView) itemView.findViewById(R.id.history_time);
+            mCompletedTextView = (TextView) itemView.findViewById(R.id.history_completed);
 
 
         }
 
         public void bind(History crime) {
             mHistory = crime;
-            mTitleTextView.setText(mHistory.getACID());
-            mDateTextView.setText(mHistory.getDate()); }
+            mACIDTextView.setText(mHistory.getACID());
+            mDateTextView.setText(mHistory.getDate());
+            mStepsTextView.setText(mHistory.getSteps());
+            mMapTextView.setText(mHistory.getMap());
+            mDistanceTextView.setText(mHistory.getDistance());
+            mTimeTextView.setText(mHistory.getTime());
+            mCompletedTextView.setText(mHistory.getCompleted());
+        }
 
     }
 

@@ -8,6 +8,8 @@ import android.util.Log;
 
 import com.example.hucklebucklebuckeye.model.AccountDBHelper;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -57,11 +59,41 @@ public class LogBaseHelper extends SQLiteOpenHelper {
 
     public LogBaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        LocalDate date = LocalDate.now();
+        ContentValues values = new ContentValues();
+        SimpleDateFormat localDateFormat = new SimpleDateFormat("HH:mm:ss");
+        String time = localDateFormat.format(new Date());
+        values.put("ACID", AccountDBHelper.getId());
+        values.put("STEPS", 12);
+        values.put("DATE", date.toString());
+        values.put("MAP", "");
+        values.put("DISTANCE", 1.3);
+        values.put("TIME", time);
+        values.put("COMPLETED", false);
+
+        long result = db.insert(TABLE_NAME, null, values);
+
+        Map<String,String> data = new HashMap<>();
+
+        for (String key : values.keySet()) {
+            data.put(key, values.get(key).toString());
+        }
+
+        Log.d("heree it is", "hi " + values.get("DISTANCE"));
+
         mHistory = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
             History history = new History();
-            history.setACID("hi");
-            history.setDate("here");
+            history.setACID(values.get("ACID").toString());
+            history.setSteps(values.get("STEPS").toString());
+            history.setDate(values.get("DATE").toString());
+            history.setMap(values.get("MAP").toString());
+            history.setDistance(values.get("DISTANCE").toString());
+            history.setTime(values.get("TIME").toString());
+            history.setCompleted(values.get("COMPLETED").toString());
             /*Log.d("sadada", "here is" + history);*/
             mHistory.add(history);
         }
