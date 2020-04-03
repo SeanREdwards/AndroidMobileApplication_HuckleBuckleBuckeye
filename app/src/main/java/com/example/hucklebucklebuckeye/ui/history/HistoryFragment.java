@@ -6,6 +6,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,6 +19,7 @@ import android.widget.Toast;
 
 import com.example.hucklebucklebuckeye.History;
 import com.example.hucklebucklebuckeye.R;
+import com.example.hucklebucklebuckeye.ui.history.HistoryListFragment;
 import com.example.hucklebucklebuckeye.model.LogBaseHelper;
 import com.example.hucklebucklebuckeye.model.AccountDBHelper;
 import java.util.Date;
@@ -32,12 +35,17 @@ public class HistoryFragment extends Fragment {
     private static int deleteCount = 0;
     private static String updateText = "updated!\n";
 
+    private RecyclerView mHistoryRecyclerView;
+
+    /*private HistoryAdapter mHistory;*/
+
+
 
     public static HistoryFragment newInstance() {
         return new HistoryFragment();
     }
 
-    @Nullable
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
@@ -46,16 +54,33 @@ public class HistoryFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.history_fragment, container, false);
 
-        History h = new History(getContext());
-        final LogBaseHelper logHandler = new LogBaseHelper(getActivity());
+        mHistoryRecyclerView = (RecyclerView) view
+                .findViewById(R.id.my_recycler_view);
+        mHistoryRecyclerView.setLayoutManager(new
+                LinearLayoutManager(getActivity()));
 
+
+        /*updateUI();*/
+
+        return view;
+    }
+
+    /*private void updateUI() {
+        CrimeLab crimeLab = CrimeLab.get(getActivity());
+        List<Crime> crimes = crimeLab.getCrimes();
+        mAdapter = new CrimeAdapter(crimes);
+        mCrimeRecyclerView.setAdapter(mAdapter); }
+    }*/
+}
+
+
+        /*History h = new History(getContext());
+        final LogBaseHelper logHandler = new LogBaseHelper(getActivity());
         final Button addButton = view.findViewById(R.id.addButton);
         final Button updateButton = view.findViewById(R.id.updateButton);
         final Button deleteButton = view.findViewById(R.id.deleteButton);
         final TextView output = view.findViewById(R.id.output);
         LocalDate date = LocalDate.now();
-
-
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +95,6 @@ public class HistoryFragment extends Fragment {
                 values.put("DISTANCE", 1.3);
                 values.put("TIME", time);
                 values.put("COMPLETED", false);
-
                 logHandler.insertData(values);
                 String out = "";
                 addedCount++;
@@ -83,8 +107,6 @@ public class HistoryFragment extends Fragment {
                 Toast.makeText(getContext(), out, Toast.LENGTH_SHORT).show();
              }
         });
-
-
         updateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,7 +122,6 @@ public class HistoryFragment extends Fragment {
                 values.put("DISTANCE", 1.3);
                 values.put("TIME", time);
                 values.put("COMPLETED", false);
-
                 logHandler.updateData(values);
                 String out = "";
                 updateCount++;
@@ -112,45 +133,35 @@ public class HistoryFragment extends Fragment {
                 Toast.makeText(getContext(), out, Toast.LENGTH_SHORT).show();
             }
         });
-
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 deleteCount++;
                 logHandler.deleteRow(Integer.toString(deleteCount));
-
                 output.setText(deleteCount + " deleted!");
-
             }
         });
-
         return view;
-
     }
-
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
     }
-
     @Override
     public void onStart() {
         Log.d("HistoryFragment", "onStart() method called");
         super.onStart();
     }
-
     @Override
     public void onPause() {
         Log.d("HistoryFragment", "onPause() method called");
         super.onPause();
     }
-
     @Override
     public void onResume() {
         Log.d("HistoryFragment", "onResume() method called");
         super.onResume();
     }
-
 //    private String getAllLogs(LogBaseHelper l) {
 //        SQLiteDatabase db = l.getReadableDatabase();
 //        String[] columns = {
@@ -161,5 +172,4 @@ public class HistoryFragment extends Fragment {
 //        Cursor cursor = db.query(MyDatabaseHelper.MY_TABLE, columns, selection,
 //                null, null, null, null, null);
 //    }
-
-}
+}*/
