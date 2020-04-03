@@ -5,7 +5,6 @@
 package com.example.hucklebucklebuckeye;
 
 import android.os.Handler;
-import android.os.SystemClock;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -43,7 +42,7 @@ public class Stopwatch {
                     seconds++;
                 }
 
-                handler.postDelayed((Runnable) this, 1000);
+                handler.postDelayed(this, 1000);
             }
         });
     }
