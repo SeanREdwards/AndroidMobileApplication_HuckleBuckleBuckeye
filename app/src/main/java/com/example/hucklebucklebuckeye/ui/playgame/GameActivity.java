@@ -87,6 +87,8 @@ public class GameActivity extends AppCompatActivity {
         //step counter setup
         stepView = findViewById(R.id.steps_view);
         steps = 0;
+        //set initial steps taken text
+        stepView.setText("Steps Taken: " + steps);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
         SensorEventListener stepListener = new SensorEventListener() {
@@ -330,7 +332,6 @@ public class GameActivity extends AppCompatActivity {
         Log.d("GameActivity", "onDestroy() method called");
         this.isCancelled = true;
         this.testTask.cancel(true);
-        Toast.makeText(this, "Total Steps: " + steps, Toast.LENGTH_LONG).show();
     }
 }
 
