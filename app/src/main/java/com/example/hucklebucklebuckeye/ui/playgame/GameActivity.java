@@ -1,7 +1,11 @@
 package com.example.hucklebucklebuckeye.ui.playgame;
+import android.animation.ArgbEvaluator;
+import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -38,6 +42,7 @@ import android.os.Looper;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -60,7 +65,10 @@ public class GameActivity extends AppCompatActivity {
     private TextView stopwatchView;
     private TextView stepView;
     MapFragment mapFragment;
-
+    private RelativeLayout background;
+    private final int blue = Color.parseColor("#0000ff");
+    private final int red = Color.parseColor("#ff0000");
+    private int currentColor;
     //For Stopwatch
     Stopwatch stopwatch;
 
@@ -77,8 +85,10 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         isCancelled = false;
+        background = findViewById(R.id.container);
+        background.setBackgroundColor(Color.parseColor("#ff0000"));
         Game game = new Game(getCurrentLocation());
-
+        toast.makeText(this, "", Toast.LENGTH_SHORT);
         //Stopwatch setup
         stopwatchView = findViewById(R.id.stopwatch_view);
         stopwatch = new Stopwatch(stopwatchView);
@@ -108,8 +118,9 @@ public class GameActivity extends AppCompatActivity {
             Toast.makeText(this, "Step Detector not found!", Toast.LENGTH_SHORT).show();
         }
 
-        Log.d("TEST", "onCreate: Line before Async task");
-        toast = Toast.makeText(this, "Starting game!", Toast.LENGTH_SHORT);
+        currentColor = 0;
+        if (background.getBackground() instanceof ColorDrawable){
+            currentColor = ((ColorDrawable) background.getBackground()).getColor();}
 
         this.testTask= new LocationUpdateTask();
         testTask.execute(game);
@@ -194,10 +205,10 @@ public class GameActivity extends AppCompatActivity {
             destination = game.getDestinationCoords();
 
 
+
             handler.postDelayed( runnable = new Runnable() {
                 public void run() {
                     if (!isCancelled){
-
                         handler.postDelayed(runnable, tick);
                         currentLocation = getCurrentLocation();
                         Log.d("HERE IT IS location is", "here is " + lat);
@@ -205,26 +216,52 @@ public class GameActivity extends AppCompatActivity {
                         distanceToDestination = game.calcDistance(new Coordinates("current ", lat, lon));
                         if (distanceToDestination < previousDistance){
                             updateMessage.setText("Hotter...");
+                            //background.setBackgroundColor(red);
+
+                            if (currentColor != red){
+                                transitionBackground(currentColor, red);
+                            }
+
+                            currentColor = red;
                         } else if (distanceToDestination > previousDistance) {
                             updateMessage.setText("Colder...");
+                            //background.setBackgroundColor(blue);
+                            if (currentColor != blue){
+                                transitionBackground(currentColor, blue);
+                            }
+                            currentColor = blue;
                         }
                         previousDistance = distanceToDestination;
                         foundDestination = game.destinationReached(new Coordinates("current ", lat, lon));
                         if (!foundDestination ){
-                            toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " ft");
+                            //toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " ft");
 
                         } else{
                             stopwatch.Stop();
-                            toast.setText("You found your destination!!!! Distance Away: " + distanceToDestination + " ft");
+                            //toast.setText("You found your destination!!!! Distance Away: " + distanceToDestination + " ft");
                             addLog();
                             handler.removeCallbacks(runnable);
                         }
-                        toast.show();
+//                        toast.show();
                     }
                 }
             }, tick);
 
             return true;
+        }
+
+        private void transitionBackground(int colorFrom, int colorTo){
+            ValueAnimator colorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), colorFrom, colorTo);
+            colorAnimation.setDuration(250); // milliseconds
+            colorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+
+                @Override
+                public void onAnimationUpdate(ValueAnimator animator) {
+                    background.setBackgroundColor((int) animator.getAnimatedValue());
+                }
+
+            });
+            colorAnimation.start();
         }
 
         @Override
@@ -255,9 +292,6 @@ public class GameActivity extends AppCompatActivity {
                     lat = location.getLatitude();
                     Log.d("location is", "here is" + lat);
                     lon = location.getLongitude();
-                    Log.d("location is", "here is " + lon);
-                    //Log.d("latitude: ", location.getLatitude()+"");
-                    //Log.d("longitude: ", location.getLongitude()+"");
                 }
             }
         }
@@ -330,7 +364,6 @@ public class GameActivity extends AppCompatActivity {
         Log.d("GameActivity", "onDestroy() method called");
         this.isCancelled = true;
         this.testTask.cancel(true);
-        Toast.makeText(this, "Total Steps: " + steps, Toast.LENGTH_LONG).show();
     }
 }
 
