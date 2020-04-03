@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.hucklebucklebuckeye.Coordinates;
 import com.example.hucklebucklebuckeye.Game;
 import com.example.hucklebucklebuckeye.R;
+import com.example.hucklebucklebuckeye.Stopwatch;
 import com.example.hucklebucklebuckeye.model.AccountDBHelper;
 import com.example.hucklebucklebuckeye.model.LogBaseHelper;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -54,6 +55,8 @@ public class GameActivity extends AppCompatActivity {
     private TextView updateMessage;
     MapFragment mapFragment;
 
+    Stopwatch stopwatch;
+
     FusedLocationProviderClient mFusedLocationClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +65,10 @@ public class GameActivity extends AppCompatActivity {
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         isCancelled = false;
         Game game = new Game(getCurrentLocation());
+        stopwatch = new Stopwatch();
+        stopwatch.getMinutes();
+        stopwatch.getSeconds();
+        stopwatch.getMiliseconds();
 
         Log.d("TEST", "onCreate: Line before Async task");
         toast = Toast.makeText(this, "Starting game!", Toast.LENGTH_SHORT);
