@@ -101,6 +101,10 @@ public class Game {
         return ((r * c) * ftPerMile);
     }
 
+    public static double stepsToMiles(double steps){
+        return steps/2200;
+    }
+
     public static void endGame(){
         //TODO: stop timer
         //nullify location

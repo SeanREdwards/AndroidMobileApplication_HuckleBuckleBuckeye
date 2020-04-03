@@ -1,7 +1,10 @@
 package com.example.hucklebucklebuckeye.ui.playgame;
+import android.animation.ArgbEvaluator;
+import android.animation.ValueAnimator;
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
-import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -35,16 +38,14 @@ import android.content.pm.PackageManager;
 import android.location.LocationManager;
 import android.os.Handler;
 import android.os.Looper;
-import android.provider.Settings;
-import android.util.Log;
-import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Date;
-import java.util.concurrent.ExecutionException;
+
 
 
 
@@ -52,14 +53,20 @@ public class GameActivity extends AppCompatActivity {
     public static double lat;
     public static double lon;
     Toast toast;
-    String s = "";
     int PERMISSION_ID = 44;
-    private AsyncTask<Game, String, Boolean> testTask;
+    private AsyncTask<Game, String, Boolean> locationUpdateTask;
     private boolean isCancelled;
+
     private TextView updateMessage;
     private TextView stopwatchView;
     private TextView stepView;
     MapFragment mapFragment;
+    private RelativeLayout background;
+
+    //Background color setup
+    private final int blue = Color.parseColor("#add8e6");
+    private final int red = Color.parseColor("#da9b86");
+    private int currentColor;
 
     //For Stopwatch
     Stopwatch stopwatch;
@@ -77,8 +84,10 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         isCancelled = false;
+        background = findViewById(R.id.container);
+        background.setBackgroundColor(red);
         Game game = new Game(getCurrentLocation());
-
+        toast.makeText(this, "", Toast.LENGTH_SHORT);
         //Stopwatch setup
         stopwatchView = findViewById(R.id.stopwatch_view);
         stopwatch = new Stopwatch(stopwatchView);
@@ -103,20 +112,23 @@ public class GameActivity extends AppCompatActivity {
 
             }
         };
-
+        //Setup pedometer values
         if (stepSensor != null){
             sensorManager.registerListener(stepListener, stepSensor, sensorManager.SENSOR_DELAY_UI);
         }else{
             Toast.makeText(this, "Step Detector not found!", Toast.LENGTH_SHORT).show();
         }
 
-        Log.d("TEST", "onCreate: Line before Async task");
-        toast = Toast.makeText(this, "Starting game!", Toast.LENGTH_SHORT);
+        //Get initial background color
+        currentColor = 0;
+        if (background.getBackground() instanceof ColorDrawable){
+            currentColor = ((ColorDrawable) background.getBackground()).getColor();}
 
-        this.testTask= new LocationUpdateTask();
-        testTask.execute(game);
-        Log.d("TEST", this.s);
+        //start location update asyncronous task
+        this.locationUpdateTask = new LocationUpdateTask();
+        locationUpdateTask.execute(game);
 
+        //commit mapFragment for mapview
         mapFragment = MapFragment.newInstance();
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
@@ -124,6 +136,7 @@ public class GameActivity extends AppCompatActivity {
                     .commitNow();
         }
 
+        //initialize update message TextView
        updateMessage = findViewById(R.id.fragment_below_textview);
        updateMessage.setText("Play game!");
     }
@@ -179,12 +192,13 @@ public class GameActivity extends AppCompatActivity {
             ContentValues values = new ContentValues();
             LocalDate date = LocalDate.now();
             SimpleDateFormat localDateFormat = new SimpleDateFormat("HH:mm:ss");
+            double miles = Game.stepsToMiles(steps);
             String time = localDateFormat.format(new Date());
                 values.put("ACID", AccountDBHelper.getId());
-                values.put("STEPS", 15);
+                values.put("STEPS", steps);
                 values.put("DATE", date.toString());
                 values.put("MAP", destination.getName());
-                values.put("DISTANCE", 10);
+                values.put("DISTANCE", miles);
                 values.put("TIME", time);
                 values.put("COMPLETED", true);
                 logHandler.insertData(values);
@@ -196,10 +210,10 @@ public class GameActivity extends AppCompatActivity {
             destination = game.getDestinationCoords();
 
 
+
             handler.postDelayed( runnable = new Runnable() {
                 public void run() {
                     if (!isCancelled){
-
                         handler.postDelayed(runnable, tick);
                         currentLocation = getCurrentLocation();
                         Log.d("HERE IT IS location is", "here is " + lat);
@@ -207,26 +221,52 @@ public class GameActivity extends AppCompatActivity {
                         distanceToDestination = game.calcDistance(new Coordinates("current ", lat, lon));
                         if (distanceToDestination < previousDistance){
                             updateMessage.setText("Hotter...");
+                            //background.setBackgroundColor(red);
+
+                            if (currentColor != red){
+                                transitionBackground(currentColor, red);
+                            }
+
+                            currentColor = red;
                         } else if (distanceToDestination > previousDistance) {
                             updateMessage.setText("Colder...");
+                            //background.setBackgroundColor(blue);
+                            if (currentColor != blue){
+                                transitionBackground(currentColor, blue);
+                            }
+                            currentColor = blue;
                         }
                         previousDistance = distanceToDestination;
                         foundDestination = game.destinationReached(new Coordinates("current ", lat, lon));
                         if (!foundDestination ){
-                            toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " ft");
+                            //toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " ft");
 
                         } else{
                             stopwatch.Stop();
-                            toast.setText("You found your destination!!!! Distance Away: " + distanceToDestination + " ft");
+                            //toast.setText("You found your destination!!!! Distance Away: " + distanceToDestination + " ft");
                             addLog();
                             handler.removeCallbacks(runnable);
                         }
-                        toast.show();
+//                        toast.show();
                     }
                 }
             }, tick);
 
             return true;
+        }
+
+        private void transitionBackground(int colorFrom, int colorTo){
+            ValueAnimator colorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), colorFrom, colorTo);
+            colorAnimation.setDuration(300); // milliseconds
+            colorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+
+                @Override
+                public void onAnimationUpdate(ValueAnimator animator) {
+                    background.setBackgroundColor((int) animator.getAnimatedValue());
+                }
+
+            });
+            colorAnimation.start();
         }
 
         @Override
@@ -257,9 +297,6 @@ public class GameActivity extends AppCompatActivity {
                     lat = location.getLatitude();
                     Log.d("location is", "here is" + lat);
                     lon = location.getLongitude();
-                    Log.d("location is", "here is " + lon);
-                    //Log.d("latitude: ", location.getLatitude()+"");
-                    //Log.d("longitude: ", location.getLongitude()+"");
                 }
             }
         }
@@ -331,7 +368,8 @@ public class GameActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d("GameActivity", "onDestroy() method called");
         this.isCancelled = true;
-        this.testTask.cancel(true);
+        this.locationUpdateTask.cancel(true);
+
     }
 }
 
