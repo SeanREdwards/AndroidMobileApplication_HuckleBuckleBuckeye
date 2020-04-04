@@ -90,7 +90,8 @@ public class GameActivity extends AppCompatActivity {
         background = findViewById(R.id.container);
         background.setBackgroundColor(white);
         Game game = new Game(getCurrentLocation());
-        toast.makeText(this, "", Toast.LENGTH_SHORT);
+        toast = Toast.makeText(this, "", Toast.LENGTH_LONG);
+        toast.setText("Good Luck!");
         //Stopwatch setup
         stopwatchView = findViewById(R.id.stopwatch_view);
         stopwatch = new Stopwatch(stopwatchView);
@@ -126,6 +127,8 @@ public class GameActivity extends AppCompatActivity {
         currentColor = 0;
         if (background.getBackground() instanceof ColorDrawable){
             currentColor = ((ColorDrawable) background.getBackground()).getColor();}
+
+        toast.show();
 
         //start location update asyncronous task
         this.locationUpdateTask = new LocationUpdateTask();
@@ -230,11 +233,12 @@ public class GameActivity extends AppCompatActivity {
 
                         } else{
                             stopwatch.Stop();
-                            //toast.setText("You found your destination!!!! Distance Away: " + distanceToDestination + " ft");
-
+                            toast.setText("Congratulations! You found the destination!!!!");
+                            toast.show();
+                            addLog();
                             handler.removeCallbacks(runnable);
                         }
-//                        toast.show();
+
                     }
                 }
             }, tick);
@@ -264,7 +268,7 @@ public class GameActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Boolean found) {
-            addLog();
+            //addLog();
         }
     }
     private void addLog(){
