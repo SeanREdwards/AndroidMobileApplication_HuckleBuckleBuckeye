@@ -8,12 +8,14 @@ import android.util.Log;
 import com.example.hucklebucklebuckeye.R;
 
 public class ProfileActivity extends AppCompatActivity {
+    private String usernameStr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         Log.d("ProfileActivity", "onCreate(Bundle) method called");
+        usernameStr = "Username: ";
     }
 
     protected void onStart() {
