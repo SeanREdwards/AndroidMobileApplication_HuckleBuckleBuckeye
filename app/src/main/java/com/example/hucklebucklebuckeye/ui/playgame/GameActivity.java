@@ -231,7 +231,7 @@ public class GameActivity extends AppCompatActivity {
                         } else{
                             stopwatch.Stop();
                             //toast.setText("You found your destination!!!! Distance Away: " + distanceToDestination + " ft");
-
+                            addLog();
                             handler.removeCallbacks(runnable);
                         }
 //                        toast.show();
@@ -264,7 +264,7 @@ public class GameActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Boolean found) {
-            addLog();
+            //addLog();
         }
     }
     private void addLog(){

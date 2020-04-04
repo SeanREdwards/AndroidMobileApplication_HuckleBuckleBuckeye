@@ -16,6 +16,7 @@ public class AccountDBHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
     private static int userId;
+    private static String username;
 
     //Database Name
     public static final String DATABASE_NAME = "huckle.db";
@@ -53,12 +54,23 @@ public class AccountDBHelper extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put(COLUMN_USERNAME, username);
         contentValues.put(COLUMN_PASSWORD, password);
+        this.username = username;
        long result = db.insert(TABLE_NAME, null, contentValues);
        if (result == -1) {
            return false;
        } else {
            return true;
        }
+    }
+
+    public void updatePassword(String password){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COLUMN_USERNAME, this.username);
+        contentValues.put(COLUMN_PASSWORD, password);
+        String[] args = {this.username};
+        db.update(TABLE_NAME, contentValues, "username = ?", args);
+        //long result = db.insert(TABLE_NAME, null, contentValues);
     }
 
     public boolean userExists(String username) {
@@ -91,6 +103,7 @@ public class AccountDBHelper extends SQLiteOpenHelper {
     public static int getId(){
         return userId;
     }
+    public static String getUsername(){return username;}
     public boolean userValid(String username, String password) {
         boolean exists = false;
         String[] columns = {COLUMN_ID};

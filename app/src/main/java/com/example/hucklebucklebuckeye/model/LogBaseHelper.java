@@ -77,19 +77,6 @@ public class LogBaseHelper extends SQLiteOpenHelper {
 
     }
 
-//    public List<History> getHistorys() {
-//        return mHistory;
-//    }
-
-//    public History getHistory(String ACID) {
-//        for (History history : mHistory) {
-//            if (history.getACID().equals(ACID)) {
-//                return history;
-//            }
-//        }
-//        return null;
-//    }
-
     /*returns history list for current user*/
     public List<History> getUserHistory(){
         List<History> userHistory = new ArrayList<>();
@@ -131,34 +118,6 @@ public class LogBaseHelper extends SQLiteOpenHelper {
     public boolean insertData(ContentValues contentValues) {
         SQLiteDatabase db = this.getWritableDatabase();
         long result = db.insert(TABLE_NAME, null, contentValues);
-
-//        Map<String,String> data = new HashMap<>();
-//
-//        for (String key : contentValues.keySet()) {
-//            data.put(key, contentValues.get(key).toString());
-//        }
-//
-//        Log.d("heree it is", "hi " + data.get("ACID"));
-        if (result == -1) {
-            return false;
-        } else {
-            return true;
-        }
-    }
-    public boolean updateData(ContentValues contentValues) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        long result = db.update(TABLE_NAME, contentValues, "uuid = 1", null);
-        //long result = db.insert(TABLE_NAME, null, contentValues);
-        if (result == -1) {
-            return false;
-        } else {
-            return true;
-        }
-    }
-    public boolean deleteRow(String temporary)
-    {
-        SQLiteDatabase db = this.getWritableDatabase();
-        long result = db.delete(TABLE_NAME,  "uuid = " + temporary, null);
         if (result == -1) {
             return false;
         } else {
