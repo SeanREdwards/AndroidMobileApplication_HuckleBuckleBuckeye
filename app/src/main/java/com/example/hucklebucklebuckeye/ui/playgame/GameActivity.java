@@ -56,6 +56,7 @@ public class GameActivity extends AppCompatActivity {
     int PERMISSION_ID = 44;
     private AsyncTask<Game, String, Boolean> locationUpdateTask;
     private boolean isCancelled;
+    private String destinationName;
 
     private TextView updateMessage;
     private TextView stopwatchView;
@@ -66,10 +67,12 @@ public class GameActivity extends AppCompatActivity {
     //Background color setup
     private final int blue = Color.parseColor("#add8e6");
     private final int red = Color.parseColor("#da9b86");
+    private final int white = Color.parseColor("#ffffff");
     private int currentColor;
 
     //For Stopwatch
     Stopwatch stopwatch;
+
 
     //For StepCounter
     private SensorManager sensorManager;
@@ -85,7 +88,7 @@ public class GameActivity extends AppCompatActivity {
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         isCancelled = false;
         background = findViewById(R.id.container);
-        background.setBackgroundColor(red);
+        background.setBackgroundColor(white);
         Game game = new Game(getCurrentLocation());
         toast.makeText(this, "", Toast.LENGTH_SHORT);
         //Stopwatch setup
@@ -187,28 +190,12 @@ public class GameActivity extends AppCompatActivity {
 
         }
 
-        private void addLog(){
-            final LogBaseHelper logHandler = new LogBaseHelper(getApplicationContext());
-            ContentValues values = new ContentValues();
-            LocalDate date = LocalDate.now();
-            SimpleDateFormat localDateFormat = new SimpleDateFormat("HH:mm:ss");
-            double miles = Game.stepsToMiles(steps);
-            String time = localDateFormat.format(new Date());
-                values.put("ACID", AccountDBHelper.getId());
-                values.put("STEPS", steps);
-                values.put("DATE", date.toString());
-                values.put("MAP", destination.getName());
-                values.put("DISTANCE", miles);
-                values.put("TIME", time);
-                values.put("COMPLETED", true);
-                logHandler.insertData(values);
-        }
         @Override
         protected Boolean doInBackground(Game... games) {
 
             final Game game = games[0];
             destination = game.getDestinationCoords();
-
+            destinationName = destination.getName();
 
 
             handler.postDelayed( runnable = new Runnable() {
@@ -244,7 +231,7 @@ public class GameActivity extends AppCompatActivity {
                         } else{
                             stopwatch.Stop();
                             //toast.setText("You found your destination!!!! Distance Away: " + distanceToDestination + " ft");
-                            addLog();
+
                             handler.removeCallbacks(runnable);
                         }
 //                        toast.show();
@@ -277,8 +264,24 @@ public class GameActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Boolean found) {
-
+            addLog();
         }
+    }
+    private void addLog(){
+        final LogBaseHelper logHandler = new LogBaseHelper(getApplicationContext());
+        ContentValues values = new ContentValues();
+        LocalDate date = LocalDate.now();
+        //SimpleDateFormat localDateFormat = new SimpleDateFormat("HH:mm:ss");
+        double dist = Game.stepsToFeet(steps);
+        String time = stopwatch.getTime();
+        values.put("ACID", AccountDBHelper.getId());
+        values.put("STEPS", steps);
+        values.put("DATE", date.toString());
+        values.put("MAP", destinationName);
+        values.put("DISTANCE", dist);
+        values.put("TIME", time);
+        values.put("COMPLETED", true);
+        logHandler.insertData(values);
     }
 
     /*
@@ -370,6 +373,8 @@ public class GameActivity extends AppCompatActivity {
         this.isCancelled = true;
         this.locationUpdateTask.cancel(true);
 
+        //This is going to be removed later, but we are using it for testing purposes
+        addLog();
     }
 }
 

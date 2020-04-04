@@ -1,49 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/history_ACID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="History Title"/>
 
-    <TextView
-        android:id="@+id/history_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="History Date"/>
-
-    <TextView
-        android:id="@+id/history_steps"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="History Date"/>
 
     <TextView
         android:id="@+id/history_map"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="History Date"/>
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop = "30dp"
+        android:textSize="20dp"
+        android:text="Temp"/>
+
+        <TextView
+            android:id="@+id/history_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Date:"/>
+
+    <TextView
+        android:id="@+id/history_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Steps taken: "/>
+
 
     <TextView
         android:id="@+id/history_distance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="History Date"/>
+        android:layout_marginLeft="30dp"
+        android:text="Distance traveled:"/>
 
     <TextView
         android:id="@+id/history_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="History Date"/>
-
-    <TextView
-        android:id="@+id/history_completed"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="History Date"/>
+        android:layout_marginLeft="30dp"
+        android:text="Time:"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#808080"
+        android:layout_marginBottom= "10dp"/>
+<!--    <TextView-->
+<!--        android:id="@+id/history_completed"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:text="History Date"/>-->
 
 
 

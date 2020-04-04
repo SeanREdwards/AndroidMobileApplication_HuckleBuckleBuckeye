@@ -41,7 +41,7 @@ public class HistoryListFragment extends Fragment {
     private void updateUI() {
         LogBaseHelper logBaseHelper =
                 LogBaseHelper.get(getActivity());
-        List<History> history = logBaseHelper.getHistorys();
+        List<History> history = logBaseHelper.getUserHistory();
         mAdapter = new HistoryAdapter(history);
         mHistoryRecyclerView.setAdapter(mAdapter);
     }
@@ -50,39 +50,31 @@ public class HistoryListFragment extends Fragment {
 
     private class HistoryHolder extends RecyclerView.ViewHolder {
 
-        private TextView mACIDTextView;
         private TextView mDateTextView;
         private TextView mStepsTextView;
         private TextView mMapTextView;
         private TextView mDistanceTextView;
         private TextView mTimeTextView;
-        private TextView mCompletedTextView;
         private History mHistory;
 
         public HistoryHolder(LayoutInflater inflater,
                              ViewGroup parent) {
             super(inflater.inflate(R.layout.list_item_history, parent, false));
-
-            mACIDTextView = (TextView) itemView.findViewById(R.id.history_ACID);
             mDateTextView = (TextView) itemView.findViewById(R.id.history_date);
             mStepsTextView = (TextView) itemView.findViewById(R.id.history_steps);
             mMapTextView = (TextView) itemView.findViewById(R.id.history_map);
             mDistanceTextView = (TextView) itemView.findViewById(R.id.history_distance);
             mTimeTextView = (TextView) itemView.findViewById(R.id.history_time);
-            mCompletedTextView = (TextView) itemView.findViewById(R.id.history_completed);
-
-
         }
 
-        public void bind(History crime) {
-            mHistory = crime;
-            mACIDTextView.setText(mHistory.getACID());
-            mDateTextView.setText(mHistory.getDate());
-            mStepsTextView.setText(mHistory.getSteps());
+        public void bind(History h) {
+            mHistory = h;
+            mDateTextView.setText("Date: " + mHistory.getDate());
+            mStepsTextView.setText("Steps taken: " + mHistory.getSteps());
             mMapTextView.setText(mHistory.getMap());
-            mDistanceTextView.setText(mHistory.getDistance());
-            mTimeTextView.setText(mHistory.getTime());
-            mCompletedTextView.setText(mHistory.getCompleted());
+            mDistanceTextView.setText("Distance traveled: " + mHistory.getDistance() + " feet");
+            mTimeTextView.setText("Time: " + mHistory.getTime());
+            //mCompletedTextView.setText(mHistory.getCompleted());
         }
 
     }
@@ -102,8 +94,8 @@ public class HistoryListFragment extends Fragment {
 
         @Override
         public void onBindViewHolder(HistoryHolder holder, int position) {
-            History crime = mHistory.get(position);
-            holder.bind(crime);
+            History currentEntry = mHistory.get(position);
+            holder.bind(currentEntry);
         }
 
         @Override

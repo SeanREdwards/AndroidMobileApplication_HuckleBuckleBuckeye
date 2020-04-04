@@ -2,6 +2,7 @@ package com.example.hucklebucklebuckeye.model;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -47,7 +48,7 @@ public class LogBaseHelper extends SQLiteOpenHelper {
     }*/
 
     SQLiteDatabase database;
-
+    private int entryCount;
     public static LogBaseHelper get(Context context) {
         if (sLogBaseHelper == null) {
             sLogBaseHelper = new LogBaseHelper(context);
@@ -59,57 +60,61 @@ public class LogBaseHelper extends SQLiteOpenHelper {
     public LogBaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
 
-        SQLiteDatabase db = this.getWritableDatabase();
+        this.database = this.getWritableDatabase();
+        this.database.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " ( " +
+                UUID + " INTEGER PRIMARY KEY, " + ACID + " UUID," + DATE + " DATE, " + STEPS + " " +
+                "INTEGER, " + MAP + " BITMAP, " + DISTANCE + " REAL, " + TIME + " VARCHAR(10), " +
+                COMPLETED + " BOOLEAN, " + " FOREIGN KEY(ACID) REFERENCES account(id))");
+        entryCount = 0;
 
-        LocalDate date = LocalDate.now();
-        ContentValues values = new ContentValues();
-        SimpleDateFormat localDateFormat = new SimpleDateFormat("HH:mm:ss");
-        String time = localDateFormat.format(new Date());
-        values.put("ACID", AccountDBHelper.getId());
-        values.put("STEPS", 12);
-        values.put("DATE", date.toString());
-        values.put("MAP", "");
-        values.put("DISTANCE", 1.3);
-        values.put("TIME", time);
-        values.put("COMPLETED", false);
 
-        long result = db.insert(TABLE_NAME, null, values);
+        mHistory = getUserHistory();
+        for (int i = 0; i < entryCount; i++) {
 
-        Map<String,String> data = new HashMap<>();
-
-        for (String key : values.keySet()) {
-            data.put(key, values.get(key).toString());
         }
+        entryCount = 0;
 
-        Log.d("heree it is", "hi " + values.get("DISTANCE"));
 
-        mHistory = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
-            History history = new History();
-            history.setACID(values.get("ACID").toString());
-            history.setSteps(values.get("STEPS").toString());
-            history.setDate(values.get("DATE").toString());
-            history.setMap(values.get("MAP").toString());
-            history.setDistance(values.get("DISTANCE").toString());
-            history.setTime(values.get("TIME").toString());
-            history.setCompleted(values.get("COMPLETED").toString());
-            /*Log.d("sadada", "here is" + history);*/
-            mHistory.add(history);
-        }
-
-        database = getWritableDatabase();
-        database.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_NAME + " ( " + UUID + " INTEGER PRIMARY KEY, " + ACID + " UUID," + DATE + " DATE, " + STEPS + " INTEGER, " + MAP + " BITMAP, " + DISTANCE + " INTEGER, " + TIME + " INTEGER, " + COMPLETED + " BOOLEAN, " + " FOREIGN KEY(ACID) REFERENCES account(id))");
     }
 
-    public List<History> getHistorys() {
-        return mHistory;
-    }
+//    public List<History> getHistorys() {
+//        return mHistory;
+//    }
 
-    public History getHistory(String ACID) {
-        for (History history : mHistory) {
-            if (history.getACID().equals(ACID)) { return history;
-            } }
-        return null;
+//    public History getHistory(String ACID) {
+//        for (History history : mHistory) {
+//            if (history.getACID().equals(ACID)) {
+//                return history;
+//            }
+//        }
+//        return null;
+//    }
+
+    /*returns history list for current user*/
+    public List<History> getUserHistory(){
+        List<History> userHistory = new ArrayList<>();
+
+        String[] columns = {STEPS, DATE, MAP, DISTANCE, TIME};
+        String whereClause = ACID + " = ? ";
+        String[] whereArgs = {AccountDBHelper.getId()+""};
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.query(TABLE_NAME, columns, whereClause, whereArgs, "", "", "");
+
+        if (cursor != null){
+            if (cursor.moveToFirst()){
+                do {
+                    History h = new History();
+                    h.setSteps(cursor.getString(cursor.getColumnIndex(STEPS)));
+                    h.setDate(cursor.getString(cursor.getColumnIndex(DATE)));
+                    h.setMap(cursor.getString(cursor.getColumnIndex(MAP)));
+                    h.setDistance(cursor.getString(cursor.getColumnIndex(DISTANCE)));
+                    h.setTime(cursor.getString(cursor.getColumnIndex(TIME)));
+                    userHistory.add(h);
+                    entryCount++;
+                } while (cursor.moveToNext());
+            }
+        }
+        return userHistory;
     }
 
     @Override
@@ -127,13 +132,13 @@ public class LogBaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         long result = db.insert(TABLE_NAME, null, contentValues);
 
-        Map<String,String> data = new HashMap<>();
-
-        for (String key : contentValues.keySet()) {
-            data.put(key, contentValues.get(key).toString());
-        }
-
-        Log.d("heree it is", "hi " + data.get("ACID"));
+//        Map<String,String> data = new HashMap<>();
+//
+//        for (String key : contentValues.keySet()) {
+//            data.put(key, contentValues.get(key).toString());
+//        }
+//
+//        Log.d("heree it is", "hi " + data.get("ACID"));
         if (result == -1) {
             return false;
         } else {
