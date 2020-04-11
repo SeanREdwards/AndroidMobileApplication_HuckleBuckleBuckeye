@@ -7,8 +7,7 @@ public class Game {
     private static Coordinates destinationLocation;
     private static Coordinates currentLocation;
 
-    //initial distance from starting location to destination in miles.
-    private double initialDistance;
+    private boolean isWon;
 
     //TODO: this is about 100 feet from the location. we might want to tweak this when we're further along
     final private static double CLOSE_ENOUGH_LATITUDE = 0.00002756515 * 10;
@@ -31,10 +30,16 @@ public class Game {
     public Game(Coordinates initial){
         Locations locations = new Locations();
         destinationLocation = locations.setLocation();
-        initialDistance = this.calcDistance(initial);
+        isWon = false;
     }
 
+    public void updateWin(){
+        isWon = true;
+    }
 
+    public boolean Status(){
+        return isWon;
+    }
 
     public static void logLocation(){
         Log.d("GAME location name: ", destinationLocation.getName());

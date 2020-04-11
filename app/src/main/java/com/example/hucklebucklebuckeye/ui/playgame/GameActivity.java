@@ -45,17 +45,18 @@ import android.widget.Toast;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Date;
-
-
+import java.util.concurrent.ExecutionException;
 
 
 public class GameActivity extends AppCompatActivity {
+    private Game game;
     public static double lat;
     public static double lon;
     Toast toast;
     int PERMISSION_ID = 44;
     private AsyncTask<Game, String, Boolean> locationUpdateTask;
     private boolean isCancelled;
+    private boolean gameWon;
     private String destinationName;
 
     private TextView updateMessage;
@@ -83,13 +84,14 @@ public class GameActivity extends AppCompatActivity {
     FusedLocationProviderClient mFusedLocationClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        gameWon = false;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         isCancelled = false;
         background = findViewById(R.id.container);
         background.setBackgroundColor(white);
-        Game game = new Game(getCurrentLocation());
+        game = new Game(getCurrentLocation());
         toast = Toast.makeText(this, "", Toast.LENGTH_LONG);
         toast.setText("Good Luck!");
         //Stopwatch setup
@@ -235,6 +237,7 @@ public class GameActivity extends AppCompatActivity {
                             stopwatch.Stop();
                             toast.setText("Congratulations! You found the destination!!!!");
                             toast.show();
+                            game.updateWin();
                             addLog();
                             handler.removeCallbacks(runnable);
                         }
@@ -243,7 +246,7 @@ public class GameActivity extends AppCompatActivity {
                 }
             }, tick);
 
-            return true;
+            return foundDestination;
         }
 
         private void transitionBackground(int colorFrom, int colorTo){
@@ -376,6 +379,7 @@ public class GameActivity extends AppCompatActivity {
         Log.d("GameActivity", "onDestroy() method called");
         this.isCancelled = true;
         this.locationUpdateTask.cancel(true);
+        Toast.makeText(this, "FUCK IT DID WE WIN?: " + game.Status(), Toast.LENGTH_LONG).show();
 
         //This is going to be removed later, but we are using it for testing purposes
         addLog();
