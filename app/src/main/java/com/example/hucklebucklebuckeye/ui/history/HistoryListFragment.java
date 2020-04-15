@@ -73,7 +73,7 @@ public class HistoryListFragment extends Fragment {
             mStepsTextView.setText("Steps taken: " + mHistory.getSteps());
             mMapTextView.setText(mHistory.getMap());
             mDistanceTextView.setText("Distance traveled: " + mHistory.getDistance() + " feet");
-            mTimeTextView.setText("Time: " + mHistory.getTime());
+            mTimeTextView.setText("Time Elapsed: " + mHistory.getTime());
             //mCompletedTextView.setText(mHistory.getCompleted());
         }
 

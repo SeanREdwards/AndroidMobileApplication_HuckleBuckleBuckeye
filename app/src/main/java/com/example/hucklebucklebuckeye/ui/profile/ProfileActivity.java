@@ -14,9 +14,6 @@ import android.widget.Toast;
 
 import com.example.hucklebucklebuckeye.R;
 import com.example.hucklebucklebuckeye.model.AccountDBHelper;
-import com.example.hucklebucklebuckeye.ui.login.LoginFormState;
-import com.example.hucklebucklebuckeye.ui.login.LoginViewModel;
-import com.example.hucklebucklebuckeye.ui.login.LoginViewModelFactory;
 
 public class ProfileActivity extends AppCompatActivity {
     private TextView newPasswordText;

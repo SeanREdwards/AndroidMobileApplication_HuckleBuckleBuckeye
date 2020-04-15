@@ -41,15 +41,11 @@ import android.os.Looper;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.Date;
-import java.util.concurrent.ExecutionException;
 
 
 public class GameActivity extends AppCompatActivity {
-    private Game game;
+    private static Game game;
     public static double lat;
     public static double lon;
     Toast toast;
@@ -58,7 +54,7 @@ public class GameActivity extends AppCompatActivity {
     private boolean isCancelled;
     private boolean gameWon;
     private String destinationName;
-
+    private static boolean gameInProg;
     private TextView updateMessage;
     private TextView stopwatchView;
     private TextView stepView;
@@ -89,19 +85,32 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         isCancelled = false;
+
+        //Message setup
         background = findViewById(R.id.container);
-        background.setBackgroundColor(white);
-        game = new Game(getCurrentLocation());
+        if(!gameInProg){
+            background.setBackgroundColor(white);
+        } else {
+            background.setBackgroundColor(game.getCurrentColor());
+        }
         toast = Toast.makeText(this, "", Toast.LENGTH_LONG);
-        toast.setText("Good Luck!");
+
         //Stopwatch setup
         stopwatchView = findViewById(R.id.stopwatch_view);
-        stopwatch = new Stopwatch(stopwatchView);
+        if (gameInProg){
+            stopwatch = new Stopwatch(stopwatchView, game.getTime());
+        } else {
+            stopwatch = new Stopwatch(stopwatchView);
+        }
         stopwatch.Start();
 
         //step counter setup
         stepView = findViewById(R.id.steps_view);
-        steps = 0;
+        if (gameInProg){
+            steps = game.getStepCount();
+        } else {
+            steps = 0;
+        }
         //set initial steps taken text
         stepView.setText("Steps Taken: " + steps);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -128,9 +137,24 @@ public class GameActivity extends AppCompatActivity {
         //Get initial background color
         currentColor = 0;
         if (background.getBackground() instanceof ColorDrawable){
-            currentColor = ((ColorDrawable) background.getBackground()).getColor();}
+            currentColor = ((ColorDrawable) background.getBackground()).getColor();
+        }
 
-        toast.show();
+        //initialize update message TextView
+        updateMessage = findViewById(R.id.fragment_below_textview);
+        if (gameInProg){
+            updateMessage.setText(game.getMessage());
+        } else {
+            updateMessage.setText("Play game!");
+        }
+
+        if (gameInProg) {
+        } else {
+            toast.setText("Good Luck!");
+            toast.show();
+            gameInProg = true;
+            game = new Game(getCurrentLocation());
+        }
 
         //start location update asyncronous task
         this.locationUpdateTask = new LocationUpdateTask();
@@ -144,9 +168,6 @@ public class GameActivity extends AppCompatActivity {
                     .commitNow();
         }
 
-        //initialize update message TextView
-       updateMessage = findViewById(R.id.fragment_below_textview);
-       updateMessage.setText("Play game!");
     }
 
     private class LocationUpdateTask extends AsyncTask<Game, String, Boolean> {
@@ -379,7 +400,17 @@ public class GameActivity extends AppCompatActivity {
         Log.d("GameActivity", "onDestroy() method called");
         this.isCancelled = true;
         this.locationUpdateTask.cancel(true);
-        Toast.makeText(this, "FUCK IT DID WE WIN?: " + game.Status(), Toast.LENGTH_LONG).show();
+        boolean success = game.status();
+        //if the game has not been won, save the state
+        if (!success){
+            gameInProg = true;
+            game.setStepCount(steps);
+            game.setTime(stopwatch.getSeconds());
+            game.setCurrentColor(((ColorDrawable) background.getBackground()).getColor());
+            game.setMessage(updateMessage.getText()+"");
+        } else {
+            gameInProg = false;
+        }
 
         //This is going to be removed later, but we are using it for testing purposes
         addLog();

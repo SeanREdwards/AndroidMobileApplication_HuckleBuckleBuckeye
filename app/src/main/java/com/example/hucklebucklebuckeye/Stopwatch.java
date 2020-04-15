@@ -15,17 +15,25 @@ public class Stopwatch {
     private int seconds;
     private boolean running;
     private String strTime;
+    private int startTime;
     private TextView timeView;
 
 
     public Stopwatch(TextView view) {
         seconds = 0;
+        startTime = 0;
         timeView = view;
+    }
+    public Stopwatch(TextView view, int initial) {
+        seconds = 0;
+        timeView = view;
+        startTime = initial;
     }
 
     //Starts the stopwatch
     public void Start() {
         running = true;
+        seconds += startTime;
         final Handler handler = new Handler();
         handler.post(new Runnable(){
             @Override
@@ -51,6 +59,9 @@ public class Stopwatch {
     public void Stop(){
         running = false;
     }
+
+    //returns elapsed time in seconds
+    public int getSeconds() {return seconds;}
 
     //Returns the elapsed time.
     public String getTime() {

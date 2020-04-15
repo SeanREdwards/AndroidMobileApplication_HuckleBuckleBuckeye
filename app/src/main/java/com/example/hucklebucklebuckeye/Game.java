@@ -6,38 +6,57 @@ public class Game {
 
     private static Coordinates destinationLocation;
     private static Coordinates currentLocation;
-
+    private static int stepCount;
+    private static int currentColor;
     private boolean isWon;
-
-    //TODO: this is about 100 feet from the location. we might want to tweak this when we're further along
+    private int time;
+    private static String message;
     final private static double CLOSE_ENOUGH_LATITUDE = 0.00002756515 * 10;
     final private static double CLOSE_ENOUGH_LONGITUDE = 0.00002738485 * 10;
-    //TODO: most of dis
-    //randomly select a location
-    //start a timer
-
-    //track path: might be handled in UI
-        //maintain values in static variables so they can be retained if activity is destroyed
-    //update warmer/colder
-        //create benchmarks to define what is "warm, what is "cold", what is "goal"
-
-    //when goal is reached, display image and message
-        //display final path?
-        //stop timer
-        //add log to db
-        //display play again option
 
     public Game(Coordinates initial){
         Locations locations = new Locations();
         destinationLocation = locations.setLocation();
         isWon = false;
+        time = 0;
+        stepCount = 0;
+        currentColor = 0;
+        message = "";
+    }
+    public static String getMessage() {
+        return message;
     }
 
+    public static void setMessage(String message) {
+        Game.message = message;
+    }
+    public void setStepCount(int steps){
+        stepCount = steps;
+    }
+
+    public int getStepCount(){
+        return stepCount;
+    }
+    public static int getCurrentColor() {
+        return currentColor;
+    }
+
+    public static void setCurrentColor(int currentColor) {
+        Game.currentColor = currentColor;
+    }
+
+    public int getTime() {
+        return time;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
+    }
     public void updateWin(){
         isWon = true;
     }
 
-    public boolean Status(){
+    public boolean status(){
         return isWon;
     }
 
@@ -51,16 +70,11 @@ public class Game {
         return destinationLocation;
     };
 
-    //TODO: figure out where to use this. I think it needs to be called continuously from MapFragment or GameActivity
     public static boolean destinationReached (Coordinates currentLocation){
         boolean destinationReached = false;
         double latitudeDifference = Math.abs(currentLocation.getLat() - destinationLocation.getLat());
         double longitudeDifference = Math.abs(currentLocation.getLon() - destinationLocation.getLon());
 
-        Log.d("tagtagtag lat", latitudeDifference+"");
-        Log.d("tagtagtag lon", longitudeDifference+"");
-
-        //TODO: this is about 30 feet from the single coordinate. We might want to adjust this a bit
         if (latitudeDifference < (CLOSE_ENOUGH_LATITUDE) || longitudeDifference < (CLOSE_ENOUGH_LONGITUDE)){
             destinationReached = true;
         }
@@ -81,7 +95,6 @@ public class Game {
 *   Longitude of end point.
 * @Returns the distance between starting and ending points.*/
     public double calcDistance(Coordinates currentLocation){
-
         /*r value obtained by taking the diameter of the Earth in miles and
         dividing by 2 to get the radius. Diameter of earth per NASA's fact sheet:
         https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_british.html*/
