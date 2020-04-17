@@ -52,11 +52,9 @@ public class GameActivity extends AppCompatActivity {
     int PERMISSION_ID = 44;
     private AsyncTask<Game, String, Boolean> locationUpdateTask;
     private boolean isCancelled;
-    private boolean gameWon;
     private String destinationName;
     private static boolean gameInProg;
     private TextView updateMessage;
-    private TextView stopwatchView;
     private TextView stepView;
     MapFragment mapFragment;
     private RelativeLayout background;
@@ -71,16 +69,13 @@ public class GameActivity extends AppCompatActivity {
     Stopwatch stopwatch;
 
 
-    //For StepCounter
-    private SensorManager sensorManager;
-    private Sensor stepSensor;
     private int steps;
 
 
     FusedLocationProviderClient mFusedLocationClient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        gameWon = false;
+        boolean gameWon = false;
         super.onCreate(savedInstanceState);
         requestPermissions();
         setContentView(R.layout.activity_game);
@@ -104,7 +99,7 @@ public class GameActivity extends AppCompatActivity {
         toast = Toast.makeText(this, "", Toast.LENGTH_LONG);
 
         //Stopwatch setup
-        stopwatchView = findViewById(R.id.stopwatch_view);
+        TextView stopwatchView = findViewById(R.id.stopwatch_view);
         if (gameInProg){
             stopwatch = new Stopwatch(stopwatchView, game.getTime());
         } else {
@@ -121,8 +116,9 @@ public class GameActivity extends AppCompatActivity {
         }
         //set initial steps taken text
         stepView.setText(getString(R.string.Steps) + steps);
-        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
+        //For StepCounter
+        SensorManager sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        Sensor stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
         SensorEventListener stepListener = new SensorEventListener() {
             @Override
             public void onSensorChanged(SensorEvent event) {
@@ -178,6 +174,9 @@ public class GameActivity extends AppCompatActivity {
 
     }
 
+    /*We made sure to end the async task when the activity is destroyed
+     to avoid the static field leak*/
+    @SuppressLint("StaticFieldLeak")
     private class LocationUpdateTask extends AsyncTask<Game, String, Boolean> {
         private Handler handler;
         int tick;
@@ -342,10 +341,7 @@ public class GameActivity extends AppCompatActivity {
 
 
     private boolean checkPermissions() {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            return true;
-        }
-        return false;
+        return ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
     }
 
     private void requestPermissions() {

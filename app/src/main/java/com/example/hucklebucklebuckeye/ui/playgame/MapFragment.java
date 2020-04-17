@@ -31,7 +31,6 @@ public class MapFragment extends Fragment implements
     private PermissionsManager permissionsManager;
     private MapboxMap mapboxMap;
     private MapView mapView;
-    private String accessToken = "pk.eyJ1IjoibmhhcnRzb29rIiwiYSI6ImNrNmptZTJ0MjBkOXczam50N3FvczN3eXIifQ.wbA5YTsEs_6XTdmMtQvj3g";
 
     public static MapFragment newInstance() {
         return new MapFragment();
@@ -41,6 +40,7 @@ public class MapFragment extends Fragment implements
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                                 @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        String accessToken = "pk.eyJ1IjoibmhhcnRzb29rIiwiYSI6ImNrNmptZTJ0MjBkOXczam50N3FvczN3eXIifQ.wbA5YTsEs_6XTdmMtQvj3g";
         Mapbox.getInstance(getContext(), accessToken);
         View view = inflater.inflate(R.layout.fragment_game_map, container, false);
         mapView = view.findViewById(R.id.mapView);

@@ -16,8 +16,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="150dp"
         android:layout_gravity="center_horizontal"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="@dimen/cardview_default_elevation">
+        app:cardCornerRadius="30dp">
         <com.mapbox.mapboxsdk.maps.MapView
             android:id="@+id/mapView"
             android:layout_width="match_parent"

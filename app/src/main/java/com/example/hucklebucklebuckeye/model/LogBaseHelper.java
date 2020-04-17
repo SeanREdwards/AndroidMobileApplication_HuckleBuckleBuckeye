@@ -32,8 +32,6 @@ public class LogBaseHelper extends SQLiteOpenHelper {
 
     private static LogBaseHelper sLogBaseHelper;
 
-    private List<History> mHistory;
-
     /*public static LogBaseHelper get(Context context) {
     }*/
 
@@ -58,7 +56,7 @@ public class LogBaseHelper extends SQLiteOpenHelper {
         entryCount = 0;
 
 
-        mHistory = getUserHistory();
+        List<History> history = getUserHistory();
         for (int i = 0; i < entryCount; i++) {
 
         }
@@ -91,6 +89,7 @@ public class LogBaseHelper extends SQLiteOpenHelper {
                 } while (cursor.moveToNext());
             }
         }
+        cursor.close();
         return userHistory;
     }
 
@@ -108,11 +107,7 @@ public class LogBaseHelper extends SQLiteOpenHelper {
     public boolean insertData(ContentValues contentValues) {
         SQLiteDatabase db = this.getWritableDatabase();
         long result = db.insert(TABLE_NAME, null, contentValues);
-        if (result == -1) {
-            return false;
-        } else {
-            return true;
-        }
+        return result != -1;
     }
 
 

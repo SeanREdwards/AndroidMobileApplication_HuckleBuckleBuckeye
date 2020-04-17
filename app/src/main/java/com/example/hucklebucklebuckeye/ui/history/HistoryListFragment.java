@@ -1,5 +1,6 @@
 package com.example.hucklebucklebuckeye.ui.history;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,8 +20,6 @@ import java.util.List;
 public class HistoryListFragment extends Fragment {
 
     private RecyclerView mHistoryRecyclerView;
-
-    private HistoryAdapter mAdapter;
 
     public static HistoryListFragment newInstance() {
         return new HistoryListFragment();
@@ -42,8 +41,8 @@ public class HistoryListFragment extends Fragment {
         LogBaseHelper logBaseHelper =
                 LogBaseHelper.get(getActivity());
         List<History> history = logBaseHelper.getUserHistory();
-        mAdapter = new HistoryAdapter(history);
-        mHistoryRecyclerView.setAdapter(mAdapter);
+        HistoryAdapter adapter = new HistoryAdapter(history);
+        mHistoryRecyclerView.setAdapter(adapter);
     }
 
 
@@ -55,7 +54,6 @@ public class HistoryListFragment extends Fragment {
         private TextView mMapTextView;
         private TextView mDistanceTextView;
         private TextView mTimeTextView;
-        private History mHistory;
 
         public HistoryHolder(LayoutInflater inflater,
                              ViewGroup parent) {
@@ -67,13 +65,13 @@ public class HistoryListFragment extends Fragment {
             mTimeTextView = itemView.findViewById(R.id.history_time);
         }
 
+        @SuppressLint("SetTextI18n")
         public void bind(History h) {
-            mHistory = h;
-            mDateTextView.setText(getString(R.string.Date) + mHistory.getDate());
-            mStepsTextView.setText(getString(R.string.Steps) + mHistory.getSteps());
-            mMapTextView.setText(mHistory.getMap());
-            mDistanceTextView.setText(getString(R.string.Distance) + mHistory.getDistance() + getString(R.string.Feet));
-            mTimeTextView.setText(getString(R.string.Time) + mHistory.getTime());
+            mDateTextView.setText(getString(R.string.Date) + h.getDate());
+            mStepsTextView.setText(getString(R.string.Steps) + h.getSteps());
+            mMapTextView.setText(h.getMap());
+            mDistanceTextView.setText(getString(R.string.Distance) + h.getDistance() + getString(R.string.Feet));
+            mTimeTextView.setText(getString(R.string.Time) + h.getTime());
             //mCompletedTextView.setText(mHistory.getCompleted());
         }
 

@@ -20,8 +20,6 @@ import java.util.UUID;
 public class History {
     private static History sHistory;
     private List<UserLog> mLogs;
-    private Context mContext;
-    private SQLiteDatabase mDatabase;
 
     public static History get(Context context){
         if (sHistory == null){
@@ -31,9 +29,8 @@ public class History {
     }
 
     public History(Context context){
-        mContext = context;
-        mDatabase = new LogBaseHelper(mContext).getWritableDatabase();
-        Log.d("database:" , mDatabase.toString());
+        SQLiteDatabase database = new LogBaseHelper(context).getWritableDatabase();
+        Log.d("database:" , database.toString());
         mLogs = new ArrayList<>();
     }
 

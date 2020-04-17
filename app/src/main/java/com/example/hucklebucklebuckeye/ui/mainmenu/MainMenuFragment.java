@@ -91,11 +91,8 @@ public class MainMenuFragment extends Fragment {
     }
 
     private boolean checkPermissions() {
-        if ((ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)||
-                (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED)) {
-            return true;
-        }
-        return false;
+        return (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) ||
+                (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED);
     }
     @Override
     public void onRequestPermissionsResult(int requestCode,
@@ -110,7 +107,6 @@ public class MainMenuFragment extends Fragment {
                 }
                 break;
         }
-        return;
     }
 
 }
