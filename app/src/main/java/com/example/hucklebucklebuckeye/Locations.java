@@ -15,7 +15,7 @@ public class Locations {
         //Coordinates found on google maps
         this.coordinates.add(new Coordinates("The Oval", 39.9994979, -83.012709));
         this.coordinates.add(new Coordinates("Thompson Library", 39.9991, -83.0153));
-        this.coordinates.add(new Coordinates("Thompson statue", 39.999437, -83.013931));
+        this.coordinates.add(new Coordinates("Thompson Statue", 39.999437, -83.013931));
         this.coordinates.add(new Coordinates("Hansford Quadrangle", 40.001747, -83.012424));
         this.coordinates.add(new Coordinates("Wexner Center For the Arts", 40.000439,  -83.0093536));
         this.coordinates.add(new Coordinates("Hitchcock Hall", 40.0037896, -83.0150181));

@@ -111,11 +111,11 @@ public class AccountDBHelper extends SQLiteOpenHelper {
         String[] whereArgs = {username, password};
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_NAME, columns, whereClause, whereArgs, "", "", "");
-
         if (cursor.getCount() == 0){
             exists = false;
         } else {
             exists = true;
+            this.username = username;
         }
         return exists;
     }
