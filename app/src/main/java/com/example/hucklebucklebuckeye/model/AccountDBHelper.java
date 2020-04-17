@@ -105,8 +105,8 @@ public class AccountDBHelper extends SQLiteOpenHelper {
         String[] whereArgs = {username, password};
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_NAME, columns, whereClause, whereArgs, "", "", "");
-
         exists = cursor.getCount() != 0;
+        if(exists){this.username = username;}
         cursor.close();
         return exists;
     }

@@ -171,6 +171,7 @@ public class GameActivity extends AppCompatActivity {
                     .commitNow();
         }
 
+
     }
 
     /*We made sure to end the async task when the activity is destroyed
@@ -262,6 +263,7 @@ public class GameActivity extends AppCompatActivity {
                             toast.setText(getString(R.string.Congrats));
                             toast.show();
                             game.updateWin();
+                            showImage();
                             addLog();
                             handler.removeCallbacks(runnable);
                         }
@@ -272,6 +274,15 @@ public class GameActivity extends AppCompatActivity {
             return foundDestination;
         }
 
+        private void showImage(){
+            GameDestinationFragment gdf = new GameDestinationFragment();
+            gdf.setDestination(game.getDestinationCoords().getName());
+            //if (savedInstanceState == null) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.container, gdf)
+                        .commitNow();
+           // }
+        }
         private void transitionBackground(int colorFrom, int colorTo){
             ValueAnimator colorAnimation = ValueAnimator.ofObject(new ArgbEvaluator(), colorFrom, colorTo);
             colorAnimation.setDuration(300); // milliseconds
