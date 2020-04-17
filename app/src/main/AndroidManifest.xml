@@ -37,7 +37,8 @@
         </activity>
         <activity
             android:name=".ui.playgame.GameActivity"
-            android:label="Game"></activity>
+            android:label="Game">
+        </activity>
     </application>
 
 </manifest>

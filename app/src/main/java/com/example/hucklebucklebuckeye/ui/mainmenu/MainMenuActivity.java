@@ -1,15 +1,7 @@
 package com.example.hucklebucklebuckeye.ui.mainmenu;
-import android.Manifest;
-import android.content.Context;
-import android.content.pm.PackageManager;
-import android.location.LocationManager;
 import android.util.Log;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
 import android.os.Bundle;
-import android.widget.Toast;
 
 
 import com.example.hucklebucklebuckeye.R;
