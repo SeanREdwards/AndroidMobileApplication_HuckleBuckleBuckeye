@@ -33,11 +33,11 @@ public class Game {
     public static void setId(int id) {
         Game.id = id;
     }
-    public static String getMessage() {
+    public String getMessage() {
         return message;
     }
 
-    public static void setMessage(String message) {
+    public void setMessage(String message) {
         Game.message = message;
     }
     public void setStepCount(int steps){
@@ -47,11 +47,11 @@ public class Game {
     public int getStepCount(){
         return stepCount;
     }
-    public static int getCurrentColor() {
+    public int getCurrentColor() {
         return currentColor;
     }
 
-    public static void setCurrentColor(int currentColor) {
+    public void setCurrentColor(int currentColor) {
         Game.currentColor = currentColor;
     }
 
@@ -78,7 +78,7 @@ public class Game {
 
     public Coordinates getDestinationCoords(){
         return destinationLocation;
-    };
+    }
 
     public static boolean destinationReached (Coordinates currentLocation){
         boolean destinationReached = false;

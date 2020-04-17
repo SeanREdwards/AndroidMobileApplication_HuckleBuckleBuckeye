@@ -1,9 +1,6 @@
 package com.example.hucklebucklebuckeye.ui.profile;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -17,16 +14,15 @@ import com.example.hucklebucklebuckeye.model.AccountDBHelper;
 
 public class ProfileActivity extends AppCompatActivity {
     private TextView newPasswordText;
-    private TextView usernameDisplay;
-    private Button changePasswordButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //LoginFormState loginFormState = new LoginFormState();
         setContentView(R.layout.activity_profile);
-        usernameDisplay = findViewById(R.id.username_view);
+        TextView usernameDisplay = findViewById(R.id.username_view);
         newPasswordText = findViewById(R.id.password_input);
-        changePasswordButton = findViewById(R.id.reset_button);
+        Button changePasswordButton = findViewById(R.id.reset_button);
         usernameDisplay.setText(getString(R.string.Username) + AccountDBHelper.getUsername());
 
         changePasswordButton.setOnClickListener(new View.OnClickListener() {

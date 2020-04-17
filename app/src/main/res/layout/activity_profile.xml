@@ -19,7 +19,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintVertical_bias="0.137"
+        tools:ignore="HardcodedText" />
+
 
     <EditText
         android:id="@+id/password_input"
@@ -56,5 +58,6 @@
         app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_input"
-        app:layout_constraintVertical_bias="0.004" />
+        app:layout_constraintVertical_bias="0.004"
+        tools:ignore="HardcodedText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

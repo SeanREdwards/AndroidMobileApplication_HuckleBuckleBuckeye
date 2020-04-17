@@ -32,8 +32,8 @@
     <string name="goodLuck">"Good Luck!"</string>
     <string name="locationIS">"location is"</string>
     <string name="hereIS">"here is "</string>
-    <string name="Hotter">"Hotter..."</string>
-    <string name="Colder">"Colder..."</string>
+    <string name="Hotter">"Hotter…"</string>
+    <string name="Colder">"Colder…"</string>
     <string name="Current">"current "</string>
     <string name="Congrats">"Congratulations! You found the destination!!!!"</string>
     <string name="ACID">"ACID"</string>
@@ -51,8 +51,4 @@
     <string name="Username">"Username: "</string>
     <string name="tooShort">"Oops - too short!"</string>
     <string name="resetPass">"Congrats - you reset your password!"</string>
-
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -56,11 +56,7 @@ public class AccountDBHelper extends SQLiteOpenHelper {
         contentValues.put(COLUMN_PASSWORD, password);
         this.username = username;
        long result = db.insert(TABLE_NAME, null, contentValues);
-       if (result == -1) {
-           return false;
-       } else {
-           return true;
-       }
+        return result != -1;
     }
 
     public void updatePassword(String password){
@@ -74,18 +70,15 @@ public class AccountDBHelper extends SQLiteOpenHelper {
     }
 
     public boolean userExists(String username) {
-        boolean exists = false;
+        boolean exists;
         String[] columns = {COLUMN_ID};
         String whereClause = COLUMN_USERNAME + " = ? ";
         String[] whereArgs = {username};
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_NAME, columns, whereClause, whereArgs, "", "", "");
 
-        if (cursor.getCount() == 0){
-            exists = false;
-        } else {
-            exists = true;
-        }
+        exists = cursor.getCount() != 0;
+        cursor.close();
         return exists;
     }
 
@@ -98,6 +91,7 @@ public class AccountDBHelper extends SQLiteOpenHelper {
         if (cursor.moveToNext()){
             userId = cursor.getInt(0);
         }
+        cursor.close();
     }
 
     public static int getId(){
@@ -105,18 +99,15 @@ public class AccountDBHelper extends SQLiteOpenHelper {
     }
     public static String getUsername(){return username;}
     public boolean userValid(String username, String password) {
-        boolean exists = false;
+        boolean exists;
         String[] columns = {COLUMN_ID};
         String whereClause = COLUMN_USERNAME + " = ? AND " + COLUMN_PASSWORD + " = ?";
         String[] whereArgs = {username, password};
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.query(TABLE_NAME, columns, whereClause, whereArgs, "", "", "");
-        if (cursor.getCount() == 0){
-            exists = false;
-        } else {
-            exists = true;
-            this.username = username;
-        }
+        exists = cursor.getCount() != 0;
+        if(exists){this.username = username;}
+        cursor.close();
         return exists;
     }
 }
