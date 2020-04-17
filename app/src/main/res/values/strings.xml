@@ -10,7 +10,49 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="elapsed_time">"Elapsed Time</string>
+    <string name="MainMenuActivity">"Main Menu Activity</string>
+    <string name="MainMenuFragment">"Main Menu Fragment</string>
+    <string name="LoginActivity">"Login Activity</string>
+    <string name="EmailInUse">"Email already in use."</string>
+    <string name="InvalidInfo">"Invalid username or password."</string>
+    <string name="onCreate">"onCreate(Bundle) method called"</string>
+    <string name="UserPass">"Username + password: "</string>
+    <string name="onStart">"onStart() method called"</string>
+    <string name="onPause">"onPause() method called"</string>
+    <string name="onResume">"onResume() method called"</string>
+    <string name="onStop">"onStop() method called"</string>
+    <string name="Date">"Date: "</string>
+    <string name="Steps">"Steps taken: "</string>
+    <string name="Distance">"Distance traveled: "</string>
+    <string name="Time">"Time Elapsed: "</string>
+    <string name="Feet">" feet"</string>
+    <string name="onCreateView">"onCreateView() method called"</string>
+    <string name="stepDetector">"Step Detector not found!"</string>
+    <string name="playGame">"Play Game!"</string>
+    <string name="goodLuck">"Good Luck!"</string>
+    <string name="locationIS">"location is"</string>
+    <string name="hereIS">"here is "</string>
+    <string name="Hotter">"Hotter..."</string>
+    <string name="Colder">"Colder..."</string>
+    <string name="Current">"current "</string>
+    <string name="Congrats">"Congratulations! You found the destination!!!!"</string>
+    <string name="ACID">"ACID"</string>
+    <string name="STEPSCOUNT">"STEPS"</string>
+    <string name="DATE">"DATE"</string>
+    <string name="MAPS">"MAP"</string>
+    <string name="DISTANCECOUNT">"DISTANCE"</string>
+    <string name="TIMECOUNT">"TIME"</string>
+    <string name="COMPLETED">"COMPLETED"</string>
+    <string name="GameActivity">"Game Activity"</string>
+    <string name="onDestroy">"onDestroy() method called"</string>
+    <string name="permissionExplain">"User location permissions need explanation."</string>
+    <string name="permissionNotGranted">"User location permission not granted."</string>
+    <string name="ProfileActivity">"Profile Activity"</string>
+    <string name="Username">"Username: "</string>
+    <string name="tooShort">"Oops - too short!"</string>
+    <string name="resetPass">"Congrats - you reset your password!"</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

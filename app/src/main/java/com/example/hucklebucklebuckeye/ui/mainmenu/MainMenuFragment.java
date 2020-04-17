@@ -31,7 +31,7 @@ public class MainMenuFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        Log.d("MainMenuFragment", "onCreateView() method called");
+        Log.d(getString(R.string.MainMenuFragment), getString(R.string.onCreateView));
 
         View view = inflater.inflate(R.layout.main_menu_fragment, container, false);
 
@@ -70,19 +70,19 @@ public class MainMenuFragment extends Fragment {
 
     @Override
     public void onStart() {
-        Log.d("MainMenuFragment", "onStart() method called");
+        Log.d(getString(R.string.MainMenuFragment), getString(R.string.onStart));
         super.onStart();
     }
 
     @Override
     public void onPause() {
-        Log.d("MainMenuFragment", "onPause() method called");
+        Log.d(getString(R.string.MainMenuFragment), getString(R.string.onPause));
         super.onPause();
     }
 
     @Override
     public void onResume() {
-        Log.d("MainMenuFragment", "onResume() method called");
+        Log.d(getString(R.string.MainMenuFragment), getString(R.string.onResume));
         super.onResume();
     }
 

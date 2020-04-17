@@ -27,47 +27,47 @@ public class ProfileActivity extends AppCompatActivity {
         usernameDisplay = findViewById(R.id.username_view);
         newPasswordText = findViewById(R.id.password_input);
         changePasswordButton = findViewById(R.id.reset_button);
-        usernameDisplay.setText("Username: " + AccountDBHelper.getUsername());
+        usernameDisplay.setText(getString(R.string.Username) + AccountDBHelper.getUsername());
 
         changePasswordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (newPasswordText.getText().length() < 6){
-                    Toast.makeText(getApplicationContext(), "Oops - too short!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.tooShort), Toast.LENGTH_LONG).show();
                 } else {
                     AccountDBHelper db = new AccountDBHelper(getApplicationContext());
                     String password = newPasswordText.getText()+"";
                     db.updatePassword(password);
-                    Toast.makeText(getApplicationContext(), "Congrats - you reset your password!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.resetPass), Toast.LENGTH_LONG).show();
                 }
             }
         });
 
-        Log.d("ProfileActivity", "onCreate(Bundle) method called");
+        Log.d(getString(R.string.ProfileActivity), getString(R.string.onCreate));
     }
 
     protected void onStart() {
         super.onStart();
-        Log.d("ProfileActivity", "onStart() method called");
+        Log.d(getString(R.string.ProfileActivity), getString(R.string.onStart));
 
     }
 
     protected void onPause() {
         super.onPause();
-        Log.d("ProfileActivity", "onPause() method called");
+        Log.d(getString(R.string.ProfileActivity), getString(R.string.onPause));
     }
 
     protected void onResume() {
         super.onResume();
-        Log.d("ProfileActivity", "onResume() method called");
+        Log.d(getString(R.string.ProfileActivity), getString(R.string.onResume));
     }
 
     protected void onStop() {
         super.onStop();
-        Log.d("ProfileActivity", "onStop() method called");
+        Log.d(getString(R.string.ProfileActivity), getString(R.string.onStop));
     }
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("ProfileActivity", "onDestroy() method called");
+        Log.d(getString(R.string.ProfileActivity), getString(R.string.onDestroy));
     }
 }

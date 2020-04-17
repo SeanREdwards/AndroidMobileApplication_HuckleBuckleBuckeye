@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        Log.d("LoginActivity", "onCreate(Bundle?) method called");
+        Log.d(getString(R.string.LoginActivity), getString(R.string.onCreate));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         final AccountDBHelper databaseHandler = new AccountDBHelper(this);
@@ -115,7 +115,7 @@ public class LoginActivity extends AppCompatActivity {
                 boolean alreadyExists = createUser(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
                 if (alreadyExists){
-                    Toast.makeText(getApplicationContext(), "Email already in use.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.EmailInUse), Toast.LENGTH_LONG).show();
                 } else {
                     loadingProgressBar.setVisibility(View.VISIBLE);
                     startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
@@ -131,7 +131,7 @@ public class LoginActivity extends AppCompatActivity {
                     loadingProgressBar.setVisibility(View.VISIBLE);
                     startActivity(new Intent(LoginActivity.this, MainMenuActivity.class));
                 } else {
-                    Toast.makeText(getApplicationContext(), "Invalid username or password.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), getString(R.string.InvalidInfo), Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -154,7 +154,7 @@ public class LoginActivity extends AppCompatActivity {
             dbHelper.updateId(username);
         }
 
-        Log.d("Username + password: ", values.toString());
+        Log.d(getString(R.string.UserPass), values.toString());
 
 
         return exists;
@@ -172,7 +172,7 @@ public class LoginActivity extends AppCompatActivity {
 
         boolean valid = dbHelper.userValid(username, password);
         if (valid) {dbHelper.updateId(username); }
-        Log.d("Username + password: ", values.toString());
+        Log.d(getString(R.string.UserPass), values.toString());
 
 
         return valid;
@@ -190,22 +190,22 @@ public class LoginActivity extends AppCompatActivity {
 
     protected void onStart() {
         super.onStart();
-        Log.d("LoginActivity", "onStart() method called");
+        Log.d(getString(R.string.LoginActivity), getString(R.string.onStart));
     }
 
     protected void onPause() {
         super.onPause();
-        Log.d("LoginActivity", "onPause() method called");
+        Log.d(getString(R.string.LoginActivity), getString(R.string.onPause));
     }
 
     protected void onResume() {
         super.onResume();
-        Log.d("LoginActivity", "onResume() method called");
+        Log.d(getString(R.string.LoginActivity), getString(R.string.onResume));
     }
 
     protected void onStop() {
         super.onStop();
-        Log.d("LoginActivity", "onStop() method called");
+        Log.d(getString(R.string.LoginActivity), getString(R.string.onStop));
     }
 
 }

@@ -119,14 +119,14 @@ public class GameActivity extends AppCompatActivity {
             steps = 0;
         }
         //set initial steps taken text
-        stepView.setText("Steps Taken: " + steps);
+        stepView.setText(getString(R.string.Steps) + steps);
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         stepSensor = sensorManager.getDefaultSensor(Sensor.TYPE_STEP_DETECTOR);
         SensorEventListener stepListener = new SensorEventListener() {
             @Override
             public void onSensorChanged(SensorEvent event) {
                 steps++;
-                stepView.setText("Steps Taken: " + steps);
+                stepView.setText(getString(R.string.Steps) + steps);
             }
 
             @Override
@@ -138,7 +138,7 @@ public class GameActivity extends AppCompatActivity {
         if (stepSensor != null){
             sensorManager.registerListener(stepListener, stepSensor, sensorManager.SENSOR_DELAY_UI);
         }else{
-            Toast.makeText(this, "Step Detector not found!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.stepDetector), Toast.LENGTH_SHORT).show();
         }
 
         //Get initial background color
@@ -152,12 +152,12 @@ public class GameActivity extends AppCompatActivity {
         if (gameInProg){
             updateMessage.setText(game.getMessage());
         } else {
-            updateMessage.setText("Play game!");
+            updateMessage.setText(getString(R.string.playGame));
         }
 
         if (gameInProg) {
         } else {
-            toast.setText("Good Luck!");
+            toast.setText(getString(R.string.goodLuck));
             toast.show();
             gameInProg = true;
             game = new Game(getCurrentLocation());
@@ -210,9 +210,9 @@ public class GameActivity extends AppCompatActivity {
                                                                                       requestNewLocationData();
                                                                                   } else {
                                                                                       lat = location.getLatitude();
-                                                                                      Log.d("location is", "here is" + lat);
+                                                                                      Log.d(getString(R.string.locationIS), getString(R.string.hereIS) + lat);
                                                                                       lon = location.getLongitude();
-                                                                                      Log.d("location is", "here is " + lon);
+                                                                                      Log.d(getString(R.string.locationIS), getString(R.string.hereIS) + lon);
                                                                                       //Log.d("latitude: ", location.getLatitude()+"");
                                                                                       //Log.d("longitude: ", location.getLongitude()+"");
                                                                                   }
@@ -236,11 +236,11 @@ public class GameActivity extends AppCompatActivity {
                     if (!isCancelled){
                         handler.postDelayed(runnable, tick);
                         currentLocation = getCurrentLocation();
-                        Log.d("HERE IT IS location is", "here is " + lat);
-                        Log.d("HERE IT IS location is", "here is " + lon);
+                        Log.d(getString(R.string.locationIS), getString(R.string.hereIS) + lat);
+                        Log.d(getString(R.string.locationIS), getString(R.string.hereIS) + lon);
                         distanceToDestination = game.calcDistance(new Coordinates("current ", lat, lon));
                         if (distanceToDestination < previousDistance){
-                            updateMessage.setText("Hotter...");
+                            updateMessage.setText(getString(R.string.Hotter));
                             //background.setBackgroundColor(red);
 
                             if (currentColor != red){
@@ -249,7 +249,7 @@ public class GameActivity extends AppCompatActivity {
 
                             currentColor = red;
                         } else if (distanceToDestination > previousDistance) {
-                            updateMessage.setText("Colder...");
+                            updateMessage.setText(getString(R.string.Colder));
                             //background.setBackgroundColor(blue);
                             if (currentColor != blue){
                                 transitionBackground(currentColor, blue);
@@ -257,13 +257,13 @@ public class GameActivity extends AppCompatActivity {
                             currentColor = blue;
                         }
                         previousDistance = distanceToDestination;
-                        foundDestination = game.destinationReached(new Coordinates("current ", lat, lon));
+                        foundDestination = game.destinationReached(new Coordinates(getString(R.string.Current), lat, lon));
                         if (!foundDestination ){
                             //toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " ft");
 
                         } else{
                             stopwatch.Stop();
-                            toast.setText("Congratulations! You found the destination!!!!");
+                            toast.setText(getString(R.string.Congrats));
                             toast.show();
                             game.updateWin();
                             addLog();
@@ -309,13 +309,13 @@ public class GameActivity extends AppCompatActivity {
         //SimpleDateFormat localDateFormat = new SimpleDateFormat("HH:mm:ss");
         double dist = Game.stepsToFeet(steps);
         String time = stopwatch.getTime();
-        values.put("ACID", AccountDBHelper.getId());
-        values.put("STEPS", steps);
-        values.put("DATE", date.toString());
-        values.put("MAP", destinationName);
-        values.put("DISTANCE", dist);
-        values.put("TIME", time);
-        values.put("COMPLETED", true);
+        values.put(getString(R.string.ACID), AccountDBHelper.getId());
+        values.put(getString(R.string.STEPSCOUNT), steps);
+        values.put(getString(R.string.DATE), date.toString());
+        values.put(getString(R.string.MAPS), destinationName);
+        values.put(getString(R.string.DISTANCECOUNT), dist);
+        values.put(getString(R.string.TIMECOUNT), time);
+        values.put(getString(R.string.COMPLETED), true);
         logHandler.insertData(values);
     }
 
@@ -333,13 +333,13 @@ public class GameActivity extends AppCompatActivity {
                     requestNewLocationData();
                 } else {
                     lat = location.getLatitude();
-                    Log.d("location is", "here is" + lat);
+                    Log.d(getString(R.string.locationIS), getString(R.string.hereIS) + lat);
                     lon = location.getLongitude();
                 }
             }
         }
         );
-        return new Coordinates("current", latlong[0], latlong[1]);
+        return new Coordinates(getString(R.string.Current), latlong[0], latlong[1]);
 
     }
 
@@ -404,7 +404,7 @@ public class GameActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("GameActivity", "onDestroy() method called");
+        Log.d(getString(R.string.GameActivity), getString(R.string.onDestroy));
         this.isCancelled = true;
 
         this.locationUpdateTask.cancel(true);

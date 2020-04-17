@@ -92,7 +92,7 @@ public class MapFragment extends Fragment implements
 
     @Override
     public void onExplanationNeeded(List<String> permissionsToExplain) {
-        Toast.makeText(getContext(), "User location permissions need explanation.", Toast.LENGTH_LONG).show();
+        Toast.makeText(getContext(), getString(R.string.permissionExplain), Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -105,7 +105,7 @@ public class MapFragment extends Fragment implements
                 }
             });
         } else {
-            Toast.makeText(getContext(), "User location permission not granted.", Toast.LENGTH_LONG).show();
+            Toast.makeText(getContext(), getString(R.string.permissionNotGranted), Toast.LENGTH_LONG).show();
         }
     }
 

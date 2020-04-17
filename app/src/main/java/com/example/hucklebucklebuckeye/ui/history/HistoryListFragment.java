@@ -69,11 +69,11 @@ public class HistoryListFragment extends Fragment {
 
         public void bind(History h) {
             mHistory = h;
-            mDateTextView.setText("Date: " + mHistory.getDate());
-            mStepsTextView.setText("Steps taken: " + mHistory.getSteps());
+            mDateTextView.setText(getString(R.string.Date) + mHistory.getDate());
+            mStepsTextView.setText(getString(R.string.Steps) + mHistory.getSteps());
             mMapTextView.setText(mHistory.getMap());
-            mDistanceTextView.setText("Distance traveled: " + mHistory.getDistance() + " feet");
-            mTimeTextView.setText("Time Elapsed: " + mHistory.getTime());
+            mDistanceTextView.setText(getString(R.string.Distance) + mHistory.getDistance() + getString(R.string.Feet));
+            mTimeTextView.setText(getString(R.string.Time) + mHistory.getTime());
             //mCompletedTextView.setText(mHistory.getCompleted());
         }
 

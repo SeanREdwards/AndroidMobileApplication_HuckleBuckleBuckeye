@@ -23,28 +23,28 @@ public class MainMenuActivity extends AppCompatActivity {
                     .commitNow();
         }
 
-        Log.d("MainMenuActivity", "onCreate(Bundle) method called");
+        Log.d(getString(R.string.MainMenuActivity), "onCreate(Bundle) method called");
 
     }
 
     protected void onStart() {
         super.onStart();
-        Log.d("MainMenuActivity", "onStart() method called");
+        Log.d(getString(R.string.MainMenuActivity), "onStart() method called");
     }
 
     protected void onPause() {
         super.onPause();
-        Log.d("MainMenuActivity", "onPause() method called");
+        Log.d(getString(R.string.MainMenuActivity), "onPause() method called");
     }
 
     protected void onResume() {
         super.onResume();
-        Log.d("MainMenuActivity", "onResume() method called");
+        Log.d(getString(R.string.MainMenuActivity), "onResume() method called");
     }
 
     protected void onStop() {
         super.onStop();
-        Log.d("MainMenuActivity", "onStop() method called");
+        Log.d(getString(R.string.MainMenuActivity), "onStop() method called");
     }
 
 }
