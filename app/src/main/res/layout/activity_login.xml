@@ -67,7 +67,7 @@
         android:layout_marginStart="250dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="64dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp"
         android:text="@string/action_register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -31,7 +31,7 @@ public class HistoryListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) { View view =
             inflater.inflate(R.layout.history_fragment, container, false);
-        mHistoryRecyclerView = (RecyclerView) view
+        mHistoryRecyclerView = view
                 .findViewById(R.id.my_recycler_view); mHistoryRecyclerView.setLayoutManager(new
                 LinearLayoutManager(getActivity()));
         updateUI();
@@ -60,11 +60,11 @@ public class HistoryListFragment extends Fragment {
         public HistoryHolder(LayoutInflater inflater,
                              ViewGroup parent) {
             super(inflater.inflate(R.layout.list_item_history, parent, false));
-            mDateTextView = (TextView) itemView.findViewById(R.id.history_date);
-            mStepsTextView = (TextView) itemView.findViewById(R.id.history_steps);
-            mMapTextView = (TextView) itemView.findViewById(R.id.history_map);
-            mDistanceTextView = (TextView) itemView.findViewById(R.id.history_distance);
-            mTimeTextView = (TextView) itemView.findViewById(R.id.history_time);
+            mDateTextView = itemView.findViewById(R.id.history_date);
+            mStepsTextView = itemView.findViewById(R.id.history_steps);
+            mMapTextView = itemView.findViewById(R.id.history_map);
+            mDistanceTextView = itemView.findViewById(R.id.history_distance);
+            mTimeTextView = itemView.findViewById(R.id.history_time);
         }
 
         public void bind(History h) {
@@ -101,8 +101,5 @@ public class HistoryListFragment extends Fragment {
         @Override
         public int getItemCount() {
             return mHistory.size(); }
-
     }
-
-
 }

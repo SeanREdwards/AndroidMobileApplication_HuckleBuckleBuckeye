@@ -259,10 +259,7 @@ public class GameActivity extends AppCompatActivity {
                         }
                         previousDistance = distanceToDestination;
                         foundDestination = game.destinationReached(new Coordinates(getString(R.string.Current), lat, lon));
-                        if (!foundDestination ){
-                            //toast.setText("You haven't found the destination yet! Distance Away: " + distanceToDestination + " ft");
-
-                        } else{
+                        if (foundDestination ){
                             stopwatch.Stop();
                             toast.setText(getString(R.string.Congrats));
                             toast.show();
@@ -270,7 +267,6 @@ public class GameActivity extends AppCompatActivity {
                             addLog();
                             handler.removeCallbacks(runnable);
                         }
-
                     }
                 }
             }, tick);
@@ -424,9 +420,6 @@ public class GameActivity extends AppCompatActivity {
             gameInProg = false;
             game.setId(-1);
         }
-
-        //This is going to be removed later, but we are using it for testing purposes
-        addLog();
     }
 }
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -9,23 +10,23 @@
         android:id="@+id/history_map"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop = "30dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:text="Temp"/>
 
         <TextView
             android:id="@+id/history_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:text="Date:"/>
 
     <TextView
         android:id="@+id/history_steps"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:text="Steps taken: "/>
 
 
@@ -33,14 +34,15 @@
         android:id="@+id/history_distance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:text="Distance traveled:"/>
+        android:layout_marginStart="30dp"
+        android:text="Distance traveled:"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/history_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:text="Time:"/>
     <View
         android:layout_width="fill_parent"
