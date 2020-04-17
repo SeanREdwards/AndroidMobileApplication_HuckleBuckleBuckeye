@@ -85,6 +85,13 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         isCancelled = false;
+        AccountDBHelper db = new AccountDBHelper(getApplicationContext());
+        int id = db.getId();
+        if (gameInProg){
+            if(game.getId() != id){
+                gameInProg = false;
+            }
+        }
 
         //Message setup
         background = findViewById(R.id.container);
@@ -399,17 +406,22 @@ public class GameActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d("GameActivity", "onDestroy() method called");
         this.isCancelled = true;
+
         this.locationUpdateTask.cancel(true);
         boolean success = game.status();
         //if the game has not been won, save the state
         if (!success){
             gameInProg = true;
+            AccountDBHelper db = new AccountDBHelper(getApplicationContext());
+            int id = db.getId();
+            game.setId(id);
             game.setStepCount(steps);
             game.setTime(stopwatch.getSeconds());
             game.setCurrentColor(((ColorDrawable) background.getBackground()).getColor());
             game.setMessage(updateMessage.getText()+"");
         } else {
             gameInProg = false;
+            game.setId(-1);
         }
 
         //This is going to be removed later, but we are using it for testing purposes

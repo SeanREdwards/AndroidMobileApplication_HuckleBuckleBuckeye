@@ -11,6 +11,8 @@ public class Game {
     private boolean isWon;
     private int time;
     private static String message;
+
+    private static int id;
     final private static double CLOSE_ENOUGH_LATITUDE = 0.00002756515 * 10;
     final private static double CLOSE_ENOUGH_LONGITUDE = 0.00002738485 * 10;
 
@@ -21,7 +23,15 @@ public class Game {
         time = 0;
         stepCount = 0;
         currentColor = 0;
+        id = -1;
         message = "";
+    }
+    public static int getId() {
+        return id;
+    }
+
+    public static void setId(int id) {
+        Game.id = id;
     }
     public static String getMessage() {
         return message;
