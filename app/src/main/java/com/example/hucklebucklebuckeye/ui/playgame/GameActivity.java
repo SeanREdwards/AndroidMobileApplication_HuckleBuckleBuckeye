@@ -82,6 +82,7 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         gameWon = false;
         super.onCreate(savedInstanceState);
+        requestPermissions();
         setContentView(R.layout.activity_game);
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         isCancelled = false;

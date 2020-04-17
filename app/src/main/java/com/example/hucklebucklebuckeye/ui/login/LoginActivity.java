@@ -32,6 +32,8 @@ import com.example.hucklebucklebuckeye.ui.mainmenu.MainMenuActivity;
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
+    private EditText passwordEditText;
+    private ProgressBar loadingProgressBar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -43,10 +45,10 @@ public class LoginActivity extends AppCompatActivity {
                 .get(LoginViewModel.class);
 
         final EditText usernameEditText = findViewById(R.id.username);
-        final EditText passwordEditText = findViewById(R.id.password);
+        passwordEditText = findViewById(R.id.password);
         final Button loginButton = findViewById(R.id.login);
         final Button registerButton = findViewById(R.id.register);
-        final ProgressBar loadingProgressBar = findViewById(R.id.loading);
+        loadingProgressBar = findViewById(R.id.loading);
         loadingProgressBar.setVisibility(View.GONE);
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {
@@ -205,7 +207,15 @@ public class LoginActivity extends AppCompatActivity {
 
     protected void onStop() {
         super.onStop();
+        passwordEditText.setText("");
+        loadingProgressBar.setVisibility(View.INVISIBLE);
         Log.d("LoginActivity", "onStop() method called");
+    }
+
+    protected void onDestroy() {
+        super.onDestroy();
+        passwordEditText.setText("");
+        Log.d("LoginActivity", "onDestroy() method called");
     }
 
 }
