@@ -78,7 +78,7 @@ public class Game {
 
     public Coordinates getDestinationCoords(){
         return destinationLocation;
-    };
+    }
 
     public static boolean destinationReached (Coordinates currentLocation){
         boolean destinationReached = false;

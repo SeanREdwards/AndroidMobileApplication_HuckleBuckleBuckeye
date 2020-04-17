@@ -22,8 +22,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-
-import com.example.hucklebucklebuckeye.Game;
 import com.example.hucklebucklebuckeye.R;
 import com.example.hucklebucklebuckeye.Account;
 import com.example.hucklebucklebuckeye.model.AccountDBHelper;

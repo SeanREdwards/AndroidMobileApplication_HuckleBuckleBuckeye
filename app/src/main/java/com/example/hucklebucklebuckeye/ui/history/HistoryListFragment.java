@@ -1,5 +1,6 @@
 package com.example.hucklebucklebuckeye.ui.history;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,8 +21,6 @@ public class HistoryListFragment extends Fragment {
 
     private RecyclerView mHistoryRecyclerView;
 
-    private HistoryAdapter mAdapter;
-
     public static HistoryListFragment newInstance() {
         return new HistoryListFragment();
     }
@@ -31,7 +30,7 @@ public class HistoryListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) { View view =
             inflater.inflate(R.layout.history_fragment, container, false);
-        mHistoryRecyclerView = (RecyclerView) view
+        mHistoryRecyclerView = view
                 .findViewById(R.id.my_recycler_view); mHistoryRecyclerView.setLayoutManager(new
                 LinearLayoutManager(getActivity()));
         updateUI();
@@ -42,8 +41,8 @@ public class HistoryListFragment extends Fragment {
         LogBaseHelper logBaseHelper =
                 LogBaseHelper.get(getActivity());
         List<History> history = logBaseHelper.getUserHistory();
-        mAdapter = new HistoryAdapter(history);
-        mHistoryRecyclerView.setAdapter(mAdapter);
+        HistoryAdapter adapter = new HistoryAdapter(history);
+        mHistoryRecyclerView.setAdapter(adapter);
     }
 
 
@@ -55,25 +54,24 @@ public class HistoryListFragment extends Fragment {
         private TextView mMapTextView;
         private TextView mDistanceTextView;
         private TextView mTimeTextView;
-        private History mHistory;
 
         public HistoryHolder(LayoutInflater inflater,
                              ViewGroup parent) {
             super(inflater.inflate(R.layout.list_item_history, parent, false));
-            mDateTextView = (TextView) itemView.findViewById(R.id.history_date);
-            mStepsTextView = (TextView) itemView.findViewById(R.id.history_steps);
-            mMapTextView = (TextView) itemView.findViewById(R.id.history_map);
-            mDistanceTextView = (TextView) itemView.findViewById(R.id.history_distance);
-            mTimeTextView = (TextView) itemView.findViewById(R.id.history_time);
+            mDateTextView = itemView.findViewById(R.id.history_date);
+            mStepsTextView = itemView.findViewById(R.id.history_steps);
+            mMapTextView = itemView.findViewById(R.id.history_map);
+            mDistanceTextView = itemView.findViewById(R.id.history_distance);
+            mTimeTextView = itemView.findViewById(R.id.history_time);
         }
 
+        @SuppressLint("SetTextI18n")
         public void bind(History h) {
-            mHistory = h;
-            mDateTextView.setText(getString(R.string.Date) + mHistory.getDate());
-            mStepsTextView.setText(getString(R.string.Steps) + mHistory.getSteps());
-            mMapTextView.setText(mHistory.getMap());
-            mDistanceTextView.setText(getString(R.string.Distance) + mHistory.getDistance() + getString(R.string.Feet));
-            mTimeTextView.setText(getString(R.string.Time) + mHistory.getTime());
+            mDateTextView.setText(getString(R.string.Date) + h.getDate());
+            mStepsTextView.setText(getString(R.string.Steps) + h.getSteps());
+            mMapTextView.setText(h.getMap());
+            mDistanceTextView.setText(getString(R.string.Distance) + h.getDistance() + getString(R.string.Feet));
+            mTimeTextView.setText(getString(R.string.Time) + h.getTime());
             //mCompletedTextView.setText(mHistory.getCompleted());
         }
 
@@ -101,8 +99,5 @@ public class HistoryListFragment extends Fragment {
         @Override
         public int getItemCount() {
             return mHistory.size(); }
-
     }
-
-
 }
