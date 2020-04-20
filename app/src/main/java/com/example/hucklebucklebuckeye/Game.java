@@ -13,8 +13,8 @@ public class Game {
     private static String message;
 
     private static int id;
-    final private static double CLOSE_ENOUGH_LATITUDE = 0.00002756515 * 10;
-    final private static double CLOSE_ENOUGH_LONGITUDE = 0.00002738485 * 10;
+    final private static double CLOSE_ENOUGH_LATITUDE = 0.00002756515 * 3;
+    final private static double CLOSE_ENOUGH_LONGITUDE = 0.00002738485 * 3;
 
     public Game(Coordinates initial){
         Locations locations = new Locations();

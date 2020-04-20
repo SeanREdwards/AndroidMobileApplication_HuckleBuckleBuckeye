@@ -229,8 +229,6 @@ public class GameActivity extends AppCompatActivity {
             final Game game = games[0];
             destination = game.getDestinationCoords();
             destinationName = destination.getName();
-
-
             handler.postDelayed( runnable = new Runnable() {
                 public void run() {
                     if (!isCancelled){
