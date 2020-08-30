@@ -1,3 +1,9 @@
+/*
+*Game.java
+*Class to instantiate a single game session necessary for app functionality and to store game session data.
+*@Author Sean Edwards
+* @Version 20200306
+*/
 package com.example.hucklebucklebuckeye;
 
 import android.util.Log;

@@ -1,4 +1,4 @@
-/*Stopwatch.js
+/*Stopwatch.java
 *@Author Sean Edwards
 *@Version 20200403
 *Class to create a stopwatch that counts hours minutes and seconds to obtain elapsed game time.*/

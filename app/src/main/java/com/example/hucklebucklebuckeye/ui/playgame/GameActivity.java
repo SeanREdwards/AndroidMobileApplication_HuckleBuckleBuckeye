@@ -1,3 +1,9 @@
+/*
+Locations.java
+@Author Sean Edwards & Natalie Hartsook
+@Version 20200306
+Primary game activity that runs and displays the main game functionality of the app.
+*/
 package com.example.hucklebucklebuckeye.ui.playgame;
 import android.animation.ArgbEvaluator;
 import android.animation.ValueAnimator;

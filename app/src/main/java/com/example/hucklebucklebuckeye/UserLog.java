@@ -48,7 +48,6 @@ public class UserLog {
 
     public UUID getId() {
 
-        //TODO May be able to remove
         //AccountDBHelper.getId();
 
         return mId;

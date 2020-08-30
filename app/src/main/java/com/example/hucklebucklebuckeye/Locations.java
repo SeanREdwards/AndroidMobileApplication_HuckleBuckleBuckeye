@@ -1,3 +1,9 @@
+/*
+Locations.java
+@Author Sean Edwards
+@Version 20200306
+Locations class for seeded destination locations.
+*/
 package com.example.hucklebucklebuckeye;
 
 import java.util.ArrayList;
